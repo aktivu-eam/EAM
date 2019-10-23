@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Device Characteristic" section_id="a48c8497db9f33001795d1b1ca96197f" sys_domain="global" table="x_392987_eam_fda_udi" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>mri_safety_status</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 07:26:20</sys_created_on>
+            <sys_id>658c4897db9f33001795d1b1ca96191f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Device Characteristic" display_value="Device Characteristic" name="x_392987_eam_fda_udi" sys_domain="global" view="Default view">a48c8497db9f33001795d1b1ca96197f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 07:26:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>labeled_contains_nrl</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 07:26:20</sys_created_on>
+            <sys_id>e58c4897db9f33001795d1b1ca96191f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Device Characteristic" display_value="Device Characteristic" name="x_392987_eam_fda_udi" sys_domain="global" view="Default view">a48c8497db9f33001795d1b1ca96197f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 07:26:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>labled_no_nrl</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 07:26:20</sys_created_on>
+            <sys_id>698c4897db9f33001795d1b1ca96191f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Device Characteristic" display_value="Device Characteristic" name="x_392987_eam_fda_udi" sys_domain="global" view="Default view">a48c8497db9f33001795d1b1ca96197f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 07:26:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>single_use</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 07:26:20</sys_created_on>
+            <sys_id>e98c4897db9f33001795d1b1ca96191f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Device Characteristic" display_value="Device Characteristic" name="x_392987_eam_fda_udi" sys_domain="global" view="Default view">a48c8497db9f33001795d1b1ca96197f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 07:26:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 07:26:20</sys_created_on>
+            <sys_id>6d8c4897db9f33001795d1b1ca96191f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Device Characteristic" display_value="Device Characteristic" name="x_392987_eam_fda_udi" sys_domain="global" view="Default view">a48c8497db9f33001795d1b1ca96197f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 07:26:20</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>rx</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 07:26:20</sys_created_on>
+            <sys_id>ed8c4897db9f33001795d1b1ca96191f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Device Characteristic" display_value="Device Characteristic" name="x_392987_eam_fda_udi" sys_domain="global" view="Default view">a48c8497db9f33001795d1b1ca96197f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 07:26:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>otc</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 07:26:20</sys_created_on>
+            <sys_id>618c4897db9f33001795d1b1ca961920</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Device Characteristic" display_value="Device Characteristic" name="x_392987_eam_fda_udi" sys_domain="global" view="Default view">a48c8497db9f33001795d1b1ca96197f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 07:26:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>device_kit</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 07:26:20</sys_created_on>
+            <sys_id>e18c4897db9f33001795d1b1ca961920</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Device Characteristic" display_value="Device Characteristic" name="x_392987_eam_fda_udi" sys_domain="global" view="Default view">a48c8497db9f33001795d1b1ca96197f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 07:26:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>device_combination_product</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 07:26:20</sys_created_on>
+            <sys_id>658c4897db9f33001795d1b1ca961920</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Device Characteristic" display_value="Device Characteristic" name="x_392987_eam_fda_udi" sys_domain="global" view="Default view">a48c8497db9f33001795d1b1ca96197f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 07:26:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>device_hctp</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 07:26:20</sys_created_on>
+            <sys_id>e58c4897db9f33001795d1b1ca961920</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Device Characteristic" display_value="Device Characteristic" name="x_392987_eam_fda_udi" sys_domain="global" view="Default view">a48c8497db9f33001795d1b1ca96197f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 07:26:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Device Characteristic</caption>
+            <header>false</header>
+            <name>x_392987_eam_fda_udi</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 07:26:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a48c8497db9f33001795d1b1ca96197f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Device Characteristic</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+            <sys_update_name>sys_ui_section_a48c8497db9f33001795d1b1ca96197f</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 07:26:17</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

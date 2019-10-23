@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Events" max_length="40" name="x_392987_eam_events" type="collection">
+        <element label="Active Exploit" max_length="40" name="active_exploit" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true,show_condition_count=true,readable=true" dependent="asset_table" dependent_on_field="asset_table" label="Asset Condition" max_length="4000" name="asset_condition" type="conditions" use_dependent_field="true"/>
+        <element attributes="edge_encryption_enabled=true" default="x_392987_eam_assets" dependent="asset_table" dependent_on_field="asset_table" label="Asset Table" max_length="32" name="asset_table" read_only="true" type="table_name" use_dependent_field="true"/>
+        <element choice="3" label="Classification" max_length="40" name="classification" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="Security" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Recall" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Discovery" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Utilization" sequence="3" value="4"/>
+            </choice>
+        </element>
+        <element label="Data Source" max_length="32" name="data_source" reference="x_392987_eam_data_source" type="reference"/>
+        <element label="Name" max_length="255" name="name" type="string"/>
+        <element default="javascript:gs.nowDateTime()" dynamic_default_value="79cb83a85f220100a9ad2572f2b4773c" label="Opened" max_length="40" name="opened" type="glide_date_time" use_dynamic_default="true"/>
+        <element label="Primary CI" max_length="32" name="primary_ci" reference="cmdb_ci" type="reference"/>
+        <element label="Queue" max_length="32" name="queue" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element label="Space Condition" max_length="4000" name="space_condition" type="conditions"/>
+        <element attributes="base_start=true" default="x_392987_eam_space" label="Space Table" max_length="80" name="space_table" read_only="true" type="table_name"/>
+        <element choice="3" label="Status" mandatory="true" max_length="40" name="status" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="Acknowledged" value="4"/>
+                <element inactive_on_update="false" label="Assigned" value="2"/>
+                <element inactive_on_update="false" label="Completed" value="3"/>
+                <element inactive_on_update="false" label="New" value="1"/>
+            </choice>
+        </element>
+        <element label="URL" max_length="1024" name="url" type="url"/>
+    </element>
+</database>

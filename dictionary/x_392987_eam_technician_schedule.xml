@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="cmn_schedule" label="Technician Schedule" max_length="40" name="x_392987_eam_technician_schedule" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" default="Shift" label="Schedule Type" max_length="40" name="schedule_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Shift" sequence="0" value="Shift"/>
+                <element inactive_on_update="false" label="Personal" sequence="1" value="Personal"/>
+            </choice>
+        </element>
+        <element label="Customer update (No Longer Used)" max_length="40" name="sys_customer_update" type="boolean"/>
+        <element label="Replace on upgrade (No Longer Used)" max_length="40" name="sys_replace_on_upgrade" type="boolean"/>
+        <element label="Technician" mandatory="true" max_length="32" name="technician" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="technician"/>
+        </index>
+    </element>
+</database>

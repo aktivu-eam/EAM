@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="authentication" table="x_392987_eam_vulnerabilities" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>authentication</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Multiple Instance</label>
+            <language>en</language>
+            <name>x_392987_eam_vulnerabilities</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-22 12:55:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4c716263dbdf73001795d1b1ca96193d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-22 12:55:26</sys_updated_on>
+            <value>MULTIPLE_INSTANCE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>authentication</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>None</label>
+            <language>en</language>
+            <name>x_392987_eam_vulnerabilities</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-22 12:55:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8c716263dbdf73001795d1b1ca96193e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-22 12:55:26</sys_updated_on>
+            <value>NONE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>authentication</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Single Instance</label>
+            <language>en</language>
+            <name>x_392987_eam_vulnerabilities</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-22 12:55:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c0716263dbdf73001795d1b1ca96194c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-22 12:55:26</sys_updated_on>
+            <value>SINGLE_INSTANCE</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>authentication</element>
+            <name>x_392987_eam_vulnerabilities</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-22 12:55:26</sys_created_on>
+            <sys_id>4f13e1042f7333000d355d372799b698</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>authentication</sys_name>
+            <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+            <sys_update_name>sys_choice_x_392987_eam_vulnerabilities_authentication</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-22 12:55:26</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

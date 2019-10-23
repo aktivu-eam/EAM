@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="material_type" table="x_392987_eam_materials" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>material_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Chemicals</label>
+            <language>en</language>
+            <name>x_392987_eam_materials</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-27 07:06:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ff514f01db6333001795d1b1ca961915</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-27 07:06:22</sys_updated_on>
+            <value>Chemicals</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>material_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Finished Goods</label>
+            <language>en</language>
+            <name>x_392987_eam_materials</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-27 07:06:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>69714381db6333001795d1b1ca961924</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-27 07:06:39</sys_updated_on>
+            <value>Finished Goods</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>material_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>General</label>
+            <language>en</language>
+            <name>x_392987_eam_materials</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-27 07:06:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9a810781db6333001795d1b1ca9619dd</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-27 07:07:00</sys_updated_on>
+            <value>General</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>material_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Packaging</label>
+            <language>en</language>
+            <name>x_392987_eam_materials</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-27 07:07:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e2910781db6333001795d1b1ca9619d2</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-27 07:07:19</sys_updated_on>
+            <value>Packaging</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>material_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pipeline</label>
+            <language>en</language>
+            <name>x_392987_eam_materials</name>
+            <sequence>4</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-27 07:07:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>63a14781db6333001795d1b1ca961974</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-27 07:07:37</sys_updated_on>
+            <value>Pipeline</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>material_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Raw Material</label>
+            <language>en</language>
+            <name>x_392987_eam_materials</name>
+            <sequence>5</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-27 07:07:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c4c14781db6333001795d1b1ca961962</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-27 07:07:56</sys_updated_on>
+            <value>Raw Material</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>material_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Samples</label>
+            <language>en</language>
+            <name>x_392987_eam_materials</name>
+            <sequence>6</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-27 07:08:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>78d18781db6333001795d1b1ca9619d7</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-27 07:08:17</sys_updated_on>
+            <value>Samples</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>material_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Semi-Finished Product</label>
+            <language>en</language>
+            <name>x_392987_eam_materials</name>
+            <sequence>7</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-27 07:08:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bde10781db6333001795d1b1ca961976</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-27 07:08:39</sys_updated_on>
+            <value>Semi-Finished Product</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>material_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Service</label>
+            <language>en</language>
+            <name>x_392987_eam_materials</name>
+            <sequence>8</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-27 07:08:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>56f14781db6333001795d1b1ca961963</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-27 07:09:03</sys_updated_on>
+            <value>Service</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>material_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Trading Material</label>
+            <language>en</language>
+            <name>x_392987_eam_materials</name>
+            <sequence>9</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-27 07:05:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>58314381db6333001795d1b1ca961915</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-27 07:05:59</sys_updated_on>
+            <value>Trading Material</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>material_type</element>
+            <name>x_392987_eam_materials</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-27 07:05:50</sys_created_on>
+            <sys_id>021321042f7333000d355d372799b6ea</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>material_type</sys_name>
+            <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+            <sys_update_name>sys_choice_x_392987_eam_materials_material_type</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-27 07:05:50</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

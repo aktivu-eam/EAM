@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="month_of_year" table="x_392987_eam_recurrence_definition" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>month_of_year</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>January</label>
+            <language>en</language>
+            <name>x_392987_eam_recurrence_definition</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-22 07:47:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4bea9963db1f73001795d1b1ca96196f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-22 07:47:21</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>month_of_year</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>February</label>
+            <language>en</language>
+            <name>x_392987_eam_recurrence_definition</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-22 07:47:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8bea9963db1f73001795d1b1ca961970</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-22 07:47:21</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>month_of_year</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>March</label>
+            <language>en</language>
+            <name>x_392987_eam_recurrence_definition</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-22 07:47:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0bea9963db1f73001795d1b1ca961971</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-22 07:47:21</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>month_of_year</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>April</label>
+            <language>en</language>
+            <name>x_392987_eam_recurrence_definition</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-22 07:47:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>87ea9963db1f73001795d1b1ca961972</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-22 07:47:21</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>month_of_year</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>May</label>
+            <language>en</language>
+            <name>x_392987_eam_recurrence_definition</name>
+            <sequence>4</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-22 07:47:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>07ea9963db1f73001795d1b1ca961973</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-22 07:47:21</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>month_of_year</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>June</label>
+            <language>en</language>
+            <name>x_392987_eam_recurrence_definition</name>
+            <sequence>5</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-22 07:47:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>83ea9963db1f73001795d1b1ca961974</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-22 07:47:21</sys_updated_on>
+            <value>6</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>month_of_year</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>July</label>
+            <language>en</language>
+            <name>x_392987_eam_recurrence_definition</name>
+            <sequence>6</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-22 07:47:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>03ea9963db1f73001795d1b1ca961975</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-22 07:47:21</sys_updated_on>
+            <value>7</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>month_of_year</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>August</label>
+            <language>en</language>
+            <name>x_392987_eam_recurrence_definition</name>
+            <sequence>7</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-22 07:47:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8fea9963db1f73001795d1b1ca961975</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-22 07:47:21</sys_updated_on>
+            <value>8</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>month_of_year</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>September</label>
+            <language>en</language>
+            <name>x_392987_eam_recurrence_definition</name>
+            <sequence>8</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-22 07:47:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0fea9963db1f73001795d1b1ca961976</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-22 07:47:21</sys_updated_on>
+            <value>9</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>month_of_year</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>October</label>
+            <language>en</language>
+            <name>x_392987_eam_recurrence_definition</name>
+            <sequence>9</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-22 07:47:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8bea9963db1f73001795d1b1ca961977</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-22 07:47:21</sys_updated_on>
+            <value>10</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>month_of_year</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>November</label>
+            <language>en</language>
+            <name>x_392987_eam_recurrence_definition</name>
+            <sequence>10</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-22 07:47:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0bea9963db1f73001795d1b1ca961978</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-22 07:47:21</sys_updated_on>
+            <value>11</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>month_of_year</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>December</label>
+            <language>en</language>
+            <name>x_392987_eam_recurrence_definition</name>
+            <sequence>11</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-22 07:47:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>87ea9963db1f73001795d1b1ca961979</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-22 07:47:21</sys_updated_on>
+            <value>12</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>month_of_year</element>
+            <name>x_392987_eam_recurrence_definition</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-22 07:47:21</sys_created_on>
+            <sys_id>5a13a1042f7333000d355d372799b62c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>month_of_year</sys_name>
+            <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+            <sys_update_name>sys_choice_x_392987_eam_recurrence_definition_month_of_year</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-22 07:47:21</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>true</applies_extended>
+        <condition/>
+        <description/>
+        <field>assigned_to</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Autopopulate Ship To Address</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	//Autopopulate ship_to_address, if it is empty
+	var existingAddress = g_form.getValue('ship_to_address');
+	
+	if(existingAddress == '') {
+		var ga = new GlideAjax('NuvoloWorkOrderPartsAjax');
+		ga.addParam('sysparm_name','getDefaultShipToAddress');
+		ga.addParam('sysparm_work_order',g_form.getValue("work_order"));
+		ga.getXML(function(response){
+			var answer = response.responseXML.documentElement.getAttribute("answer");
+			g_form.setValue('ship_to_address',answer);
+		});
+	}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-08-29 05:48:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cfe1493ddb2f33001795d1b1ca961970</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Autopopulate Ship To Address</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+        <sys_update_name>sys_script_client_cfe1493ddb2f33001795d1b1ca961970</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-08-29 05:48:09</sys_updated_on>
+        <table>x_392987_eam_purchase_order</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

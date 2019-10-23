@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="condition" table="x_392987_eam_assets" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>condition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>A- Good</label>
+            <language>en</language>
+            <name>x_392987_eam_assets</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-09-17 10:27:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b4d8b7372ff333000d355d372799b6ed</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-09-17 10:28:33</sys_updated_on>
+            <value>A- Good</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>condition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>null</label>
+            <language>en</language>
+            <name>x_392987_eam_assets</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-09-17 10:28:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e7097f772ff333000d355d372799b6a4</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-09-17 10:28:46</sys_updated_on>
+            <value>null</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>condition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>B- Repairs Needed</label>
+            <language>en</language>
+            <name>x_392987_eam_assets</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-09-17 10:27:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a5e8bb772ff333000d355d372799b68b</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-09-17 10:28:35</sys_updated_on>
+            <value>B- Repairs Needed</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>condition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>C- Lifecycle/No Repairs</label>
+            <language>en</language>
+            <name>x_392987_eam_assets</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-09-17 10:27:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0cf83f772ff333000d355d372799b6a0</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-09-17 10:28:38</sys_updated_on>
+            <value>C- Lifecycle/No Repairs</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>condition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>D- Critical System Failure Danger</label>
+            <language>en</language>
+            <name>x_392987_eam_assets</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-09-17 10:27:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6af87f772ff333000d355d372799b6a3</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-09-17 10:28:41</sys_updated_on>
+            <value>D- Critical System Failure Danger</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>condition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>F- Urgent-Safety Related</label>
+            <language>en</language>
+            <name>x_392987_eam_assets</name>
+            <sequence>4</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-09-17 10:28:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3409bb772ff333000d355d372799b68c</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-09-17 10:28:43</sys_updated_on>
+            <value>F- Urgent-Safety Related</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>condition</element>
+            <name>x_392987_eam_assets</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-09-17 10:27:26</sys_created_on>
+            <sys_id>25e8bb372ff333000d355d372799b6a8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>condition</sys_name>
+            <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+            <sys_update_name>sys_choice_x_392987_eam_assets_condition</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-09-17 10:27:26</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

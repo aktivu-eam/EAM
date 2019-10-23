@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="x_392987_eam_work_order_substate" label="Facilities Work Order Substate" max_length="40" name="x_392987_eam_facilities_work_order_substate" type="collection"/>
+</database>

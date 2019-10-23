@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="preventable_visit" label="Preventable Visit" language="en" table="x_392987_eam_invoice">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>preventable_visit</element>
+            <help/>
+            <hint/>
+            <label>Preventable Visit</label>
+            <language>en</language>
+            <name>x_392987_eam_invoice</name>
+            <plural>Preventable Visits</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-09-05 12:46:42</sys_created_on>
+            <sys_id>a4b5a2482f3733000d355d372799b675</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Preventable Visit</sys_name>
+            <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+            <sys_update_name>sys_documentation_x_392987_eam_invoice_preventable_visit_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-09-05 12:46:42</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

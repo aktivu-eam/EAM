@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="Company" max_length="40" name="x_392987_eam_company" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="After Hours Phone" max_length="40" name="after_hours_phone" type="phone_number_e164"/>
+        <element attributes="edge_encryption_enabled=true" label="City" max_length="40" name="city" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Country" max_length="40" name="country" type="string"/>
+        <element label="Customer" max_length="40" name="customer" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="4000" name="description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Email" max_length="120" name="email" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Fax" max_length="40" name="fax" type="phone_number_e164"/>
+        <element attributes="omit_sys_original=true" label="Labor Rate" max_length="20" name="labor_rate" type="currency"/>
+        <element label="Land Lord" max_length="40" name="land_lord" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Main Phone" max_length="40" name="main_phone" type="phone_number_e164"/>
+        <element label="Manufacturer" max_length="40" name="manufacturer" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" mandatory="true" max_length="255" name="name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="omit_sys_original=true" label="Overtime Labor Rate" max_length="20" name="overtime_labor_rate" type="currency"/>
+        <element label="Payee" max_length="40" name="payee" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Primary Contact" max_length="100" name="primary_contact" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Primary Contact Phone" max_length="40" name="primary_contact_phone" type="phone_number_e164"/>
+        <element label="Property Manager" max_length="40" name="property_manager" type="boolean"/>
+        <element label="Service Provider" max_length="40" name="service_provider" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="State" max_length="40" name="state" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Street" max_length="100" name="street" type="string"/>
+        <element attributes="omit_sys_original=true" label="Travel Rate" max_length="20" name="travel_rate" type="currency"/>
+        <element label="Vendor" max_length="40" name="vendor" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Website" max_length="1024" name="website" type="url"/>
+        <element attributes="edge_encryption_enabled=true" label="Zip Code" max_length="40" name="zip_code" type="string"/>
+    </element>
+</database>

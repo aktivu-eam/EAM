@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Space" max_length="40" name="x_392987_eam_space" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Actual End Date" max_length="40" name="actual_end_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Actual Start Date" max_length="40" name="actual_start_date" type="glide_date"/>
+        <element label="Advance Booking Period" max_length="40" name="advance_booking_period" type="glide_duration"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Amenities" max_length="1024" name="amenities" type="glide_list"/>
+        <element label="Net Area" max_length="40" name="area" type="float"/>
+        <element label="Area unit" max_length="32" name="area_unit" read_only="true" reference="x_392987_eam_unit_of_measure" type="reference"/>
+        <element label="Asset" max_length="32" name="asset" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element label="Assignable Area" max_length="40" name="assignable_area" type="float"/>
+        <element label="Campus" max_length="32" name="campus" reference="x_392987_eam_campus" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Conditions" max_length="40" name="conditions" type="conditions"/>
+        <element default="0" label="Current Occupancy" max_length="40" name="current_occupancy" read_only="true" type="integer"/>
+        <element label="Default Space Layout" max_length="32" name="default_space_layout" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="4000" name="description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Document ID" max_length="40" name="document_id" type="document_id"/>
+        <element attributes="base_start=true" label="Document Table" max_length="80" name="document_table" type="table_name"/>
+        <element label="Flex Capacity" max_length="40" name="flex_capacity" read_only="true" type="integer"/>
+        <element label="Flex Occupancy" max_length="40" name="flex_occupancy" read_only="true" type="integer"/>
+        <element label="Floor" max_length="32" name="floor" reference="x_392987_eam_floor" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="GeoJSON Data" max_length="4000" name="geojson_data" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Geo Cache Last Build Date" max_length="40" name="geo_cache_last_build_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Geo Cache Processing Status" max_length="40" name="geo_cache_processing_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="error" sequence="0" value="error"/>
+                <element inactive_on_update="false" label="ready" sequence="1" value="ready"/>
+                <element inactive_on_update="false" label="processed" sequence="2" value="processed"/>
+            </choice>
+        </element>
+        <element label="Handicap Accessible" max_length="40" name="handicap_accessible" type="boolean"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Layouts" max_length="1024" name="layouts" type="glide_list"/>
+        <element label="Location" max_length="32" name="location" reference="x_392987_eam_location" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Location Level" max_length="40" name="location_level" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Region" sequence="0" value="region"/>
+                <element inactive_on_update="false" label="Campus" sequence="1" value="campus"/>
+                <element inactive_on_update="false" label="Site" sequence="2" value="site"/>
+                <element inactive_on_update="false" label="Floor" sequence="3" value="floor"/>
+                <element inactive_on_update="false" label="Location" sequence="4" value="location"/>
+                <element inactive_on_update="false" label="Zone" sequence="5" value="zone"/>
+                <element inactive_on_update="false" label="Asset" sequence="6" value="asset"/>
+            </choice>
+        </element>
+        <element label="Code Capacity" max_length="40" name="max_capacity" type="integer"/>
+        <element label="Workspace Capacity" max_length="40" name="max_occupancy" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="255" name="name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Occupancy Status" max_length="40" name="occupancy_status" read_only="true" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Occupied" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Vacant" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Over Occupied" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Under Occupied" sequence="3" value="4"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Parent" max_length="40" name="parent" type="string"/>
+        <element label="Parent Reference" max_length="32" name="parent_reference" reference="x_392987_eam_space" type="reference"/>
+        <element attributes="base_start=true" label="Parent Table" max_length="80" name="parent_table" type="table_name"/>
+        <element default="0" label="Percent Occupied" max_length="40" name="percent_occupied" read_only="true" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Planned End Date" max_length="40" name="planned_end_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Planned Start Date" max_length="40" name="planned_start_date" type="glide_date"/>
+        <element label="Primary Use" max_length="32" name="primary_use" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element default="0" label="Reference area" max_length="40" name="reference_area" read_only="true" type="float"/>
+        <element label="Reference area unit" max_length="32" name="reference_area_unit" read_only="true" reference="x_392987_eam_unit_of_measure" type="reference"/>
+        <element active="false" label="Reference assignable area" max_length="40" name="reference_assignable_area" read_only="true" type="float"/>
+        <element label="Region" max_length="32" name="region" reference="x_392987_eam_region" type="reference"/>
+        <element label="Reservable" max_length="40" name="reservable" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Reservation Class" max_length="40" name="reservation_class" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Reservable" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Requestable" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Private" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <element label="Reservation Cut Off" max_length="40" name="reservation_cut_off" type="glide_duration"/>
+        <element label="Reservation Owner" max_length="32" name="reservation_owner" reference="sys_user_group" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Seat Status" max_length="40" name="seat_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Active" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Temporary" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Retired" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Future" sequence="3" value="4"/>
+            </choice>
+        </element>
+        <element label="Share Ratio" max_length="40" name="share_ratio" type="float"/>
+        <element label="Site" max_length="32" name="site" reference="x_392987_eam_building" type="reference"/>
+        <element label="Space Function" max_length="32" name="space_function" read_only="true" reference="x_392987_eam_space_function" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Special Notes" max_length="4000" name="special_notes" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="edge_encryption_enabled=true" label="Sys domain path" max_length="40" name="sys_domain_path" type="string"/>
+        <element label="Space Type" max_length="32" name="type" reference="x_392987_eam_space_type" reference_qual="javascript:new x_nuvo_eam.NuvoloSpaceUtils().spaceTypeRefQual(current)" type="reference" use_reference_qualifier="advanced"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Usage" max_length="40" name="usage" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Assigned" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Drop In" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Hotel" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Other Use" sequence="3" value="4"/>
+                <element inactive_on_update="false" label="Common" sequence="4" value="5"/>
+                <element inactive_on_update="false" label="Shared" sequence="5" value="6"/>
+                <element inactive_on_update="false" label="Reserved" sequence="6" value="7"/>
+            </choice>
+        </element>
+        <element attributes="omit_sys_original=true" label="Usage Cost" max_length="20" name="usage_cost" type="currency"/>
+        <element label="Usage Unit" max_length="32" name="usage_unit" reference="x_392987_eam_unit_of_measure" type="reference"/>
+        <index name="index">
+            <element name="primary_use"/>
+        </index>
+        <index name="index2">
+            <element name="campus"/>
+        </index>
+        <index name="index3">
+            <element name="document_id"/>
+        </index>
+        <index name="index4">
+            <element name="type"/>
+        </index>
+        <index name="index5">
+            <element name="parent_reference"/>
+        </index>
+        <index name="index6">
+            <element name="default_space_layout"/>
+        </index>
+        <index name="index7">
+            <element name="sys_class_name"/>
+        </index>
+        <index name="index8">
+            <element name="usage_unit"/>
+        </index>
+        <index name="index9">
+            <element name="site"/>
+        </index>
+        <index name="index10">
+            <element name="space_function"/>
+        </index>
+        <index name="index11">
+            <element name="area_unit"/>
+        </index>
+        <index name="index12">
+            <element name="reference_area_unit"/>
+        </index>
+        <index name="index13">
+            <element name="location"/>
+        </index>
+        <index name="index14">
+            <element name="asset"/>
+        </index>
+        <index name="index15">
+            <element name="floor"/>
+        </index>
+        <index name="index16">
+            <element name="region"/>
+        </index>
+        <index name="index17">
+            <element name="reservation_owner"/>
+        </index>
+    </element>
+</database>

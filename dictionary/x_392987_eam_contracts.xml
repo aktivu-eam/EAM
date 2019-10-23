@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Contracts" max_length="40" name="x_392987_eam_contracts" type="collection">
+        <element label="Approver" max_length="32" name="approver" reference="sys_user" type="reference"/>
+        <element label="Calculate ROI" max_length="40" name="calculate_roi" type="boolean"/>
+        <element default="0" label="Contract Cost" max_length="20" name="contract_cost" type="currency"/>
+        <element label="Description" max_length="4000" name="description" type="string"/>
+        <element choice="1" default="Y ear" label="Duration (Unit)" max_length="40" name="duration_unit" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Month/s" sequence="0" value="Month"/>
+                <element inactive_on_update="false" label="Year/s" sequence="1" value="Y ear"/>
+            </choice>
+        </element>
+        <element label="Duration (Value)" max_length="40" name="duration_value" type="integer"/>
+        <element label="End Date" max_length="40" name="end_date" read_only="true" type="glide_date"/>
+        <element label="Equipment Uptime SLA (%)" max_length="15" name="equipment_uptime_sla" type="percent_complete"/>
+        <element label="External Contract ID" max_length="40" name="external_contract_id" type="string"/>
+        <element label="Labor Discount (%)" max_length="15" name="labor_discount" type="percent_complete"/>
+        <element label="Legacy - Terms and Conditions" max_length="1000" name="legacy_terms_and_conditions" type="translated_text"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element default="0" label="Overall Contract Value" max_length="20" name="overall_contract_value" type="currency"/>
+        <element label="Parts Discount (%)" max_length="15" name="parts_discount" type="percent_complete"/>
+        <element default="0" label="Realized Contract Value" max_length="20" name="realized_contract_value" type="currency"/>
+        <element label="Renewable" max_length="40" name="renewable" type="boolean"/>
+        <element label="Renewal Date" max_length="40" name="renewal_date" type="glide_date"/>
+        <element label="ROI (%)" max_length="15" name="roi" type="percent_complete"/>
+        <element label="Service Level" max_length="40" name="service_level" type="integer"/>
+        <element label="Short Description" max_length="255" name="short_description" type="string"/>
+        <element label="Start Date" max_length="40" name="start_date" type="glide_date"/>
+        <element choice="1" default="1" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Draft" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Active" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Expired" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Canceled" sequence="3" value="4"/>
+            </choice>
+        </element>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Target ROI" max_length="15" name="target_roi" type="percent_complete"/>
+        <element label="Terms &amp; Conditions" max_length="8000" name="terms_conditions" type="html"/>
+        <element choice="1" default="1" label="Type" mandatory="true" max_length="40" name="type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Maintenance" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Service" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Insurance" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Warranty" sequence="3" value="4"/>
+                <element inactive_on_update="false" label="Purchase" sequence="4" value="5"/>
+            </choice>
+        </element>
+        <element label="Vendor" mandatory="true" max_length="32" name="vendor" reference="x_392987_eam_company" type="reference"/>
+        <index name="index">
+            <element name="approver"/>
+        </index>
+        <index name="index2">
+            <element name="vendor"/>
+        </index>
+        <index name="index3">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

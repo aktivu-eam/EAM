@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Transfer Order Line Item" max_length="40" name="x_392987_eam_transfer_order_line_item" type="collection">
+        <element label="Description" max_length="4000" name="description" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Parts" max_length="32" name="parts" reference="x_392987_eam_m2m_stockrooms_parts" type="reference"/>
+        <element label="Parts Transfer Order" max_length="32" name="parts_transfer_order" reference="x_392987_eam_parts_transfer_order" type="reference"/>
+        <element label="Received" max_length="40" name="received" type="glide_date_time"/>
+        <element label="Received quantity" max_length="40" name="received_quantity" type="integer"/>
+        <element label="Remaining quantity" max_length="40" name="remaining_quantity" type="integer"/>
+        <element label="Requested Quantity" max_length="40" name="requested_quantity" type="integer"/>
+        <element label="Shipment Tracking Link" max_length="1024" name="shipment_tracking_link" type="url"/>
+        <element label="Shipment Tracking Number" max_length="40" name="shipment_tracking_number" type="string"/>
+        <element label="Short Description" max_length="255" name="short_description" type="string"/>
+        <element choice="3" default="1" label="Status" max_length="40" name="status" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="Delivered" value="3"/>
+                <element inactive_on_update="false" label="Pending Delivery" value="1"/>
+                <element inactive_on_update="false" label="Shipped" value="2"/>
+            </choice>
+        </element>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Sys domain path" max_length="255" name="sys_domain_path" type="string"/>
+        <index name="index">
+            <element name="parts_transfer_order"/>
+        </index>
+        <index name="index2">
+            <element name="parts"/>
+        </index>
+        <index name="index3">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

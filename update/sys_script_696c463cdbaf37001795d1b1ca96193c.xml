@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_392987_eam_hazard</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Set tagout_required on Asset</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	
+	//array of assets
+	var assetsArr = [];
+	
+	//query m2m hazards assets table to get the assets associated with a hardard
+	var m2mHazardAssestGR = new GlideRecord('x_392987_eam_m2m_hazards_assets');
+	m2mHazardAssestGR.addQuery('hazard',current.sys_id);
+	m2mHazardAssestGR.query();
+	while(m2mHazardAssestGR.next()){
+		assetsArr.push(m2mHazardAssestGR.assets.toString());
+	}
+	
+	//if tagout_required is true
+	if(current.tagout_required){
+		if(assetsArr.length > 0){
+			var grAssets = new GlideRecord('x_392987_eam_assets');
+			grAssets.addQuery('sys_id','IN',assetsArr);
+			grAssets.query();
+			while (grAssets.next()) {
+				if (!grAssets.tagout_required)
+					{grAssets.tagout_required = true;
+				grAssets.update();}
+			}
+		}
+	}
+	
+	//if tagout_required is false
+	if(!current.tagout_required){
+		if(assetsArr.length > 0){
+			var noChangeList = [];
+			var changeList = [];
+			
+			var m2mHazardAssestGR2 = new GlideRecord('x_392987_eam_m2m_hazards_assets');
+			m2mHazardAssestGR2.addQuery('assets','IN',assetsArr);
+			m2mHazardAssestGR2.query();
+			while(m2mHazardAssestGR2.next()) {
+				if(m2mHazardAssestGR2.hazard.tagout_required == true) {
+					noChangeList.push(m2mHazardAssestGR2.assets.toString());
+				}
+				else{
+					changeList.push(m2mHazardAssestGR2.assets.toString());
+				}
+			}
+			var arrUtil = new global.ArrayUtil();
+			var uniqueChangeList = arrUtil.unique(changeList);
+			var uniqueNoChangeList = arrUtil.unique(noChangeList);
+			var finalChangeList = arrUtil.diff(uniqueChangeList,uniqueNoChangeList);
+			
+			if(finalChangeList.length>0){
+				var grAssets1 = new GlideRecord('x_392987_eam_assets');
+				grAssets1.addQuery('sys_id','IN',finalChangeList);
+				grAssets1.query();
+				while (grAssets1.next()) {
+					if (grAssets1.tagout_required){
+						grAssets1.tagout_required = false;
+						
+						grAssets1.update();}
+					}
+				}
+			}
+		}
+		
+	})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-08-26 08:38:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>696c463cdbaf37001795d1b1ca96193c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set tagout_required on Asset</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+        <sys_update_name>sys_script_696c463cdbaf37001795d1b1ca96193c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-08-26 08:38:12</sys_updated_on>
+        <template/>
+        <when>async</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=696c463cdbaf37001795d1b1ca96193c"/>
+</record_update>

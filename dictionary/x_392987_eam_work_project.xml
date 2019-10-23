@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="x_392987_eam_planned_activities" label="Work Project" max_length="40" name="x_392987_eam_work_project" type="collection">
+        <element label="Estimated Effort" max_length="40" name="estimated_effort" type="glide_duration"/>
+        <element label="Work Round" max_length="32" name="work_round" reference="x_392987_eam_work_rounds" type="reference"/>
+    </element>
+</database>

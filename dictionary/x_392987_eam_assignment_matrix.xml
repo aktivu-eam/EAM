@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="Assignment Matrix" max_length="40" name="x_392987_eam_assignment_matrix" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="4000" name="description" type="string"/>
+        <element label="Asset" max_length="32" name="eam_asset" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element label="Asset Type" max_length="32" name="eam_asset_type" reference="x_392987_eam_asset_type" type="reference"/>
+        <element label="Assignment Group" mandatory="true" max_length="32" name="eam_assignment_group" reference="sys_user_group" type="reference"/>
+        <element label="Department" max_length="32" name="eam_department" reference="cmn_department" type="reference"/>
+        <element label="Location" max_length="32" name="eam_location" reference="x_392987_eam_location" type="reference"/>
+        <element label="Model" max_length="32" name="eam_model" reference="x_392987_eam_models" type="reference"/>
+        <element label="Work Order Type" max_length="32" name="eam_work_order_type" reference="x_392987_eam_work_order_type" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" mandatory="true" max_length="255" name="name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="edge_encryption_enabled=true" label="Sys domain path" max_length="255" name="sys_domain_path" type="string"/>
+        <index name="index">
+            <element name="eam_asset"/>
+        </index>
+        <index name="index2">
+            <element name="eam_work_order_type"/>
+        </index>
+        <index name="index3">
+            <element name="eam_assignment_group"/>
+        </index>
+        <index name="index4">
+            <element name="eam_model"/>
+        </index>
+        <index name="index5">
+            <element name="eam_location"/>
+        </index>
+        <index name="index6">
+            <element name="eam_department"/>
+        </index>
+        <index name="index7">
+            <element name="eam_asset_type"/>
+        </index>
+        <index name="index8">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

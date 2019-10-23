@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Work Item Definition" max_length="40" name="x_392987_eam_work_item_definition" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Default Value" max_length="40" name="default_value" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Input Type" max_length="40" name="input_type" type="string"/>
+        <element label="Input Unit" max_length="32" name="input_unit" reference="x_392987_eam_unit_of_measure" type="reference"/>
+        <element label="Input Value" max_length="15" name="input_value" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" mandatory="true" max_length="100" name="name" type="string"/>
+        <element label="Order" max_length="40" name="order" type="integer"/>
+        <element label="Output Lower Limit" max_length="15" name="output_lower_limit" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" label="Output Type" max_length="40" name="output_type" type="string"/>
+        <element label="Output Unit" max_length="32" name="output_unit" reference="x_392987_eam_unit_of_measure" type="reference"/>
+        <element label="Output Upper Limit" max_length="15" name="output_upper_limit" type="decimal"/>
+        <element label="Output Value" max_length="15" name="output_value" type="decimal"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="edge_encryption_enabled=true" label="Sys domain path" max_length="255" name="sys_domain_path" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="Text" label="Type" mandatory="true" max_length="40" name="type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes/No" sequence="0" value="Yes/No"/>
+                <element inactive_on_update="false" label="Pass/Fail" sequence="1" value="Pass/Fail"/>
+                <element inactive_on_update="false" label="Text" sequence="2" value="Text"/>
+                <element inactive_on_update="false" label="Calibration" sequence="3" value="Calibration"/>
+            </choice>
+        </element>
+        <element label="Work Definition" mandatory="true" max_length="32" name="work_definition" reference="x_392987_eam_work_definition" type="reference"/>
+        <index name="index">
+            <element name="work_definition"/>
+        </index>
+        <index name="index2">
+            <element name="input_unit"/>
+        </index>
+        <index name="index3">
+            <element name="output_unit"/>
+        </index>
+        <index name="index4">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

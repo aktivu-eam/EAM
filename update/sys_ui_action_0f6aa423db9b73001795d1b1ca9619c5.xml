@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>edit_security_status</action_name>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments/>
+        <condition>gs.hasRole("x_392987_eam.security_analyst")</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <name>Change Security Status</name>
+        <onclick>showReviewdialog()</onclick>
+        <order>100</order>
+        <script><![CDATA[function showReviewdialog() {
+	var title = getMessage("Change Security Status");
+	var sysId = [g_form.getUniqueValue()];
+	var table = [g_form.getTableName()];
+	var dialogClass = GlideModal ? GlideModal : GlideDialogWindow;
+	var dd = new dialogClass("x_392987_eam_edit_model_security_status");
+	dd.setTitle(title);
+	dd.setPreference('sysparm_sys_id', sysId);
+	dd.setPreference('sysparm_table_name', table);
+	dd.setWidth(500);
+	dd.render();
+}]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-08-22 04:15:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0f6aa423db9b73001795d1b1ca9619c5</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Change Security Status</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+        <sys_update_name>sys_ui_action_0f6aa423db9b73001795d1b1ca9619c5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-10-16 09:42:28</sys_updated_on>
+        <table>x_392987_eam_models</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>true</ui16_compatible>
+    </sys_ui_action>
+</record_update>

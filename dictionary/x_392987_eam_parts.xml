@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="x_392987_eam_assets" label="Parts" max_length="40" name="x_392987_eam_parts" type="collection">
+        <element attributes="omit_sys_original=true" label="Acquisition Cost" max_length="20" name="acquisition_cost" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="1" label="Acquisition Method" max_length="40" name="acquisition_method" type="string">
+            <choice/>
+        </element>
+        <element label="AEM" max_length="40" name="aem" type="boolean"/>
+        <element label="AEM Formula" max_length="32" name="aem_formula" reference="x_392987_eam_aem_inclusion_formula" type="reference"/>
+        <element label="Alarm" max_length="40" name="alarm" type="boolean"/>
+        <element label="Last Known Location" max_length="32" name="asset_location" reference="x_392987_eam_location" type="reference"/>
+        <element label="Asset Manufacturer" max_length="32" name="asset_manufacturer" reference="x_392987_eam_company" type="reference"/>
+        <element label="Asset Space" max_length="32" name="asset_space" reference="x_392987_eam_space" type="reference"/>
+        <element label="Asset Type" max_length="32" name="asset_type" reference="x_392987_eam_asset_type" type="reference"/>
+        <element label="Asset Type.Tool" max_length="40" name="asset_typetool" type="boolean"/>
+        <element label="Asset Vendor" max_length="32" name="asset_vendor" reference="x_392987_eam_company" type="reference"/>
+        <element label="Available License Quantity" max_length="40" name="available_license_quantity" read_only="true" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Average Use" max_length="40" name="average_use" type="string"/>
+        <element label="Backup Available" max_length="40" name="backup_available" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Barcode" max_length="40" name="barcode" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Condition" max_length="40" name="condition" type="string">
+            <choice/>
+        </element>
+        <element label="CPE Cascade" max_length="40" name="cpe_cascade" type="boolean"/>
+        <element label="Created Via Work Order" max_length="40" name="created_via_work_order" type="boolean"/>
+        <element label="Critical" max_length="40" name="critical" type="boolean"/>
+        <element attributes="omit_sys_original=true" label="Current Book Value" max_length="20" name="current_book_value" type="currency"/>
+        <element label="Customer" max_length="32" name="customer" reference="x_392987_eam_company" type="reference"/>
+        <element label="Replenish Threshold" max_length="40" name="daily_replenish_threshold" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Decommission Date" max_length="40" name="decommission_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Disposal locations" max_length="200" name="disposal_locations" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="Donation" label="Disposal Method" max_length="40" name="disposal_method" type="string">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Disposal reason" max_length="200" name="disposal_reason" type="string"/>
+        <element attributes="omit_sys_original=true" label="Disposal Value" max_length="20" name="disposal_value" type="currency"/>
+        <element label="Donated" max_length="40" name="donated" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="End of LIfe" max_length="40" name="end_of_life" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Expiration Date" max_length="40" name="expiration_date" type="glide_date_time"/>
+        <element label="Firmware Version Number" max_length="40" name="firmware_version_number" type="string"/>
+        <element label="Hazardous" max_length="40" name="hazardous" read_only="true" type="boolean"/>
+        <element label="Installed License Quantity" max_length="40" name="installed_license_quantity" read_only="true" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Last Maintenance Date" max_length="40" name="last_maintenance_date" type="glide_date_time"/>
+        <element label="Last Used" max_length="40" name="last_used" type="glide_date_time"/>
+        <element label="Latitude" max_length="40" name="latitude" type="float"/>
+        <element label="Leased" max_length="40" name="leased" type="boolean"/>
+        <element attributes="omit_sys_original=true" label="List Price" max_length="20" name="list_price" type="currency"/>
+        <element label="Longitude" max_length="40" name="longitude" type="float"/>
+        <element attributes="edge_encryption_enabled=true" label="Manufacture Date" max_length="40" name="manufacture_date" type="glide_date"/>
+        <element label="Mass Casualty Threshold" max_length="40" name="mass_casualty_threshold" type="integer"/>
+        <element label="Asset Model Name" max_length="32" name="model_name" reference="x_392987_eam_models" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Next Scheduled Maintenance" max_length="40" name="next_scheduled_maint" type="glide_date_time"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="OEM Part Name" max_length="255" name="oem_part_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Reason for Out of Service" max_length="40" name="out_of_service_reason" type="string">
+            <choice/>
+        </element>
+        <element label="Part Type" max_length="32" name="part_type" reference="x_392987_eam_part_type" reference_qual="sys_class_name=x_392987_eam_facilities_part_type^EQ" reference_qual_condition="sys_class_name=x_392987_eam_facilities_part_type^EQ" type="reference"/>
+        <element label="Quantity" mandatory="true" max_length="40" name="quantity" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Reason for Disposal" max_length="40" name="reason_for_disposal" type="string">
+            <choice/>
+        </element>
+        <element label="Reservable" max_length="40" name="reservable" type="boolean"/>
+        <element label="Responsible Cost Center" max_length="32" name="responsible_cost_center" reference="cmn_cost_center" type="reference"/>
+        <element label="RFC Formula" max_length="32" name="rfc_formula" reference="x_392987_eam_rfc_formulas" type="reference"/>
+        <element label="RFC Function" max_length="32" name="rfc_function" reference="x_392987_eam_rfc_functions" type="reference"/>
+        <element label="RFC Incident History" max_length="32" name="rfc_incident_history" reference="x_392987_eam_rfc_incident_history" type="reference"/>
+        <element label="RFC Maintenance Requirement" max_length="32" name="rfc_maintenance_requirement" reference="x_392987_eam_rfc_maintenance_requirements" type="reference"/>
+        <element choice="1" label="RFC Mission Criticality" max_length="40" name="rfc_mission_criticality" type="integer">
+            <choice/>
+        </element>
+        <element label="RFC Physical Risk" max_length="32" name="rfc_physical_risk" reference="x_392987_eam_rfc_physical_risks" type="reference"/>
+        <element label="RFC Utilization Rate" max_length="15" name="rfc_utilization_rate" type="percent_complete"/>
+        <element attributes="edge_encryption_enabled=true" label="RFID" max_length="40" name="rfid" type="string"/>
+        <element choice="1" label="Risk Factor Source" max_length="40" name="risk_factor_source" read_only="true" type="integer">
+            <choice/>
+        </element>
+        <element label="Risk Factor Source Override" max_length="40" name="risk_factor_source_override" type="boolean"/>
+        <element label="Risk Score" max_length="15" name="risk_score" read_only="true" type="decimal"/>
+        <element label="Salvage Value" max_length="20" name="salvage_value" type="currency"/>
+        <element label="Scheduled Maintenance" max_length="40" name="scheduled_maintenance" type="integer"/>
+        <element attributes="omit_sys_original=true" label="Service Contract Cost" max_length="20" name="service_contract_cost" read_only="true" type="currency"/>
+        <element label="Primary Service Provider" max_length="32" name="service_provider" reference="x_392987_eam_company" type="reference"/>
+        <element label="Software Version Number" max_length="40" name="software_version_number" type="string"/>
+        <element label="Stockroom" max_length="32" name="stockroom" reference="x_392987_eam_stockrooms" type="reference"/>
+        <element label="System" max_length="40" name="system" type="boolean"/>
+        <element attributes="synchronizePartitions=true" choice="3" default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true">
+            <choice/>
+        </element>
+        <element label="Tagout Required" max_length="40" name="tagout_required" read_only="true" type="boolean"/>
+        <element attributes="omit_sys_original=true" label="Total Cost of Ownership" max_length="20" name="tco" read_only="true" type="currency"/>
+        <element label="Third Party ID" max_length="100" name="third_party_id" type="string"/>
+        <element label="UDI" max_length="32" name="udi" reference="x_392987_eam_fda_udi" type="reference"/>
+        <element label="Unit Cost" max_length="20" name="unit_cost" type="currency"/>
+        <element label="Usage Unit" max_length="32" name="usage_unit" reference="x_392987_eam_unit_of_measure" type="reference"/>
+        <element label="Used Quantity" max_length="40" name="used_quantity" read_only="true" type="integer"/>
+        <element label="Work Order" max_length="32" name="work_order" reference="x_392987_eam_work_order" type="reference"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

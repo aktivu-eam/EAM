@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="RGA" max_length="40" name="x_392987_eam_return_goods_authorization" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Additional Comments" max_length="40" name="comments" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="PO Line Item" max_length="32" name="po_line_item" read_only="true" reference="x_392987_eam_purchase_order_line_item" type="reference"/>
+        <element label="Quantity" max_length="40" name="quantity" type="integer"/>
+        <element label="Receiving Slip Line Item" max_length="32" name="receiving_slip_line_item" reference="x_392987_eam_receiving_slip_line_item" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="RGA Number" max_length="40" name="rga_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="RGA Type" mandatory="true" max_length="40" name="rga_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Exchange" sequence="0" value="Exchange"/>
+                <element inactive_on_update="false" label="Return" sequence="1" value="Return"/>
+                <element inactive_on_update="false" label="Repair" sequence="2" value="Repair"/>
+                <element inactive_on_update="false" label="Warranty Return" sequence="3" value="Warranty Return"/>
+                <element inactive_on_update="false" label="Warranty Repair" sequence="4" value="Warranty Repair"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="Requested" label="Status" max_length="40" name="status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Requested" sequence="0" value="Requested"/>
+                <element inactive_on_update="false" label="In Progress" sequence="1" value="In Progress"/>
+                <element inactive_on_update="false" label="Completed" sequence="2" value="Completed"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="3" value="Cancelled"/>
+            </choice>
+        </element>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <index name="index">
+            <element name="receiving_slip_line_item"/>
+        </index>
+        <index name="index2">
+            <element name="po_line_item"/>
+        </index>
+        <index name="index3">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

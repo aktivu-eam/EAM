@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_392987_eam_purchase_order_line_item</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_392987_eam_purchase_order_line_item">unit_costVALCHANGESjavascript:global.getCurrencyFilter('x_392987_eam_purchase_order_line_item','unit_cost', 'USD;USD')^ORordered_quantityVALCHANGES^ORtotal_shipping_costVALCHANGESjavascript:global.getCurrencyFilter('x_392987_eam_purchase_order_line_item','total_shipping_cost', 'USD;USD')^ORtotal_feesVALCHANGESjavascript:global.getCurrencyFilter('x_392987_eam_purchase_order_line_item','total_fees', 'USD;USD')^ORtotal_taxVALCHANGESjavascript:global.getCurrencyFilter('x_392987_eam_purchase_order_line_item','total_tax', 'USD;USD')^EQ<item endquery="false" field="unit_cost" goto="false" newquery="false" operator="VALCHANGES" or="false" value="javascript:global.getCurrencyFilter('x_392987_eam_purchase_order_line_item','unit_cost', 'USD;USD')"/>
+            <item endquery="false" field="ordered_quantity" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item endquery="false" field="total_shipping_cost" goto="false" newquery="false" operator="VALCHANGES" or="true" value="javascript:global.getCurrencyFilter('x_392987_eam_purchase_order_line_item','total_shipping_cost', 'USD;USD')"/>
+            <item endquery="false" field="total_fees" goto="false" newquery="false" operator="VALCHANGES" or="true" value="javascript:global.getCurrencyFilter('x_392987_eam_purchase_order_line_item','total_fees', 'USD;USD')"/>
+            <item endquery="false" field="total_tax" goto="false" newquery="false" operator="VALCHANGES" or="true" value="javascript:global.getCurrencyFilter('x_392987_eam_purchase_order_line_item','total_tax', 'USD;USD')"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Calculate Total Cost</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[function onBefore(current, previous) {
+	//This function will be automatically called when this rule is processed.
+	updateTotal();
+}
+
+function updateTotal() {
+	if(current.type == '2' || current.type == '3'){
+		current.total_cost = (parseFloat(current.cost) * current.ordered_quantity) + parseFloat(current.total_shipping_cost) + parseFloat(current.total_fees) + parseFloat(current.total_tax);
+	}
+	else{
+		current.total_cost = current.cost;
+	}
+}]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-09-06 11:11:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a0d8d31c2f3373000d355d372799b658</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Calculate Total Cost</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+        <sys_update_name>sys_script_a0d8d31c2f3373000d355d372799b658</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-09-06 11:11:41</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=a0d8d31c2f3373000d355d372799b658"/>
+</record_update>

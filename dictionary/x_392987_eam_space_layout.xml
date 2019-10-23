@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Space Layout" max_length="40" name="x_392987_eam_space_layout" type="collection">
+        <element label="Breakdown Time" max_length="40" name="breakdown_time" type="glide_duration"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="4000" name="description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Image" max_length="40" name="image" type="user_image"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Layout Type" max_length="40" name="layout_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Conference Room" sequence="0" value="Conference Room"/>
+                <element inactive_on_update="false" label="Workspace" sequence="1" value="Workspace"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="40" name="name" type="string"/>
+        <element attributes="omit_sys_original=true" label="Setup Cost" max_length="20" name="setup_cost" type="currency"/>
+        <element label="Setup Time" max_length="40" name="setup_time" type="glide_duration"/>
+    </element>
+</database>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Tolerance Unit" max_length="40" name="x_392987_eam_tolerance_unit" type="collection">
+        <element default="/* Add Adjust Tolerance Formula here */" label="Adjust Tolerance Formula" max_length="8000" name="adjust_tolerance_formula" type="script"/>
+        <element default="/* Add Fail Tolerance Formula here */" label="Fail Tolerance Formula" max_length="8000" name="fail_tolerance_formula" type="script"/>
+        <element default="/* Add Input Clipped Limit Formula here */" label="Input Clipped Limit Formula" max_length="8000" name="input_clipped_limit_formula" type="script"/>
+        <element label="Name" max_length="100" name="name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="8d1971a7db5f73001795d1b1ca96197c" sys_domain="global" table="x_392987_eam_state_definition" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-22 09:59:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c91971a7db5f73001795d1b1ca96197e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_392987_eam_state_definition" name="x_392987_eam_state_definition" sys_domain="global" view="Default view">8d1971a7db5f73001795d1b1ca96197c</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_state_definition" sys_domain="global" view="Default view">616aa1ebdb1f73001795d1b1ca9619b1</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-22 09:59:07</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-22 09:59:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>851971a7db5f73001795d1b1ca96197f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_392987_eam_state_definition" name="x_392987_eam_state_definition" sys_domain="global" view="Default view">8d1971a7db5f73001795d1b1ca96197c</sys_ui_form>
+            <sys_ui_section caption="Validation" display_value="Validation" name="x_392987_eam_state_definition" sys_domain="global" view="Default view">c11971a7db5f73001795d1b1ca96197c</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-22 09:59:07</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_392987_eam_state_definition</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-22 09:59:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8d1971a7db5f73001795d1b1ca96197c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_392987_eam_state_definition</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+            <sys_update_name>sys_ui_form_sections_8d1971a7db5f73001795d1b1ca96197c</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-22 09:59:07</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

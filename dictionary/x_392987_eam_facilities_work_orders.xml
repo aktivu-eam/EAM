@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="x_392987_eam_work_order" label="Facilities Work Orders" max_length="40" name="x_392987_eam_facilities_work_orders" sizeclass="3" type="collection">
+        <element label="Acknowledged" max_length="40" name="acknowledged" type="glide_date_time"/>
+        <element label="Building" max_length="32" name="building" reference="x_392987_eam_building" type="reference"/>
+        <element label="Catalog Item Name" max_length="40" name="catalog_item_name" type="string"/>
+        <element label="Category" max_length="40" name="category" type="string"/>
+        <element label="District" max_length="32" name="district" reference="x_392987_eam_campus" type="reference"/>
+        <element label="Room/Location" max_length="40" name="room_location" type="string"/>
+        <element label="Space Type" max_length="32" name="space_type" reference="x_392987_eam_space_type" type="reference"/>
+        <element label="Sub Category" max_length="40" name="sub_category" type="string"/>
+        <element label="Zone" max_length="32" name="zone" reference="x_392987_eam_region" type="reference"/>
+    </element>
+</database>

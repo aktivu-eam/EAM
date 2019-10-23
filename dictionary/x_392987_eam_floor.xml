@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="Floor" max_length="40" name="x_392987_eam_floor" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Site" mandatory="true" max_length="32" name="building" reference="x_392987_eam_building" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="4000" name="description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Effective Date" max_length="40" name="effective_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Floor Plan" max_length="40" name="floor_plan" type="user_image"/>
+        <element attributes="edge_encryption_enabled=true" label="Floor Plan Link" max_length="1024" name="floor_plan_link" type="url"/>
+        <element attributes="edge_encryption_enabled=true" label="Floor Name" mandatory="true" max_length="255" name="name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Occupancy target" max_length="40" name="occupancy_target" type="integer"/>
+        <element label="Occupancy threshold" max_length="40" name="occupancy_threshold" type="integer"/>
+        <element label="Space" max_length="32" name="space" reference="x_392987_eam_space" type="reference"/>
+        <element label="Space Type" max_length="32" name="space_type" reference="x_392987_eam_space_type" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Sys domain path" max_length="40" name="sys_domain_path" type="string"/>
+        <index name="index">
+            <element name="space_type"/>
+        </index>
+        <index name="index2">
+            <element name="building"/>
+        </index>
+        <index name="index3">
+            <element name="space"/>
+        </index>
+    </element>
+</database>

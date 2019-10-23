@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Zone Spaces" max_length="40" name="x_392987_eam_m2m_spaces_zones" type="collection">
+        <element label="Space" max_length="32" name="space" reference="x_392987_eam_space" reference_qual="javascript:&quot;parent=&quot;+current.zones.floor.sys_id" type="reference" use_reference_qualifier="advanced"/>
+        <element label="Sys domain path" max_length="255" name="sys_domain_path" type="string"/>
+        <element label="Zones" max_length="32" name="zones" reference="x_392987_eam_zones" type="reference"/>
+        <index name="index">
+            <element name="zones"/>
+        </index>
+        <index name="index2">
+            <element name="space"/>
+        </index>
+    </element>
+</database>

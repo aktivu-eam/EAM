@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Alert Work Order M2M" max_length="40" name="x_392987_eam_alert_work_order_m2m" type="collection">
+        <element label="Alert" max_length="32" name="alert" reference="x_392987_eam_events" type="reference"/>
+        <element label="Sys domain path" max_length="255" name="sys_domain_path" type="string"/>
+        <element label="Work Order" max_length="32" name="work_order" reference="x_392987_eam_work_order" type="reference"/>
+        <index name="index">
+            <element name="alert"/>
+        </index>
+        <index name="index2">
+            <element name="work_order"/>
+        </index>
+    </element>
+</database>

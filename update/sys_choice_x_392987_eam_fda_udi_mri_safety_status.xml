@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="mri_safety_status" table="x_392987_eam_fda_udi" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>mri_safety_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>MR Safe</label>
+            <language>en</language>
+            <name>x_392987_eam_fda_udi</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 07:26:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>218c4897db9f33001795d1b1ca961917</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 07:26:20</sys_updated_on>
+            <value>MR Safe</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>mri_safety_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>MR Unsafe</label>
+            <language>en</language>
+            <name>x_392987_eam_fda_udi</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 07:26:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>618c4897db9f33001795d1b1ca961918</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 07:26:20</sys_updated_on>
+            <value>MR Unsafe</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>mri_safety_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>MR Conditional</label>
+            <language>en</language>
+            <name>x_392987_eam_fda_udi</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 07:26:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ed8c4897db9f33001795d1b1ca961918</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 07:26:20</sys_updated_on>
+            <value>MR Conditional</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>mri_safety_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Labeling does not contain MRI Safety Information</label>
+            <language>en</language>
+            <name>x_392987_eam_fda_udi</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 07:26:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6d8c4897db9f33001795d1b1ca961919</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 07:26:20</sys_updated_on>
+            <value>Labeling does not contain MRI Safety Information</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>mri_safety_status</element>
+            <name>x_392987_eam_fda_udi</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 07:26:20</sys_created_on>
+            <sys_id>b11321042f7333000d355d372799b6b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>mri_safety_status</sys_name>
+            <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+            <sys_update_name>sys_choice_x_392987_eam_fda_udi_mri_safety_status</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 07:26:20</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

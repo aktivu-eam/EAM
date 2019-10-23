@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Software Firmware Patch Definition" max_length="40" name="x_392987_eam_software_firmware_patch_definition" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Patch Name" mandatory="true" max_length="40" name="name" type="string"/>
+        <element label="Order" max_length="40" name="order" read_only="true" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Published Date" mandatory="true" max_length="40" name="published_date" type="glide_date"/>
+        <element label="Rank" max_length="40" name="rank" read_only="true" type="float"/>
+        <element label="Software Firmware Definition" mandatory="true" max_length="32" name="software_firmware_definition" reference="x_392987_eam_software_firmware_definitions" type="reference"/>
+        <index name="index">
+            <element name="software_firmware_definition"/>
+        </index>
+    </element>
+</database>

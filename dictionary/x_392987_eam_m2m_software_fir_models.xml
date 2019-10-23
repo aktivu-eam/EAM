@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Available Software/Firmware" max_length="40" name="x_392987_eam_m2m_software_fir_models" type="collection">
+        <element label="Currently Installed" max_length="40" name="current" read_only="true" type="boolean"/>
+        <element label="Models" mandatory="true" max_length="32" name="models" reference="x_392987_eam_models" type="reference"/>
+        <element label="Rank" max_length="40" name="rank" read_only="true" type="float"/>
+        <element label="Software Firmware Definitions" mandatory="true" max_length="32" name="software_firmware_definitions" reference="x_392987_eam_software_firmware_definitions" type="reference"/>
+        <element label="Software Firmware Patch Definition" max_length="32" name="software_firmware_patch_definition" reference="x_392987_eam_software_firmware_patch_definition" type="reference"/>
+        <index name="index">
+            <element name="models"/>
+        </index>
+        <index name="index2">
+            <element name="software_firmware_definitions"/>
+        </index>
+    </element>
+</database>

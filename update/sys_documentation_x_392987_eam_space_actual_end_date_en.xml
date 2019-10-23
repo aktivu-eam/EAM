@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="actual_end_date" label="Actual End Date" language="en" table="x_392987_eam_space">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>actual_end_date</element>
+            <help/>
+            <hint/>
+            <label>Actual End Date</label>
+            <language>en</language>
+            <name>x_392987_eam_space</name>
+            <plural>Actual End Dates</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-16 10:58:00</sys_created_on>
+            <sys_id>80b1ed442f3333000d355d372799b66c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Actual End Date</sys_name>
+            <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+            <sys_update_name>sys_documentation_x_392987_eam_space_actual_end_date_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-16 10:58:00</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

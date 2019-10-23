@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="Internal Rate" max_length="40" name="x_392987_eam_internal_rate" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="4000" name="description" type="string"/>
+        <element label="Employee" mandatory="true" max_length="32" name="employee" reference="sys_user" type="reference"/>
+        <element attributes="omit_sys_original=true" label="Labor Rate" mandatory="true" max_length="20" name="labor_rate" type="currency"/>
+        <element attributes="omit_sys_original=true" label="Overtime Labor Rate" max_length="20" name="overtime_labor_rate" type="currency"/>
+        <element attributes="omit_sys_original=true" label="Travel Rate" mandatory="true" max_length="20" name="travel_rate" type="currency"/>
+        <index name="index">
+            <element name="employee"/>
+        </index>
+    </element>
+</database>

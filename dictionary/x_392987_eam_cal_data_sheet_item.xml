@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Calibration Data Sheet Item Definition" max_length="40" name="x_392987_eam_cal_data_sheet_item" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Data Sheet Template" max_length="32" name="data_sheet_template" reference="x_392987_eam_cal_data_sheet_template" type="reference"/>
+        <element label="Desired Output" max_length="40" name="desired_output" read_only="true" type="float"/>
+        <element label="Input Lower Limit" max_length="40" name="input_lower_limit" type="float"/>
+        <element label="Input Upper Limit" max_length="40" name="input_upper_limit" type="float"/>
+        <element label="Name" max_length="100" name="name" type="string"/>
+        <element label="Nominal Input" max_length="40" name="nominal_input" type="float"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Output Adjustment Lower Limit" max_length="40" name="output_adjustment_lower_limit" type="float"/>
+        <element label="Output Adjustment Upper Limit" max_length="40" name="output_adjustment_upper_limit" type="float"/>
+        <element label="Output Failed Lower Limit" max_length="40" name="output_failed_lower_limit" type="float"/>
+        <element label="Output Failed Upper Limit" max_length="40" name="output_failed_upper_limit" type="float"/>
+        <index name="index">
+            <element name="data_sheet_template"/>
+        </index>
+    </element>
+</database>

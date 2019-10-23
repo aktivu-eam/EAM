@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Work Order Task Procedures" max_length="40" name="x_392987_eam_work_order_task_procedures" type="collection">
+        <element label="Adjust" max_length="40" name="adjust" type="boolean"/>
+        <element label="Data Sheet Item Definition" max_length="32" name="data_sheet_item_definition" reference="x_392987_eam_cal_data_sheet_item" type="reference"/>
+        <element label="Found As" max_length="40" name="found_as" type="string"/>
+        <element label="Found As (Input)" max_length="40" name="found_as_input" type="float"/>
+        <element label="Found As (Output)" max_length="40" name="found_as_output" type="float"/>
+        <element choice="1" label="Found As Result" max_length="40" name="found_as_result" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Fail" value="2"/>
+                <element inactive_on_update="false" label="Pass" value="1"/>
+            </choice>
+        </element>
+        <element label="Left As" max_length="40" name="left_as" type="string"/>
+        <element label="Left As (Input)" max_length="40" name="left_as_input" type="float"/>
+        <element label="Left As (Output)" max_length="40" name="left_as_output" type="float"/>
+        <element choice="1" label="Left As Result" max_length="40" name="left_as_result" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Fail" value="2"/>
+                <element inactive_on_update="false" label="Pass" value="1"/>
+            </choice>
+        </element>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Reference Standard" max_length="32" name="reference_standard" reference="x_392987_eam_assets" reference_qual="javascript:new x_nuvo_eam.NuvoloCalibrationUtil().getRefStandardWOTP(current)" type="reference" use_reference_qualifier="advanced"/>
+        <element attributes="edge_encryption_enabled=true" label="Result" max_length="100" name="result" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="Draft" label="State" max_length="40" name="state" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Draft" value="Draft"/>
+                <element inactive_on_update="false" label="Submitted" value="Submitted"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Sys domain path" max_length="255" name="sys_domain_path" type="string"/>
+        <element label="Work Item Definition" max_length="32" name="work_item_definition" reference="x_392987_eam_work_item_definition" type="reference"/>
+        <element label="Work Notes" max_length="4000" name="work_notes" type="journal"/>
+        <element label="Work Order Task" max_length="32" name="work_order_task" reference="x_392987_eam_work_order" type="reference"/>
+        <index name="index">
+            <element name="work_order_task"/>
+        </index>
+        <index name="index2">
+            <element name="reference_standard"/>
+        </index>
+        <index name="index3">
+            <element name="data_sheet_item_definition"/>
+        </index>
+        <index name="index4">
+            <element name="work_item_definition"/>
+        </index>
+    </element>
+</database>

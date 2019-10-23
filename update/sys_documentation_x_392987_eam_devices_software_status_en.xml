@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="software_status" label="Software Status" language="en" table="x_392987_eam_devices">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>software_status</element>
+            <help/>
+            <hint/>
+            <label>Software Status</label>
+            <language>en</language>
+            <name>x_392987_eam_devices</name>
+            <plural>Software Status</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-10-16 11:40:40</sys_created_on>
+            <sys_id>4dcf159d2fe000100d355d372799b61a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Software Status</sys_name>
+            <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+            <sys_update_name>sys_documentation_x_392987_eam_devices_software_status_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-10-16 11:40:40</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

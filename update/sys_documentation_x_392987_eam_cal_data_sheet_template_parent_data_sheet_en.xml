@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="parent_data_sheet" label="Parent Data Sheet" language="en" table="x_392987_eam_cal_data_sheet_template">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>parent_data_sheet</element>
+            <help/>
+            <hint/>
+            <label>Parent Data Sheet</label>
+            <language>en</language>
+            <name>x_392987_eam_cal_data_sheet_template</name>
+            <plural>Parent Data Sheets</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-29 10:47:59</sys_created_on>
+            <sys_id>a0e1a5482f3333000d355d372799b671</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Parent Data Sheet</sys_name>
+            <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+            <sys_update_name>sys_documentation_x_392987_eam_cal_data_sheet_template_parent_data_sheet_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-29 10:47:59</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

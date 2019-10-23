@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="CWE" max_length="40" name="x_392987_eam_cwe" type="collection">
+        <element label="Common Consequences" max_length="8000" name="common_consequences" type="html"/>
+        <element label="Content" max_length="8000" name="content" type="html"/>
+        <element label="Demonstrative Examples" max_length="8000" name="demonstrative_examples" type="html"/>
+        <element label="Description" max_length="522" name="description" type="string"/>
+        <element label="Detection Methods" max_length="8000" name="detection_methods" type="html"/>
+        <element label="ID" max_length="40" name="id" type="string"/>
+        <element label="Likelihood Of Exploit" max_length="40" name="likelihood_of_exploit" type="integer"/>
+        <element label="Name" max_length="255" name="name" type="string"/>
+        <element label="Potential Mitigations" max_length="8000" name="potential_mitigations" type="html"/>
+        <element label="Short Description" max_length="1000" name="short_description" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

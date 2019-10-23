@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Device Exclusion Schedule M2M" max_length="40" name="x_392987_eam_eam_device_exclusion_schedule_m2m" type="collection">
+        <element label="Device" max_length="32" name="device" reference="x_392987_eam_devices" type="reference"/>
+        <element label="Exclusion Schedule" max_length="32" name="exclusion_schedule" reference="x_392987_eam_device_exclusion_schedule" type="reference"/>
+        <index name="index">
+            <element name="exclusion_schedule"/>
+        </index>
+        <index name="index2">
+            <element name="device"/>
+        </index>
+    </element>
+</database>

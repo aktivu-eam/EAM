@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Knowledge Map" max_length="40" name="x_392987_eam_knowledge_map" type="collection">
+        <element dependent="asset_type" dependent_on_field="asset_type" label="Asset" max_length="32" name="asset" reference="x_392987_eam_assets" type="reference" use_dependent_field="true"/>
+        <element label="Asset Type" max_length="32" name="asset_type" reference="x_392987_eam_asset_type" type="reference"/>
+        <element label="Knowledge Article" max_length="32" name="knowledge_article" reference="kb_knowledge" type="reference"/>
+        <element label="Manufacturer" max_length="32" name="manufacturer" reference="x_392987_eam_company" type="reference"/>
+        <element dependent="manufacturer" dependent_on_field="manufacturer" label="Model" max_length="32" name="model" reference="x_392987_eam_models" type="reference" use_dependent_field="true"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" mandatory="true" max_length="255" name="name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="edge_encryption_enabled=true" label="Sys domain path" max_length="255" name="sys_domain_path" type="string"/>
+        <element label="Work Order Type" max_length="32" name="work_order_type" reference="x_392987_eam_work_order_type" type="reference"/>
+        <index name="index">
+            <element name="knowledge_article"/>
+        </index>
+        <index name="index2">
+            <element name="asset_type"/>
+        </index>
+        <index name="index3">
+            <element name="model"/>
+        </index>
+        <index name="index4">
+            <element name="asset"/>
+        </index>
+        <index name="index5">
+            <element name="sys_class_name"/>
+        </index>
+        <index name="index6">
+            <element name="manufacturer"/>
+        </index>
+        <index name="index7">
+            <element name="work_order_type"/>
+        </index>
+    </element>
+</database>

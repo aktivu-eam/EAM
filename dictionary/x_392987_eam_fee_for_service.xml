@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Fee For Service" max_length="40" name="x_392987_eam_fee_for_service" type="collection">
+        <element attributes="omit_sys_original=true" label="Cost" mandatory="true" max_length="20" name="cost" type="currency"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Vendor" mandatory="true" max_length="32" name="vendor" reference="x_392987_eam_company" type="reference"/>
+        <element label="Work Order Type" mandatory="true" max_length="32" name="work_order_type" reference="x_392987_eam_work_order_type" type="reference"/>
+        <index name="index">
+            <element name="vendor"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+        <index name="index3">
+            <element name="work_order_type"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Calibration Measurement Types" max_length="40" name="x_392987_eam_cal_measure_types" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Description" max_length="4000" name="description" type="string"/>
+        <element label="Measurement Services" max_length="32" name="measurement_services" reference="x_392987_eam_calibration_measurement_services" type="reference"/>
+        <element label="Name" max_length="100" name="name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <index name="index">
+            <element name="measurement_services"/>
+        </index>
+    </element>
+</database>

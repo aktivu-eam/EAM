@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Scheduled Maintenances" max_length="40" name="x_392987_eam_scheduled_maintenances" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element default="30" label="Lead Time (in days)" max_length="40" name="advance_days" type="integer"/>
+        <element label="Asset" max_length="32" name="asset" reference="x_392987_eam_assets" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Condition Table" max_length="4000" name="condition_table" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="DateTime Details" max_length="500" name="datetime_details" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="End Date" max_length="40" name="end_date" type="glide_date"/>
+        <element attributes="omit_sys_original=true" label="Estimated Cost" max_length="20" name="estimated_cost" read_only="true" type="currency"/>
+        <element label="Estimated Effort" max_length="40" name="estimated_effort" type="glide_duration"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="once" label="Generation Type" max_length="40" name="generation_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Generate Now" sequence="0" value="once"/>
+                <element inactive_on_update="false" label="Recurring" sequence="1" value="recurring"/>
+            </choice>
+        </element>
+        <element label="Grace Period (in days)" max_length="40" name="grace_period" type="integer"/>
+        <element label="Hours" max_length="40" name="hours" type="glide_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Work Order Summary" mandatory="true" max_length="255" name="maintenance_description" type="string"/>
+        <element label="Schedule" max_length="32" name="maintenance_schedule" reference="x_392987_eam_schedules" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="Manufacturer" label="Maintenance Source" max_length="40" name="maintenance_source" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Manufacturer" sequence="0" value="Manufacturer"/>
+                <element inactive_on_update="false" label="AEM" sequence="1" value="AEM"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="Asset" label="Maintenance Type" max_length="40" name="maintenance_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Asset" sequence="0" value="Asset"/>
+                <element inactive_on_update="false" label="Space" sequence="1" value="Space"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="Calendar" label="Trigger Type" max_length="40" name="maint_start_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Calendar" sequence="0" value="Calendar"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Float" sequence="1" value="Float"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 3" sequence="2" value="Choice 3"/>
+                <element inactive_on_update="false" label="Utilization" sequence="2" value="utilization"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Name" mandatory="true" max_length="255" name="name" type="string"/>
+        <element label="Number of Maint Per Year" max_length="15" name="number_of_maint_per_pear" read_only="true" type="decimal"/>
+        <element label="Overrided" max_length="40" name="overrided" type="boolean"/>
+        <element label="Scheduled Maintenance Definition" max_length="32" name="scheduled_maintenance_definition" reference="x_392987_eam_sched_maint_definition" type="reference"/>
+        <element label="Space" max_length="32" name="space" reference="x_392987_eam_space" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Start Date" max_length="40" name="start_date" type="glide_date"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="edge_encryption_enabled=true" label="Sys domain path" max_length="255" name="sys_domain_path" type="string"/>
+        <element label="Work Order Type" mandatory="true" max_length="32" name="work_order_type" reference="x_392987_eam_work_order_type" type="reference"/>
+        <index name="index">
+            <element name="maintenance_schedule"/>
+        </index>
+        <index name="index2">
+            <element name="asset"/>
+        </index>
+        <index name="index3">
+            <element name="space"/>
+        </index>
+        <index name="index4">
+            <element name="sys_class_name"/>
+        </index>
+        <index name="index5">
+            <element name="work_order_type"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>10</order>
+        <role display_value="x_392987_eam.integration_admin" name="x_392987_eam.integration_admin">d23a26582fbf33000d355d372799b644</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-09-06 07:45:04</sys_created_on>
+        <sys_id>8c4a6e182fbf33000d355d372799b6c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>d23a26582fbf33000d355d372799b644</sys_name>
+        <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+        <sys_update_name>sys_embedded_help_role_8c4a6e182fbf33000d355d372799b6c1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-09-06 07:45:04</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

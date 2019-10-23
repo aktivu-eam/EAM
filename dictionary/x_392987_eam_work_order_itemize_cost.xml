@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Work Order Itemize Cost" max_length="40" name="x_392987_eam_work_order_itemize_cost" type="collection">
+        <element attributes="omit_sys_original=true" label="Amount" mandatory="true" max_length="20" name="amount" type="currency"/>
+        <element default="true" label="Auto Calculate" max_length="40" name="auto_calculate" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="In House" label="Cost Types" max_length="40" name="cost_types" type="string">
+            <choice>
+                <element inactive_on_update="false" label="In House" sequence="0" value="In House"/>
+                <element inactive_on_update="false" label="Contract" sequence="1" value="Contract"/>
+                <element inactive_on_update="false" label="Purchase" sequence="2" value="Purchase"/>
+                <element inactive_on_update="false" label="Vendor" sequence="3" value="Vendor"/>
+            </choice>
+        </element>
+        <element label="Coverage" max_length="32" name="coverage" reference="x_392987_eam_asset_coverage_details" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="End Time" max_length="40" name="end_time" type="glide_date_time"/>
+        <element label="Hours" max_length="40" name="hours" type="integer"/>
+        <element label="Minutes" max_length="40" name="minutes" type="integer"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Overtime" max_length="40" name="overtime" type="boolean"/>
+        <element label="Parts" max_length="32" name="parts" reference="x_392987_eam_parts" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Percent Covered" max_length="40" name="percent_covered" type="string"/>
+        <element label="PO Line Item" max_length="32" name="po_line_item" reference="x_392987_eam_purchase_order_line_item" type="reference"/>
+        <element label="Quantity" max_length="40" name="quantity" type="integer"/>
+        <element label="Service Activity" max_length="32" name="service_activity" reference="x_392987_eam_work_order_service_activities" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Start Time" max_length="40" name="start_time" type="glide_date_time"/>
+        <element label="Stockroom" max_length="32" name="stockroom" reference="x_392987_eam_stockrooms" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Summary" max_length="4000" name="summary" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Sys domain path" max_length="255" name="sys_domain_path" type="string"/>
+        <element label="Technician" max_length="32" name="technician" read_only="true" reference="sys_user" type="reference"/>
+        <element default="Travel" label="Type" max_length="32" name="type" reference="x_392987_eam_cost_types" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element label="Work Duration" max_length="40" name="work_duration" type="glide_duration"/>
+        <element label="Work Order" max_length="32" name="work_order" reference="x_392987_eam_work_order" type="reference"/>
+        <element label="Work Order Task" max_length="32" name="work_order_task" reference="x_392987_eam_work_order_task" type="reference"/>
+        <index name="index">
+            <element name="coverage"/>
+        </index>
+        <index name="index2">
+            <element name="service_activity"/>
+        </index>
+        <index name="index3">
+            <element name="work_order_task"/>
+        </index>
+        <index name="index4">
+            <element name="stockroom"/>
+        </index>
+        <index name="index5">
+            <element name="parts"/>
+        </index>
+        <index name="index6">
+            <element name="technician"/>
+        </index>
+        <index name="index7">
+            <element name="type"/>
+        </index>
+        <index name="index8">
+            <element name="po_line_item"/>
+        </index>
+        <index name="index9">
+            <element name="work_order"/>
+        </index>
+    </element>
+</database>

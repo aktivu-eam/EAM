@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Vendor" section_id="3c7b3bf72ff333000d355d372799b6bf" sys_domain="global" table="x_392987_eam_facilities_materials" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>asset_manufacturer</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-09-17 10:38:36</sys_created_on>
+            <sys_id>4d7b7bf72ff333000d355d372799b620</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Vendor" display_value="Vendor" name="x_392987_eam_facilities_materials" sys_domain="global" view="Default view">3c7b3bf72ff333000d355d372799b6bf</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-09-17 10:38:36</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>asset_vendor</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-09-17 10:38:36</sys_created_on>
+            <sys_id>cd7b7bf72ff333000d355d372799b620</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Vendor" display_value="Vendor" name="x_392987_eam_facilities_materials" sys_domain="global" view="Default view">3c7b3bf72ff333000d355d372799b6bf</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-09-17 10:38:36</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>service_provider</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-09-17 10:38:36</sys_created_on>
+            <sys_id>417b7bf72ff333000d355d372799b621</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Vendor" display_value="Vendor" name="x_392987_eam_facilities_materials" sys_domain="global" view="Default view">3c7b3bf72ff333000d355d372799b6bf</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-09-17 10:38:36</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-09-17 10:38:36</sys_created_on>
+            <sys_id>c17b7bf72ff333000d355d372799b621</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Vendor" display_value="Vendor" name="x_392987_eam_facilities_materials" sys_domain="global" view="Default view">3c7b3bf72ff333000d355d372799b6bf</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-09-17 10:38:36</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>department</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-09-17 10:38:36</sys_created_on>
+            <sys_id>457b7bf72ff333000d355d372799b621</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Vendor" display_value="Vendor" name="x_392987_eam_facilities_materials" sys_domain="global" view="Default view">3c7b3bf72ff333000d355d372799b6bf</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-09-17 10:38:36</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cost_center</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-09-17 10:38:36</sys_created_on>
+            <sys_id>c57b7bf72ff333000d355d372799b621</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Vendor" display_value="Vendor" name="x_392987_eam_facilities_materials" sys_domain="global" view="Default view">3c7b3bf72ff333000d355d372799b6bf</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-09-17 10:38:36</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Vendor</caption>
+            <header>false</header>
+            <name>x_392987_eam_facilities_materials</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-09-17 10:38:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3c7b3bf72ff333000d355d372799b6bf</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Vendor</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+            <sys_update_name>sys_ui_section_3c7b3bf72ff333000d355d372799b6bf</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-09-17 10:38:35</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

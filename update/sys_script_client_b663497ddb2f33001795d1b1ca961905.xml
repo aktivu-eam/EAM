@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>true</applies_extended>
+        <condition/>
+        <description>Based on the carrier service and tracking number autofill the tracking url on PO form</description>
+        <field>tracking_number</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Populate Shipment Tracking link</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	if (isLoading || newValue === '') {
+		return;
+	}
+	
+	if(g_form.getValue('shipment_tracking_link') != "") {
+		g_form.setValue('shipment_tracking_link',"");
+	}
+	
+	var trackingNum = newValue;
+	var shippingCarrier = g_form.getValue('shipping_carrier');
+	
+	if(shippingCarrier != "") {
+		var ga = new GlideAjax('NuvoloPurchaseOrderAJAXMS');
+		ga.addParam('sysparm_name','fetchTrackingURL');
+		ga.addParam('sysparm_carrierName',shippingCarrier);
+		ga.getXML(function(response){
+			var answer = response.responseXML.documentElement.getAttribute("answer");
+			answer = answer+trackingNum;
+			g_form.setValue('shipment_tracking_link',answer);
+			
+		});
+	}
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-08-29 05:52:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b663497ddb2f33001795d1b1ca961905</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Populate Shipment Tracking link</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+        <sys_update_name>sys_script_client_b663497ddb2f33001795d1b1ca961905</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-08-29 05:52:22</sys_updated_on>
+        <table>x_392987_eam_purchase_order</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

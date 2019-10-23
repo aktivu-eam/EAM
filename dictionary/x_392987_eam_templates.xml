@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="Templates" max_length="40" name="x_392987_eam_templates" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Advance Conditions" max_length="40" name="advance" type="boolean"/>
+        <element label="Advance Template" max_length="40" name="advance_template" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Condition Script" max_length="40" name="apply_when_script" type="conditions"/>
+        <element attributes="edge_encryption_enabled=true" dependent="table" dependent_on_field="table" label="Condition" max_length="40" name="condition" type="conditions" use_dependent_field="true"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" mandatory="true" max_length="255" name="name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Resolution Code" max_length="32" name="resolution_code" reference="x_392987_eam_resolution_code" type="reference"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="edge_encryption_enabled=true" label="Sys domain path" max_length="255" name="sys_domain_path" type="string"/>
+        <element attributes="base_start=true" label="Table" max_length="80" name="table" type="table_name"/>
+        <element attributes="edge_encryption_enabled=true" label="Template" max_length="40" name="template" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Template Script" max_length="40" name="template_script" type="script"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="1" label="Type" max_length="40" name="type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Creation" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Fulfillment" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Generic" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="resolution_code"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Software Firmware Definitions" max_length="40" name="x_392987_eam_software_firmware_definitions" type="collection">
+        <element label="Base Version" max_length="32" name="base_version" read_only="true" reference="x_392987_eam_software_firmware_definitions" type="reference"/>
+        <element label="Company" max_length="32" name="company" reference="x_392987_eam_company" type="reference"/>
+        <element label="CPE Dictionary" max_length="32" name="cpe_dictionary" reference="x_392987_eam_x_392987_eam_vulnerable_software" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" mandatory="true" max_length="40" name="name" type="string"/>
+        <element label="Previous Version" max_length="32" name="previous_version" reference="x_392987_eam_software_firmware_definitions" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Published Date" mandatory="true" max_length="40" name="published_date" type="glide_date_time"/>
+        <element label="Rank" max_length="40" name="rank" read_only="true" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Type" mandatory="true" max_length="40" name="type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Software" sequence="0" value="software"/>
+                <element inactive_on_update="false" label="Firmware" sequence="1" value="firmware"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Version" max_length="40" name="version" type="string"/>
+        <index name="index">
+            <element name="base_version"/>
+        </index>
+        <index name="index2">
+            <element name="previous_version"/>
+        </index>
+        <index name="index3">
+            <element name="company"/>
+        </index>
+        <index name="index4">
+            <element name="cpe_dictionary"/>
+        </index>
+    </element>
+</database>

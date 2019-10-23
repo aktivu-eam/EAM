@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Installed Software Firmware" max_length="40" name="x_392987_eam_installed_software_firmware" type="collection">
+        <element label="Asset" mandatory="true" max_length="32" name="asset" reference="x_392987_eam_assets" type="reference"/>
+        <element label="Currently Installed" max_length="40" name="current" read_only="true" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Installed Date" mandatory="true" max_length="40" name="installed_date" type="glide_date_time"/>
+        <element label="Patch" max_length="32" name="patch" reference="x_392987_eam_software_firmware_patch_definition" type="reference"/>
+        <element label="Patch Order" max_length="40" name="patch_order" read_only="true" type="integer"/>
+        <element label="Rank" max_length="40" name="rank" read_only="true" type="float"/>
+        <element label="Software Firmware Definition" max_length="32" name="software_firmware_definition" reference="x_392987_eam_software_firmware_definitions" type="reference"/>
+        <index name="index">
+            <element name="patch"/>
+        </index>
+        <index name="index2">
+            <element name="software_firmware_definition"/>
+        </index>
+        <index name="index3">
+            <element name="asset"/>
+        </index>
+    </element>
+</database>

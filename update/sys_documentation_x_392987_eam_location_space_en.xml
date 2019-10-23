@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="space" label="Space" language="en" table="x_392987_eam_location">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>space</element>
+            <help/>
+            <hint/>
+            <label>Space</label>
+            <language>en</language>
+            <name>x_392987_eam_location</name>
+            <plural>Spaces</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-16 09:26:23</sys_created_on>
+            <sys_id>d8c169c42f3333000d355d372799b6fb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Space</sys_name>
+            <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+            <sys_update_name>sys_documentation_x_392987_eam_location_space_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-16 09:26:23</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

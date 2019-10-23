@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="Site" max_length="40" name="x_392987_eam_building" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Campus" mandatory="true" max_length="32" name="campus" reference="x_392987_eam_campus" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="City" max_length="40" name="city" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Country" max_length="40" name="country" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="4000" name="description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Effective date" max_length="40" name="effective_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Latitude" max_length="40" name="latitude" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Longitude" max_length="40" name="longitude" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Site Name" mandatory="true" max_length="255" name="name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Occupancy target" max_length="40" name="occupancy_target" type="integer"/>
+        <element label="Occupancy threshold" max_length="40" name="occupancy_threshold" type="integer"/>
+        <element label="Site Type" max_length="32" name="site_type" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element label="Space" max_length="32" name="space" reference="x_392987_eam_space" type="reference"/>
+        <element label="Space Type" max_length="32" name="space_type" reference="x_392987_eam_space_type" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="State/ Province" max_length="40" name="state_province" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Street" max_length="40" name="street" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Sys domain path" max_length="40" name="sys_domain_path" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="US/Eastern" label="Timezone" max_length="40" name="timezone" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Canada/Atlantic" sequence="0" value="Canada/Atlantic"/>
+                <element inactive_on_update="false" label="Canada/Central" sequence="1" value="Canada/Central"/>
+                <element inactive_on_update="false" label="Canada/Eastern" sequence="2" value="Canada/Eastern"/>
+                <element inactive_on_update="false" label="Canada/Mountain" sequence="3" value="Canada/Mountain"/>
+                <element inactive_on_update="false" label="Canada/Pacific" sequence="4" value="Canada/Pacific"/>
+                <element inactive_on_update="false" label="Europe/Amsterdam" sequence="5" value="Europe/Amsterdam"/>
+                <element inactive_on_update="false" label="Europe/Berlin" sequence="6" value="Europe/Berlin"/>
+                <element inactive_on_update="false" label="Europe/Brussels" sequence="7" value="Europe/Brussels"/>
+                <element inactive_on_update="false" label="Europe/Copenhagen" sequence="8" value="Europe/Copenhagen"/>
+                <element inactive_on_update="false" label="Europe/Dublin" sequence="9" value="Europe/Dublin"/>
+                <element inactive_on_update="false" label="Europe/London" sequence="10" value="Europe/London"/>
+                <element inactive_on_update="false" label="Europe/Madrid" sequence="11" value="Europe/Madrid"/>
+                <element inactive_on_update="false" label="Europe/Paris" sequence="12" value="Europe/Paris"/>
+                <element inactive_on_update="false" label="Europe/Rome" sequence="13" value="Europe/Rome"/>
+                <element inactive_on_update="false" label="Europe/Stockholm" sequence="14" value="Europe/Stockholm"/>
+                <element inactive_on_update="false" label="Europe/Zurich" sequence="15" value="Europe/Zurich"/>
+                <element inactive_on_update="false" label="GMT" sequence="16" value="GMT"/>
+                <element inactive_on_update="false" label="Hongkong" sequence="17" value="Hongkong"/>
+                <element inactive_on_update="false" label="US/Arizona" sequence="18" value="US/Arizona"/>
+                <element inactive_on_update="false" label="US/Central" sequence="19" value="US/Central"/>
+                <element inactive_on_update="false" label="US/Eastern" sequence="20" value="US/Eastern"/>
+                <element inactive_on_update="false" label="US/Hawaii" sequence="21" value="US/Hawaii"/>
+                <element inactive_on_update="false" label="US/Mountain" sequence="22" value="US/Mountain"/>
+                <element inactive_on_update="false" label="US/Pacific" sequence="23" value="US/Pacific"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Zip/Postal Code" max_length="40" name="zip_postal_code" type="string"/>
+        <index name="index">
+            <element name="site_type"/>
+        </index>
+        <index name="index2">
+            <element name="campus"/>
+        </index>
+        <index name="index3">
+            <element name="space_type"/>
+        </index>
+        <index name="index4">
+            <element name="space"/>
+        </index>
+    </element>
+</database>

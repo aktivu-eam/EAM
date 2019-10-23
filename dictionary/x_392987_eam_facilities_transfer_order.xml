@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="x_392987_eam_parts_transfer_order" label="Facilities Transfer Order" max_length="40" name="x_392987_eam_facilities_transfer_order" type="collection"/>
+</database>

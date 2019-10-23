@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Vulnerabilities" max_length="40" name="x_392987_eam_vulnerabilities" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" default="3" label="Active Exploit" max_length="40" name="active_exploit" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Unknown" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Attack Complexity" max_length="40" name="attack_complexity" type="string">
+            <choice>
+                <element inactive_on_update="false" label="High" sequence="0" value="HIGH"/>
+                <element inactive_on_update="false" label="Low" sequence="1" value="LOW"/>
+                <element inactive_on_update="false" label="Medium" sequence="2" value="MEDIUM"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Attack Vector" max_length="40" name="attack_vector" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Network" sequence="0" value="NETWORK"/>
+                <element inactive_on_update="false" label="Adjacent Network" sequence="1" value="ADJACENT_NETWORK"/>
+                <element inactive_on_update="false" label="Local" sequence="2" value="LOCAL"/>
+                <element inactive_on_update="false" label="Physical" sequence="3" value="PHYSICAL"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Authentication" max_length="40" name="authentication" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Multiple Instance" sequence="0" value="MULTIPLE_INSTANCE"/>
+                <element inactive_on_update="false" label="None" sequence="1" value="NONE"/>
+                <element inactive_on_update="false" label="Single Instance" sequence="2" value="SINGLE_INSTANCE"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="COMPLETE" label="Availability Impact" max_length="40" name="availability_impact" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Complete" sequence="0" value="COMPLETE"/>
+                <element inactive_on_update="false" label="None" sequence="1" value="NONE"/>
+                <element inactive_on_update="false" label="Partial" sequence="2" value="PARTIAL"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Category" max_length="40" name="category" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="COMPLETE" label="Confidentiality Impact" max_length="40" name="confidentiality_impact" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Complete" sequence="0" value="COMPLETE"/>
+                <element inactive_on_update="false" label="None" sequence="1" value="NONE"/>
+                <element inactive_on_update="false" label="Partial" sequence="2" value="PARTIAL"/>
+            </choice>
+        </element>
+        <element label="CWE Entry" max_length="32" name="cwe_entry" reference="x_392987_eam_cwe" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Date  Published" max_length="40" name="date_published" type="glide_date_time"/>
+        <element label="Event" max_length="32" name="event" reference="x_392987_eam_events" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="ID" max_length="100" name="id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Integrity Impact" max_length="40" name="integrity_impact" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Complete" sequence="0" value="COMPLETE"/>
+                <element inactive_on_update="false" label="None" sequence="1" value="NONE"/>
+                <element inactive_on_update="false" label="Partial" sequence="2" value="PARTIAL"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Last Modified" max_length="40" name="last_modified" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="3" label="Public Exploit" max_length="40" name="public_exploit" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Unknown" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Remediation Type" max_length="40" name="remediation_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Patch" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Configuration Change" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Patch and Configuration Change" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Countermeasure" sequence="3" value="4"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Score Generated" max_length="40" name="score_generated" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Severity" max_length="40" name="severity" type="string"/>
+        <element label="Solution" max_length="65536" name="solution" type="html"/>
+        <element attributes="edge_encryption_enabled=true" label="Source" max_length="20" name="source" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Summary" max_length="4000" name="summary" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Threat" max_length="65536" name="threat" type="html"/>
+        <element label="Vulnerability Score" max_length="15" name="vulnerability_score" type="decimal"/>
+        <index name="index">
+            <element name="cwe_entry"/>
+        </index>
+        <index name="index2">
+            <element name="event"/>
+        </index>
+        <index name="index3">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Receiving Slip" max_length="40" name="x_392987_eam_receiving_slip" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Purchase Order" max_length="32" name="purchase_order" reference="x_392987_eam_purchase_order" type="reference"/>
+        <element label="Received" max_length="40" name="received" type="glide_date_time"/>
+        <element label="Receiving stockroom" max_length="32" name="receiving_stockroom" reference="x_392987_eam_stockrooms" type="reference"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Sys domain path" max_length="255" name="sys_domain_path" type="string"/>
+        <element label="Transfer Order" max_length="32" name="transfer_order" reference="x_392987_eam_parts_transfer_order" type="reference"/>
+        <index name="index">
+            <element name="transfer_order"/>
+        </index>
+        <index name="index2">
+            <element name="purchase_order"/>
+        </index>
+        <index name="index3">
+            <element name="receiving_stockroom"/>
+        </index>
+        <index name="index4">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

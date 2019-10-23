@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_392987_eam_devices</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Create Work Packages</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[function onAfter(current, previous) {
+	
+	var tableMapping = {
+		'x_392987_eam_clinical_devices':'x_392987_eam_clinical_work_package_definition',
+		'x_392987_eam_lab_devices':'x_392987_eam_lab_work_package_definition',
+		'x_392987_eam_facilities_devices':'x_392987_eam_facilities_work_package_definition',
+		'x_392987_eam_manufacturing_devices':'x_392987_eam_manufacturing_work_package_definition'
+	};
+	
+	var workPackageClass = tableMapping[current.sys_class_name];
+	if(workPackageClass){ //Handle Case that a table is not in mapping
+		var inactiveWorkPackage = [];//Array to store Work Package Definition that are no longer applicable
+		var workPackageDefinitionGR = new GlideRecord(workPackageClass);
+		workPackageDefinitionGR.addQuery('asset_table',current.sys_class_name);
+		workPackageDefinitionGR.query();
+		while(workPackageDefinitionGR.next())
+		{
+			if(GlideFilter.checkRecord(current, workPackageDefinitionGR.asset_condition, true)){
+				var workPackageGR = new GlideRecord('x_392987_eam_work_package');
+				workPackageGR.addQuery('work_package_definition',workPackageDefinitionGR.getValue('sys_id'));
+				workPackageGR.addQuery('asset',current.getValue('sys_id'));
+				workPackageGR.query();
+				if(workPackageGR.next()){
+					workPackageGR.active = true;
+					workPackageGR.name = workPackageDefinitionGR.name;
+					workPackageGR.description = workPackageDefinitionGR.description;
+					workPackageGR.update();
+				}
+				else{
+					workPackageGR.initialize();
+					workPackageGR.work_package_definition = workPackageDefinitionGR.getValue('sys_id');
+					workPackageGR.asset = current.getValue('sys_id');
+					workPackageGR.work_order_type = workPackageDefinitionGR.getValue('work_order_type');
+					workPackageGR.name = workPackageDefinitionGR.name;
+					workPackageGR.active = true;
+					workPackageGR.description = workPackageDefinitionGR.description;
+					workPackageGR.insert();
+				}
+			}
+			else{
+				inactiveWorkPackage.push(workPackageDefinitionGR.getValue('sys_id'));
+			}
+		}
+		var InactiveWorkPackage = new GlideRecord('x_392987_eam_work_package');
+		InactiveWorkPackage.addQuery('work_package_definition','IN',inactiveWorkPackage.join());
+		InactiveWorkPackage.addQuery('asset',current.getValue('sys_id'));
+		InactiveWorkPackage.query();
+		while(InactiveWorkPackage.next()){
+			InactiveWorkPackage.active = false;
+			InactiveWorkPackage.update();
+		}	
+	}
+
+}]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-08-26 09:45:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b60cdef4dbef37001795d1b1ca961917</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create Work Packages</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+        <sys_update_name>sys_script_b60cdef4dbef37001795d1b1ca961917</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-08-26 09:45:50</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=b60cdef4dbef37001795d1b1ca961917"/>
+</record_update>

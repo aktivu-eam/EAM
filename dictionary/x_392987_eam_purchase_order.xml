@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="Purchase Order" max_length="40" name="x_392987_eam_purchase_order" type="collection">
+        <element dependent="assignment_group" dependent_on_field="assignment_group" label="Assigned To" max_length="32" name="assigned_to" reference="sys_user" type="reference" use_dependent_field="true"/>
+        <element label="Assignment Group" max_length="32" name="assignment_group" reference="sys_user_group" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="Please Bill To:" label="Bill To" max_length="1000" name="bill_to" type="string"/>
+        <element label="Contract" max_length="32" name="contract" reference="x_392987_eam_contracts" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Correlation Display" max_length="100" name="correlation_display" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Correlation ID" max_length="100" name="correlation_id" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Customer PO" max_length="40" name="customer_po" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="4000" name="description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Expected Delivery Date" max_length="40" name="expected_delivery" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="External PO Number" max_length="40" name="external_po_number" type="string"/>
+        <element label="Invoice Created" max_length="40" name="invoice_reated" type="boolean"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Parent" max_length="32" name="parent" read_only="true" reference="x_392987_eam_purchase_order" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="PO Date" max_length="40" name="po_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Received" max_length="40" name="received" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Requested" max_length="40" name="requested" type="glide_date_time"/>
+        <element label="Requester" max_length="32" name="requester" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Shipment Tracking Link" max_length="1024" name="shipment_tracking_link" type="url"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Shipping" max_length="40" name="shipping" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Ground - Economy" sequence="0" value="ground"/>
+                <element inactive_on_update="false" label="15 Days Standard" sequence="1" value="15_days_ground"/>
+                <element inactive_on_update="false" label="2 Days Expedited" sequence="2" value="2_days_ground"/>
+                <element inactive_on_update="false" label="Next Day Air" sequence="3" value="next_day_ground"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Shipping Carrier" max_length="40" name="shipping_carrier" type="string">
+            <choice>
+                <element inactive_on_update="false" label="FedEx" sequence="0" value="FedEx"/>
+                <element inactive_on_update="false" label="UPS" sequence="1" value="UPS"/>
+                <element inactive_on_update="false" label="USPS" sequence="2" value="USPS"/>
+            </choice>
+        </element>
+        <element attributes="omit_sys_original=true" label="Ship Rate" max_length="20" name="ship_rate" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" default="Please Ship To:" label="Ship To Address" max_length="4000" name="ship_to_address" type="string"/>
+        <element label="Ship To Stockroom" max_length="32" name="ship_to_stockroom" reference="x_392987_eam_stockrooms" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Short Description" mandatory="true" max_length="255" name="short_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="request" label="Stage" max_length="40" name="stage" read_only="true" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Request" sequence="0" value="request"/>
+                <element inactive_on_update="false" label="Approval" sequence="1" value="approval"/>
+                <element inactive_on_update="false" label="Fulfillment" sequence="2" value="fulfillment"/>
+                <element inactive_on_update="false" label="Closed" sequence="3" value="closed"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="requested" label="Status" max_length="40" name="status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Requested" sequence="0" value="requested"/>
+                <element inactive_on_update="false" label="Ordered" sequence="1" value="ordered"/>
+                <element inactive_on_update="false" label="Pending Delivery" sequence="2" value="pending delivery"/>
+                <element inactive_on_update="false" label="Delivered" sequence="3" value="delivered"/>
+                <element inactive_on_update="false" label="Received" sequence="4" value="received"/>
+                <element inactive_on_update="false" label="Suspended" sequence="5" value="suspended"/>
+                <element inactive_on_update="false" label="Canceled" sequence="6" value="canceled"/>
+                <element inactive_on_update="false" label="Returned" sequence="7" value="returned"/>
+            </choice>
+        </element>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="edge_encryption_enabled=true" label="Sys domain path" max_length="255" name="sys_domain_path" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Payment Terms" max_length="40" name="terms" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Credit" sequence="0" value="credit"/>
+                <element inactive_on_update="false" label="Net 30 Days" sequence="1" value="net_30"/>
+                <element inactive_on_update="false" label="Net 90 Days" sequence="2" value="net_90"/>
+            </choice>
+        </element>
+        <element attributes="omit_sys_original=true" label="Total Cost" max_length="20" name="total_cost" read_only="true" type="currency"/>
+        <element attributes="omit_sys_original=true" label="Total Discount" max_length="20" name="total_discount" read_only="true" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" label="Shipment Tracking Number" max_length="40" name="tracking_number" type="string"/>
+        <element label="Vendor" max_length="32" name="vendor" reference="x_392987_eam_company" type="reference"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Viewed by" max_length="1024" name="viewed_by" reference="sys_user" type="glide_list"/>
+        <element label="Work Order" max_length="32" name="work_order" reference="x_392987_eam_work_order" type="reference"/>
+        <index name="index">
+            <element name="requester"/>
+        </index>
+        <index name="index2">
+            <element name="parent"/>
+        </index>
+        <index name="index3">
+            <element name="ship_to_stockroom"/>
+        </index>
+        <index name="index4">
+            <element name="assignment_group"/>
+        </index>
+        <index name="index5">
+            <element name="vendor"/>
+        </index>
+        <index name="index6">
+            <element name="contract"/>
+        </index>
+        <index name="index7">
+            <element name="sys_class_name"/>
+        </index>
+        <index name="index8">
+            <element name="work_order"/>
+        </index>
+        <index name="index9">
+            <element name="assigned_to"/>
+        </index>
+    </element>
+</database>

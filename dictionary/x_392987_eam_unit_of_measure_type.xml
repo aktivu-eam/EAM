@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Unit Of Measure Type" max_length="40" name="x_392987_eam_unit_of_measure_type" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Sys domain path" max_length="40" name="sys_domain_path" type="string"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Type" max_length="40" name="type" type="string"/>
+    </element>
+</database>

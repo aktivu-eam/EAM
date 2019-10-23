@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>true</applies_extended>
+        <condition/>
+        <description/>
+        <field>active</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>STC - Set Choices</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+	if (!g_scratchpad.hasOwnProperty('state_transition_enabled'))
+		return;
+	else if(g_scratchpad.state_transition_enabled == false)
+		return;
+	
+	var field_name = "state";
+	var current_state = g_form.getValue(field_name);
+	var sel = g_form.getElement(field_name).options;
+	var choices = [];
+	for (var i=0, n=sel.length;i<n;i++) {
+	   choices.push({
+				label : sel[i].label.toString(),
+				value : sel[i].value.toString()
+			});
+	}
+	//clear options
+	g_form.clearOptions(field_name);
+
+	//Add Option for Current state
+	g_form.addOption(field_name, current_state, getLabel(current_state, choices));
+
+	var end_state = '';
+	var roles = '';
+	var available_transitions = g_scratchpad.available_state_transitions[current_state];
+	for (var prop in available_transitions) {
+	  if (available_transitions.hasOwnProperty(prop)) {
+		var obj = available_transitions[prop];
+		for (var transition in obj) {
+		  if (obj.hasOwnProperty('end_state')) {
+			  end_state = obj.end_state;
+			  roles = obj.roles;
+		  }
+		}
+	  }
+		if (g_user.hasRoleFromList(roles)) {
+			g_form.addOption(field_name, end_state, getLabel(end_state, choices));
+		}
+	}
+	
+	function getLabel(value, choices) {
+		var label = '';
+		for (var j=0; j<choices.length; j++) {
+			if (value == choices[j].value) {
+				label = choices[j].label.toString();
+				break;
+			}				
+		}
+		return label;
+	}
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-08-28 07:07:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3d2b8ce1db6333001795d1b1ca96193c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>STC - Set Choices</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+        <sys_update_name>sys_script_client_3d2b8ce1db6333001795d1b1ca96193c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-08-28 07:07:16</sys_updated_on>
+        <table>x_392987_eam_work_order</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

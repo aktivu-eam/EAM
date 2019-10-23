@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_392987_eam_work_order</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Checklist Verification to Scratchpad</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[function onDisplay(current, g_scratchpad) {
+	//This function will be automatically called when this rule is processed.
+	
+	var check = new NuvoloChecklistUtils();
+	
+	//needs pre verification yes/no
+	//if(check.checklistButtonShowCondition('pre',current))
+	if(check.showChecklistUIAction('pre',current))
+		g_scratchpad.eam_need_pre_verification = 'yes';
+	else
+		g_scratchpad.eam_need_pre_verification = 'no';
+	
+	//needs working checklist verification yes/no
+	//if(check.checklistButtonShowCondition('working',current))
+	if(check.showChecklistUIAction('working',current))
+		g_scratchpad.eam_need_working_verification = 'yes';
+	else
+		g_scratchpad.eam_need_working_verification = 'no';
+	
+	g_scratchpad.eam_pre_checklist_states = gs.getProperty('x_392987_eam.pre_checklist_states');
+}
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-08-27 12:13:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7f974c51db2733001795d1b1ca961948</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Checklist Verification to Scratchpad</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+        <sys_update_name>sys_script_7f974c51db2733001795d1b1ca961948</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-08-27 12:13:48</sys_updated_on>
+        <template/>
+        <when>before_display</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=7f974c51db2733001795d1b1ca961948"/>
+</record_update>

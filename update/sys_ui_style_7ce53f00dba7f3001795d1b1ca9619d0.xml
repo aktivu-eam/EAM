@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_style">
+    <sys_ui_style action="INSERT_OR_UPDATE">
+        <alt/>
+        <element>active</element>
+        <name>x_392987_eam_building</name>
+        <style>font-weight:bold;&#13;
+color:#990000;&#13;
+background-color:#ffcccc;</style>
+        <sys_class_name>sys_ui_style</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-08-24 08:21:47</sys_created_on>
+        <sys_id>7ce53f00dba7f3001795d1b1ca9619d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_392987_eam_building</sys_name>
+        <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+        <sys_update_name>sys_ui_style_7ce53f00dba7f3001795d1b1ca9619d0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-08-24 08:21:47</sys_updated_on>
+        <value>javascript: ( new x_nuvo_eam.NuvoloSpaceUtils().highlightUtilBad(current) )</value>
+    </sys_ui_style>
+    <sys_translated_text action="delete_multiple" query="documentkey=7ce53f00dba7f3001795d1b1ca9619d0"/>
+</record_update>

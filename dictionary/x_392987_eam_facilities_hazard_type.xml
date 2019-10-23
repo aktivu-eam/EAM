@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="x_392987_eam_hazard_type" label="Facilities Hazard Type" max_length="40" name="x_392987_eam_facilities_hazard_type" type="collection"/>
+</database>

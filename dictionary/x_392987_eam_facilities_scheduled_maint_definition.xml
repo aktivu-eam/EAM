@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="x_392987_eam_sched_maint_definition" label="Facilities Scheduled Maint Definition" max_length="40" name="x_392987_eam_facilities_scheduled_maint_definition" type="collection"/>
+</database>

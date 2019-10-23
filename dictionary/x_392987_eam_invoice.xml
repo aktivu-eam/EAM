@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Invoice" max_length="40" name="x_392987_eam_invoice" type="collection">
+        <element label="Account Code" max_length="40" name="account_code" type="string"/>
+        <element label="Approved By" max_length="32" name="approved_by" read_only="true" reference="sys_user" type="reference"/>
+        <element label="Check#" max_length="40" name="check_number" type="string"/>
+        <element label="Customer" mandatory="true" max_length="32" name="customer" reference="x_392987_eam_company" type="reference"/>
+        <element label="Invoice Type" max_length="40" name="invoice_type" type="string"/>
+        <element label="Job#" max_length="40" name="job_number" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Preventable Visit" max_length="40" name="preventable_visit" type="boolean"/>
+        <element label="Service" mandatory="true" max_length="225" name="service" type="string"/>
+        <element choice="3" label="Status" max_length="40" name="status" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="Approved" value="2"/>
+                <element inactive_on_update="false" label="Pending" value="1"/>
+                <element inactive_on_update="false" label="Rejected" value="3"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Sys domain path" max_length="255" name="sys_domain_path" type="string"/>
+        <element attributes="omit_sys_original=true" label="Total" max_length="20" name="total" read_only="true" type="currency"/>
+        <element label="Vendor" mandatory="true" max_length="32" name="vendor" reference="x_392987_eam_company" type="reference"/>
+        <element label="Vendor Invoice #" max_length="40" name="vendor_invoice_number" type="string"/>
+        <element label="Vendor P.O.#" max_length="40" name="vendor_po" type="string"/>
+        <element label="Viewed by" max_length="4000" name="viewed_by" reference="sys_user" type="glide_list"/>
+        <element label="Work Order" max_length="32" name="work_order" reference="x_392987_eam_work_order" type="reference"/>
+        <index name="index">
+            <element name="approved_by"/>
+        </index>
+        <index name="index2">
+            <element name="vendor"/>
+        </index>
+        <index name="index3">
+            <element name="work_order"/>
+        </index>
+        <index name="index4">
+            <element name="customer"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="CPE Dictionary Records" max_length="40" name="x_392987_eam_x_392987_eam_vulnerable_software" type="collection">
+        <element label="Company" max_length="32" name="company" reference="x_392987_eam_company" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="CPE Formatted String Binding" max_length="400" name="cpe_formatted_string_binding" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="CPE URI Binding" max_length="400" name="cpe_uri_binding" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Edition" max_length="255" name="edition" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Last Scan Date" max_length="40" name="last_scan_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Model" max_length="255" name="model" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="255" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Publisher" max_length="255" name="publisher" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="edge_encryption_enabled=true" label="Title" max_length="400" name="title" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Update" max_length="255" name="update" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Version" max_length="255" name="version" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Well-formed CPE name" max_length="400" name="well_formed_cpe_name" type="string"/>
+        <index name="index">
+            <element name="company"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

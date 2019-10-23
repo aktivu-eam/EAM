@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="x_392987_eam_assignment_matrix" label="Facilities Assignment Rules" max_length="40" name="x_392987_eam_facilities_assignment_matrix" type="collection"/>
+</database>

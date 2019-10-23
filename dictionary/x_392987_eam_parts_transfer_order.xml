@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="Transfer Order" max_length="40" name="x_392987_eam_parts_transfer_order" type="collection">
+        <element label="Assigned To" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
+        <element label="Assignment Group" max_length="32" name="assignment_group" reference="sys_user_group" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Delivery by date" max_length="40" name="delivery_by_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="4000" name="description" type="string"/>
+        <element label="From Location" max_length="32" name="from_location" read_only="true" reference="x_392987_eam_location" type="reference"/>
+        <element label="From Stockroom" mandatory="true" max_length="32" name="from_stockroom" reference="x_392987_eam_stockrooms" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Shipment Tracking Link" max_length="1024" name="shipment_tracking_link" type="url"/>
+        <element attributes="edge_encryption_enabled=true" label="Shipment Tracking Number" max_length="100" name="shipment_tracking_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Ship To Address" max_length="4000" name="ship_to_address" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Short Description" mandatory="true" max_length="255" name="short_description" type="string"/>
+        <element choice="1" default="1" label="Status" max_length="40" name="status" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="Pending Delivery" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Shipped" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Delivered" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="edge_encryption_enabled=true" label="Sys domain path" max_length="255" name="sys_domain_path" type="string"/>
+        <element label="To Location" max_length="32" name="to_location" read_only="true" reference="x_392987_eam_location" type="reference"/>
+        <element label="To Stockroom" mandatory="true" max_length="32" name="to_stockroom" reference="x_392987_eam_stockrooms" type="reference"/>
+        <element label="Work Order" max_length="32" name="work_order" reference="x_392987_eam_work_order" type="reference"/>
+        <index name="index">
+            <element name="to_stockroom"/>
+        </index>
+        <index name="index2">
+            <element name="assignment_group"/>
+        </index>
+        <index name="index3">
+            <element name="to_location"/>
+        </index>
+        <index name="index4">
+            <element name="from_location"/>
+        </index>
+        <index name="index5">
+            <element name="from_stockroom"/>
+        </index>
+        <index name="index6">
+            <element name="sys_class_name"/>
+        </index>
+        <index name="index7">
+            <element name="work_order"/>
+        </index>
+        <index name="index8">
+            <element name="assigned_to"/>
+        </index>
+    </element>
+</database>

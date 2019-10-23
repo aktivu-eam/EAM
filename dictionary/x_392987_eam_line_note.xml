@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Line Note" max_length="40" name="x_392987_eam_line_note" type="collection">
+        <element label="Date" max_length="40" name="date" type="glide_date_time"/>
+        <element label="ID" max_length="40" name="id" type="integer"/>
+        <element label="User ID" max_length="40" name="user_id" type="integer"/>
+        <element label="User Name" max_length="40" name="user_name" type="string"/>
+    </element>
+</database>

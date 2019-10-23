@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Calibration Data Sheet Template" max_length="40" name="x_392987_eam_cal_data_sheet_template" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Adjust Tolerance Range" max_length="40" name="adjust_tolerance_range" type="float"/>
+        <element label="Adjust Tolerance Unit" max_length="32" name="adjust_tolerance_unit" reference="x_392987_eam_tolerance_unit" type="reference"/>
+        <element choice="3" default="1" label="Application Type" max_length="40" name="application_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Clinical" value="1"/>
+                <element inactive_on_update="false" label="Facilities" value="3"/>
+                <element inactive_on_update="false" label="Lab" value="2"/>
+            </choice>
+        </element>
+        <element choice="3" default="1" label="Calibration Method" max_length="40" name="calibration_method" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Individual Instrument Calibration" value="1"/>
+                <element inactive_on_update="false" label="Loop Calibration" value="2"/>
+            </choice>
+        </element>
+        <element choice="3" default="3" label="Calibration Test Type" max_length="40" name="calibration_test_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Eccentricity Test" value="1"/>
+                <element inactive_on_update="false" label="Other" value="3"/>
+                <element inactive_on_update="false" label="Repeatability Test" value="2"/>
+            </choice>
+        </element>
+        <element label="Description" max_length="40" name="description" type="string"/>
+        <element label="Desired Output Formula" max_length="32" name="desired_output_formula" reference="x_392987_eam_desired_output_formula" type="reference"/>
+        <element label="Fail Tolerance Range" max_length="40" name="fail_tolerance_range" type="float"/>
+        <element label="Fail Tolerance Unit" max_length="32" name="fail_tolerance_unit" reference="x_392987_eam_tolerance_unit" type="reference"/>
+        <element label="Input Clipped Limit Unit" max_length="32" name="input_clipped_limit_unit" reference="x_392987_eam_tolerance_unit" type="reference"/>
+        <element label="Input Limits Clipped" max_length="40" name="input_limits_clipped" type="float"/>
+        <element label="Input Range (High)" max_length="40" name="input_range_high" type="float"/>
+        <element label="Input Range (Low)" max_length="40" name="input_range_low" type="float"/>
+        <element label="Input Range Unit" max_length="32" name="input_range_unit" reference="x_392987_eam_unit_of_measure" type="reference"/>
+        <element label="Measurement Type" max_length="32" name="measurement_type" reference="x_392987_eam_cal_measure_types" type="reference"/>
+        <element label="Name" max_length="100" name="name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Output Range (High)" max_length="40" name="output_range_high" type="float"/>
+        <element label="Output Range (Low)" max_length="40" name="output_range_low" type="float"/>
+        <element label="Output Range Unit" max_length="32" name="output_range_unit" reference="x_392987_eam_unit_of_measure" type="reference"/>
+        <element label="Parent Data Sheet" max_length="32" name="parent_data_sheet" reference="x_392987_eam_cal_data_sheet_template" type="reference"/>
+        <element label="Reference Standard" max_length="32" name="reference_standard" reference="x_392987_eam_devices" type="reference"/>
+        <index name="index">
+            <element name="output_range_unit"/>
+        </index>
+        <index name="index2">
+            <element name="input_clipped_limit_unit"/>
+        </index>
+        <index name="index3">
+            <element name="measurement_type"/>
+        </index>
+        <index name="index4">
+            <element name="reference_standard"/>
+        </index>
+        <index name="index5">
+            <element name="desired_output_formula"/>
+        </index>
+        <index name="index6">
+            <element name="parent_data_sheet"/>
+        </index>
+        <index name="index7">
+            <element name="input_range_unit"/>
+        </index>
+        <index name="index8">
+            <element name="fail_tolerance_unit"/>
+        </index>
+        <index name="index9">
+            <element name="adjust_tolerance_unit"/>
+        </index>
+    </element>
+</database>

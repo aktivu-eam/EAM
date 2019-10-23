@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Receiving Slip Line Item" max_length="40" name="x_392987_eam_receiving_slip_line_item" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Purchase Order Line Item" max_length="32" name="purchase_order_line_item" reference="x_392987_eam_purchase_order_line_item" type="reference"/>
+        <element label="Quantity" max_length="40" name="quantity" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Received" max_length="40" name="received" type="glide_date_time"/>
+        <element label="Received by" max_length="32" name="received_by" reference="sys_user" type="reference"/>
+        <element label="Receiving Slip" max_length="32" name="receiving_slip" reference="x_392987_eam_receiving_slip" type="reference"/>
+        <element label="Requested for" max_length="32" name="requested_for" reference="sys_user" type="reference"/>
+        <element label="Stockroom" max_length="32" name="stockroom" reference="x_392987_eam_stockrooms" type="reference"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="edge_encryption_enabled=true" label="Sys domain path" max_length="255" name="sys_domain_path" type="string"/>
+        <element label="Transfer Order Line Item" max_length="32" name="transfer_order_line_item" reference="x_392987_eam_transfer_order_line_item" type="reference"/>
+        <element attributes="omit_sys_original=true" label="Unit cost" max_length="20" name="unit_cost" type="currency"/>
+        <element label="Work Order Itemize Cost" max_length="32" name="work_order_itemize_cost" reference="x_392987_eam_work_order_itemize_cost" type="reference"/>
+        <index name="index">
+            <element name="received_by"/>
+        </index>
+        <index name="index2">
+            <element name="stockroom"/>
+        </index>
+        <index name="index3">
+            <element name="purchase_order_line_item"/>
+        </index>
+        <index name="index4">
+            <element name="receiving_slip"/>
+        </index>
+        <index name="index5">
+            <element name="transfer_order_line_item"/>
+        </index>
+        <index name="index6">
+            <element name="work_order_itemize_cost"/>
+        </index>
+        <index name="index7">
+            <element name="requested_for"/>
+        </index>
+        <index name="index8">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

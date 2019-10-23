@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="x_392987_eam_model_attribute" label="Facilities Model Attribute" max_length="40" name="x_392987_eam_facilities_model_attribute" type="collection"/>
+</database>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Problem Cause Symptoms" max_length="40" name="x_392987_eam_m2m_symptoms_problem_causes" type="collection">
+        <element label="Problem Cause" max_length="32" name="problem_cause" reference="x_392987_eam_problem_cause" type="reference"/>
+        <element label="Symptoms" max_length="32" name="symptoms" reference="x_392987_eam_symptoms" type="reference"/>
+        <element label="Sys domain path" max_length="255" name="sys_domain_path" type="string"/>
+        <index name="index">
+            <element name="symptoms"/>
+        </index>
+        <index name="index2">
+            <element name="problem_cause"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="INSERT_OR_UPDATE">
+        <contains display_value="x_392987_eam.assessments_user" name="x_392987_eam.assessments_user">f9f2b5842fb333000d355d372799b68e</contains>
+        <role display_value="x_392987_eam.manufacturing_asset_user" name="x_392987_eam.manufacturing_asset_user">bba6ce802ff333000d355d372799b6a8</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-09-05 10:34:41</sys_created_on>
+        <sys_id>fa7702442ff333000d355d372799b6cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_392987_eam.assessments_user.x_392987_eam.manufacturing_asset_user</sys_name>
+        <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+        <sys_update_name>sys_user_role_contains_fa7702442ff333000d355d372799b6cf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-09-05 10:34:41</sys_updated_on>
+    </sys_user_role_contains>
+</record_update>

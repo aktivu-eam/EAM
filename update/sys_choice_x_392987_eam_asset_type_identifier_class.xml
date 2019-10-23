@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="identifier_class" table="x_392987_eam_asset_type" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>identifier_class</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Standalone Equipment</label>
+            <language>en</language>
+            <name>x_392987_eam_asset_type</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-13 09:57:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b05267a0db1f3300f318fbef299619d7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-13 09:57:10</sys_updated_on>
+            <value>standalone equipment</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>identifier_class</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Component</label>
+            <language>en</language>
+            <name>x_392987_eam_asset_type</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-13 09:57:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c15267a0db1f3300f318fbef299619d8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-13 09:57:10</sys_updated_on>
+            <value>component</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>identifier_class</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>System</label>
+            <language>en</language>
+            <name>x_392987_eam_asset_type</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-13 09:57:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>415267a0db1f3300f318fbef299619d9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-13 09:57:10</sys_updated_on>
+            <value>system</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>identifier_class</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Location</label>
+            <language>en</language>
+            <name>x_392987_eam_asset_type</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-13 09:57:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cd5267a0db1f3300f318fbef299619d9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-13 09:57:10</sys_updated_on>
+            <value>location</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>identifier_class</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Tool</label>
+            <language>en</language>
+            <name>x_392987_eam_asset_type</name>
+            <sequence>4</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-13 09:57:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4d5267a0db1f3300f318fbef299619da</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-13 09:57:10</sys_updated_on>
+            <value>tool</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>identifier_class</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Reference Standard</label>
+            <language>en</language>
+            <name>x_392987_eam_asset_type</name>
+            <sequence>5</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-13 09:57:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c95267a0db1f3300f318fbef299619db</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-13 09:57:10</sys_updated_on>
+            <value>reference standard</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>identifier_class</element>
+            <name>x_392987_eam_asset_type</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-13 09:57:10</sys_created_on>
+            <sys_id>cd136dc02f7333000d355d372799b6de</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>identifier_class</sys_name>
+            <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+            <sys_update_name>sys_choice_x_392987_eam_asset_type_identifier_class</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-13 09:57:10</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

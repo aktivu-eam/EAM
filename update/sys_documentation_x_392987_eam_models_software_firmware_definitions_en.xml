@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="software_firmware_definitions" label="Software Firmware Definitions" language="en" table="x_392987_eam_models">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>software_firmware_definitions</element>
+            <help/>
+            <hint/>
+            <label>Software Firmware Definitions</label>
+            <language>en</language>
+            <name>x_392987_eam_models</name>
+            <plural>Software Firmware Definitions</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-10-22 07:32:31</sys_created_on>
+            <sys_id>68806b032fa000100d355d372799b681</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Software Firmware Definitions</sys_name>
+            <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+            <sys_update_name>sys_documentation_x_392987_eam_models_software_firmware_definitions_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-10-22 07:32:31</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

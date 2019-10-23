@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Asset Coverage Definition" max_length="40" name="x_392987_eam_asset_coverage_definition" type="collection">
+        <element label="All Work Order Types" max_length="40" name="all_work_order_types" type="boolean"/>
+        <element label="Asset Contract" max_length="32" name="asset_contract" reference="x_392987_eam_asset_contract" type="reference"/>
+        <element label="Contract Coverage Definition" max_length="32" name="contract_coverage_definition" reference="x_392987_eam_contract_coverage_definition" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Number of Occurrences" max_length="40" name="number_of_occurrences" type="integer"/>
+        <element label="Override" max_length="40" name="override" type="boolean"/>
+        <element label="Renewal Unit" max_length="40" name="renewal_unit" type="string"/>
+        <element label="Restricted" max_length="40" name="restricted" type="boolean"/>
+        <element label="Sys domain path" max_length="255" name="sys_domain_path" type="string"/>
+        <element label="Work Order Types" max_length="1024" name="work_order_types" reference="x_392987_eam_work_order_type" type="glide_list"/>
+        <index name="index">
+            <element name="contract_coverage_definition"/>
+        </index>
+        <index name="index2">
+            <element name="asset_contract"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="asmt_metric_definition">
+    <asmt_metric_definition action="INSERT_OR_UPDATE">
+        <display>Yes</display>
+        <metric display_value="Look Test">36f5d2a72f1000100d355d372799b66d</metric>
+        <order>100</order>
+        <selected_image/>
+        <sys_class_name>asmt_metric_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-10-11 05:08:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>32f5d2a72f1000100d355d372799b671</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Yes</sys_name>
+        <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+        <sys_update_name>asmt_metric_definition_32f5d2a72f1000100d355d372799b671</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-10-11 05:08:09</sys_updated_on>
+        <unselected_image/>
+        <value>0</value>
+    </asmt_metric_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=32f5d2a72f1000100d355d372799b671"/>
+</record_update>

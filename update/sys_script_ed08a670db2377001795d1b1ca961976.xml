@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_392987_eam_devices</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_392987_eam_devices">acquisition_costVALCHANGESjavascript:global.getCurrencyFilter('x_392987_eam_devices','acquisition_cost', 'USD;USD')^ORservice_contract_costVALCHANGESjavascript:global.getCurrencyFilter('x_392987_eam_devices','service_contract_cost', 'USD;USD')^ORlabor_costVALCHANGESjavascript:global.getCurrencyFilter('x_392987_eam_devices','labor_cost', 'USD;USD')^ORtotal_materials_costVALCHANGESjavascript:global.getCurrencyFilter('x_392987_eam_devices','total_materials_cost', 'USD;USD')^EQ<item endquery="false" field="acquisition_cost" goto="false" newquery="false" operator="VALCHANGES" or="false" value="javascript:global.getCurrencyFilter('x_392987_eam_devices','acquisition_cost', 'USD;USD')"/>
+            <item endquery="false" field="service_contract_cost" goto="false" newquery="false" operator="VALCHANGES" or="true" value="javascript:global.getCurrencyFilter('x_392987_eam_devices','service_contract_cost', 'USD;USD')"/>
+            <item endquery="false" field="labor_cost" goto="false" newquery="false" operator="VALCHANGES" or="true" value="javascript:global.getCurrencyFilter('x_392987_eam_devices','labor_cost', 'USD;USD')"/>
+            <item endquery="false" field="total_materials_cost" goto="false" newquery="false" operator="VALCHANGES" or="true" value="javascript:global.getCurrencyFilter('x_392987_eam_devices','total_materials_cost', 'USD;USD')"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Update TCO</name>
+        <order>1000</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[function onBefore(current, previous) {
+	//This function will be automatically called when this rule is processed.
+	current.tco = parseFloat(current.acquisition_cost.getReferenceValue())+parseFloat(current.labor_cost.getReferenceValue())+parseFloat(current.total_materials_cost.getReferenceValue())+parseFloat(current.service_contract_cost);
+}]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-08-26 10:38:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ed08a670db2377001795d1b1ca961976</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update TCO</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+        <sys_update_name>sys_script_ed08a670db2377001795d1b1ca961976</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-08-26 10:38:09</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=ed08a670db2377001795d1b1ca961976"/>
+</record_update>

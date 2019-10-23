@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="Checklist Questions" max_length="40" name="x_392987_eam_checklist_questions" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Default Value" max_length="255" name="default_value" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="External Key Item" max_length="100" name="external_key_item" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" mandatory="true" max_length="255" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Sys domain path" max_length="155" name="sys_domain_path" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="1" label="Type" max_length="40" name="type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Pass/ Fail" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Yes/ No" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Free text" sequence="2" value="3"/>
+            </choice>
+        </element>
+    </element>
+</database>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="disposal_method" table="x_392987_eam_assets" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>disposal_method</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Donation</label>
+            <language>en</language>
+            <name>x_392987_eam_assets</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-20 14:27:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a7332487db5733001795d1b1ca96197e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-20 14:27:07</sys_updated_on>
+            <value>Donation</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>disposal_method</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Moved To Stock</label>
+            <language>en</language>
+            <name>x_392987_eam_assets</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-20 14:27:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a7332487db5733001795d1b1ca961981</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-20 14:27:07</sys_updated_on>
+            <value>Moved To Stock</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>disposal_method</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Sale</label>
+            <language>en</language>
+            <name>x_392987_eam_assets</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-20 14:27:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>63332487db5733001795d1b1ca96199d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-20 14:27:07</sys_updated_on>
+            <value>Sale</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>disposal_method</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Surplus</label>
+            <language>en</language>
+            <name>x_392987_eam_assets</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-20 14:27:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>af332487db5733001795d1b1ca96199f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-20 14:27:07</sys_updated_on>
+            <value>Surplus</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>disposal_method</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Scrapped</label>
+            <language>en</language>
+            <name>x_392987_eam_assets</name>
+            <sequence>4</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-20 14:27:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>eb332487db5733001795d1b1ca9619a2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-20 14:27:07</sys_updated_on>
+            <value>Scrapped</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>disposal_method</element>
+            <name>x_392987_eam_assets</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-20 14:27:07</sys_created_on>
+            <sys_id>1113adc02f7333000d355d372799b64e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>disposal_method</sys_name>
+            <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+            <sys_update_name>sys_choice_x_392987_eam_assets_disposal_method</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-20 14:27:07</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

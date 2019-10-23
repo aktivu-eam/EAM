@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="Purchase Order Line Item" max_length="40" name="x_392987_eam_purchase_order_line_item" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" default="not_yet_requested" label="Approval" max_length="40" name="approval" read_only="true" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Not Yet Requested" sequence="0" value="not_yet_requested"/>
+                <element inactive_on_update="false" label="Requested" sequence="1" value="requested"/>
+                <element inactive_on_update="false" label="Approved" sequence="2" value="approved"/>
+                <element inactive_on_update="false" label="Rejected" sequence="3" value="rejected"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="4" value="cancelled"/>
+                <element inactive_on_update="false" label="No Longer Required" sequence="5" value="not_required"/>
+            </choice>
+        </element>
+        <element label="Asset Model" max_length="32" name="asset_model" reference="x_392987_eam_models" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Backorder ETA" max_length="40" name="backorder_eta" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Additional Comments" max_length="40" name="comments" type="journal_input"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Condition" max_length="40" name="condition" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Flat Rate Repair" sequence="0" value="FlatRateRepair"/>
+                <element inactive_on_update="false" label="Major Repair" sequence="1" value="MajorRepair"/>
+                <element inactive_on_update="false" label="Minor Repair" sequence="2" value="MinorRepair"/>
+                <element inactive_on_update="false" label="Not Tested" sequence="3" value="NotTested"/>
+                <element inactive_on_update="false" label="OEM Original" sequence="4" value="OEMOriginal"/>
+                <element inactive_on_update="false" label="OEM Replacement" sequence="5" value="OEMReplacement"/>
+                <element inactive_on_update="false" label="Refurbished" sequence="6" value="Refurbished"/>
+                <element inactive_on_update="false" label="Tested" sequence="7" value="Tested"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Correlation Display" max_length="100" name="correlation_display" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Correlation ID" max_length="100" name="correlation_id" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Customer Line Key" max_length="40" name="customer_line_key" type="string"/>
+        <element label="Derive List Price" max_length="40" name="derive_list_price" type="boolean"/>
+        <element attributes="omit_sys_original=true" label="Discount" max_length="20" name="discount" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" label="Expected Delivery" max_length="40" name="expected_delivery" type="glide_date_time"/>
+        <element label="External PO Required" max_length="40" name="external_po_required" type="boolean"/>
+        <element label="External PO Submitted" max_length="40" name="external_po_submitted" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="External PO Submit Date" max_length="40" name="external_po_submit_date" type="glide_date_time"/>
+        <element label="Is Exchange Required" max_length="40" name="is_exchange_required" type="boolean"/>
+        <element attributes="omit_sys_original=true" label="List Price" max_length="20" name="list_price" type="currency"/>
+        <element label="Notes" max_length="32" name="notes" reference="x_392987_eam_line_note" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Ordered Quantity" max_length="40" name="ordered_quantity" type="integer"/>
+        <element label="OrderID" max_length="40" name="orderid" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Order Type" max_length="40" name="order_type" type="string"/>
+        <element label="Part" max_length="32" name="part" reference="x_392987_eam_parts" type="reference"/>
+        <element label="Purchase Order" max_length="32" name="purchase_order" reference="x_392987_eam_purchase_order" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Received" max_length="40" name="received" type="glide_date_time"/>
+        <element label="Received quantity" max_length="40" name="received_quantity" type="integer"/>
+        <element label="Remaining quantity" max_length="40" name="remaining_quantity" type="integer"/>
+        <element label="Requester" mandatory="true" max_length="32" name="requester" reference="sys_user" type="reference"/>
+        <element label="Returned Quantity" max_length="40" name="returned_quantity" read_only="true" type="integer"/>
+        <element label="RGA" max_length="32" name="rga" read_only="true" reference="x_392987_eam_return_goods_authorization" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Shipment Tracking Link" max_length="1024" name="shipment_tracking_link" type="url"/>
+        <element attributes="omit_sys_original=true" label="Shipping Cost" max_length="20" name="shipping_cost" type="currency"/>
+        <element attributes="omit_sys_original=true" label="Ship Cost" max_length="20" name="ship_cost" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" label="Ship To Address" max_length="4000" name="ship_to_address" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Short Description" max_length="10000" name="short_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="draft" label="Status" max_length="40" name="status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Draft" sequence="0" value="draft"/>
+                <element inactive_on_update="false" label="Requested" sequence="1" value="requested"/>
+                <element inactive_on_update="false" label="Pending Approval" sequence="2" value="pending_approval"/>
+                <element inactive_on_update="false" label="Rejected" sequence="3" value="rejected"/>
+                <element inactive_on_update="false" label="Awaiting PO" sequence="4" value="awaiting po"/>
+                <element inactive_on_update="false" label="Ordered" sequence="5" value="ordered"/>
+                <element inactive_on_update="false" label="Back Ordered" sequence="6" value="back_ordered"/>
+                <element inactive_on_update="false" label="Pending Delivery" sequence="7" value="pending"/>
+                <element inactive_on_update="false" label="Delivered" sequence="8" value="delivered"/>
+                <element inactive_on_update="false" label="Received" sequence="9" value="received"/>
+                <element inactive_on_update="false" label="Returned" sequence="10" value="returned"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="11" value="cancelled"/>
+            </choice>
+        </element>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="edge_encryption_enabled=true" label="Sys domain Path" max_length="255" name="sys_domain_path" type="string"/>
+        <element attributes="omit_sys_original=true" label="Total Cost" max_length="20" name="total_cost" read_only="true" type="currency"/>
+        <element attributes="omit_sys_original=true" label="Total Discount" max_length="20" name="total_discount" read_only="true" type="currency"/>
+        <element attributes="omit_sys_original=true" label="Total Fees" max_length="20" name="total_fees" read_only="true" type="currency"/>
+        <element attributes="omit_sys_original=true" label="Total Shipping Cost" max_length="20" name="total_shipping_cost" read_only="true" type="currency"/>
+        <element attributes="omit_sys_original=true" label="Total Shipping Fees" max_length="20" name="total_shipping_fees" read_only="true" type="currency"/>
+        <element attributes="omit_sys_original=true" label="Total Tax" max_length="20" name="total_tax" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" label="Shipment Tracking Number" max_length="200" name="tracking_number" type="string"/>
+        <element choice="1" default="2" label="Type" max_length="40" name="type" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="Labor" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Part" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Model" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <element attributes="omit_sys_original=true" label="Unit Cost" max_length="20" name="unit_cost" read_only="true" type="currency"/>
+        <index name="index">
+            <element name="requester"/>
+        </index>
+        <index name="index2">
+            <element name="notes"/>
+        </index>
+        <index name="index3">
+            <element name="purchase_order"/>
+        </index>
+        <index name="index4">
+            <element name="asset_model"/>
+        </index>
+        <index name="index5">
+            <element name="part"/>
+        </index>
+        <index name="index6">
+            <element name="rga"/>
+        </index>
+        <index name="index7">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

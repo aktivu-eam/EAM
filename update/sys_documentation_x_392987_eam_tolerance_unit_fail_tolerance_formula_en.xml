@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="fail_tolerance_formula" label="Fail Tolerance Formula" language="en" table="x_392987_eam_tolerance_unit">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>fail_tolerance_formula</element>
+            <help/>
+            <hint/>
+            <label>Fail Tolerance Formula</label>
+            <language>en</language>
+            <name>x_392987_eam_tolerance_unit</name>
+            <plural>Fail Tolerance Formulas</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-29 10:58:48</sys_created_on>
+            <sys_id>dad16d082f3333000d355d372799b603</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Fail Tolerance Formula</sys_name>
+            <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+            <sys_update_name>sys_documentation_x_392987_eam_tolerance_unit_fail_tolerance_formula_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-29 10:58:48</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_392987_eam_facilities_templates" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_392987_eam_facilities_templates" element="NULL" name="x_392987_eam_facilities_templates" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">0a5c9eeedbd7b300f318fbef2996198f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-19 09:59:15</sys_created_on>
+            <sys_id>ce5c9eeedbd7b300f318fbef2996198f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-19 09:59:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="x_392987_eam_facilities_templates" element="NULL" name="x_392987_eam_facilities_templates" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">0a5c9eeedbd7b300f318fbef2996198f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-19 09:59:15</sys_created_on>
+            <sys_id>425c9eeedbd7b300f318fbef29961990</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-19 09:59:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>active</element>
+            <list_id display_value="x_392987_eam_facilities_templates" element="NULL" name="x_392987_eam_facilities_templates" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">0a5c9eeedbd7b300f318fbef2996198f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-19 09:59:15</sys_created_on>
+            <sys_id>c25c9eeedbd7b300f318fbef29961990</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-19 09:59:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>advance</element>
+            <list_id display_value="x_392987_eam_facilities_templates" element="NULL" name="x_392987_eam_facilities_templates" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">0a5c9eeedbd7b300f318fbef2996198f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-19 09:59:15</sys_created_on>
+            <sys_id>465c9eeedbd7b300f318fbef29961990</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-19 09:59:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>advance_template</element>
+            <list_id display_value="x_392987_eam_facilities_templates" element="NULL" name="x_392987_eam_facilities_templates" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">0a5c9eeedbd7b300f318fbef2996198f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-19 09:59:15</sys_created_on>
+            <sys_id>c65c9eeedbd7b300f318fbef29961990</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-19 09:59:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>apply_when_script</element>
+            <list_id display_value="x_392987_eam_facilities_templates" element="NULL" name="x_392987_eam_facilities_templates" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">0a5c9eeedbd7b300f318fbef2996198f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-19 09:59:15</sys_created_on>
+            <sys_id>4a5c9eeedbd7b300f318fbef29961990</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-19 09:59:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>condition</element>
+            <list_id display_value="x_392987_eam_facilities_templates" element="NULL" name="x_392987_eam_facilities_templates" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">0a5c9eeedbd7b300f318fbef2996198f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-19 09:59:15</sys_created_on>
+            <sys_id>ca5c9eeedbd7b300f318fbef29961990</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-19 09:59:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>resolution_code</element>
+            <list_id display_value="x_392987_eam_facilities_templates" element="NULL" name="x_392987_eam_facilities_templates" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">0a5c9eeedbd7b300f318fbef2996198f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-19 09:59:15</sys_created_on>
+            <sys_id>4e5c9eeedbd7b300f318fbef29961990</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-19 09:59:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>table</element>
+            <list_id display_value="x_392987_eam_facilities_templates" element="NULL" name="x_392987_eam_facilities_templates" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">0a5c9eeedbd7b300f318fbef2996198f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-19 09:59:15</sys_created_on>
+            <sys_id>ce5c9eeedbd7b300f318fbef29961990</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-19 09:59:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>template</element>
+            <list_id display_value="x_392987_eam_facilities_templates" element="NULL" name="x_392987_eam_facilities_templates" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">0a5c9eeedbd7b300f318fbef2996198f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-19 09:59:15</sys_created_on>
+            <sys_id>425c9eeedbd7b300f318fbef29961991</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-19 09:59:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_392987_eam_facilities_templates</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-19 09:59:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0a5c9eeedbd7b300f318fbef2996198f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_392987_eam_facilities_templates</sys_name>
+            <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+            <sys_update_name>sys_ui_list_x_392987_eam_facilities_templates_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-19 09:59:15</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Calls" max_length="40" name="x_392987_eam_calls" type="collection">
+        <element label="Asset" max_length="32" name="asset" reference="x_392987_eam_assets" type="reference"/>
+        <element label="Assign To" max_length="32" name="assign_to" reference="sys_user" type="reference"/>
+        <element label="Caller" max_length="32" name="caller" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element label="Call Duration" max_length="40" name="call_duration" type="glide_duration"/>
+        <element label="Call Type" max_length="40" name="call_type" type="integer"/>
+        <element label="Company" max_length="32" name="company" reference="x_392987_eam_company" type="reference"/>
+        <element label="Contact Type" max_length="40" name="contact_type" type="integer"/>
+        <element label="Description" max_length="40" name="description" type="string"/>
+        <element label="Email" max_length="40" name="email" type="string"/>
+        <element label="First Name" max_length="40" name="first_name" type="string"/>
+        <element label="Last Name" max_length="40" name="last_name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Opened At" max_length="40" name="opened_at" type="glide_date_time"/>
+        <element label="Opened By" max_length="32" name="opened_by" reference="sys_user" type="reference"/>
+        <element label="Override Assignee" max_length="40" name="override_assignee" type="boolean"/>
+        <element label="Phone Number" max_length="40" name="phone_number" type="string"/>
+        <element label="Planned End" max_length="40" name="planned_end" type="glide_date_time"/>
+        <element label="Planned Start" max_length="40" name="planned_start" type="glide_date_time"/>
+        <element label="Priority" max_length="40" name="priority" type="integer"/>
+        <element label="Short Description" max_length="40" name="short_description" type="string"/>
+        <element label="Status" max_length="40" name="status" type="integer"/>
+        <element label="Sys domain path" max_length="255" name="sys_domain_path" type="string"/>
+        <element label="Transfer To" max_length="32" name="transfer_to" reference="task" type="reference"/>
+        <element label="Work Location" max_length="32" name="work_location" reference="x_392987_eam_location" type="reference"/>
+        <index name="index">
+            <element name="caller"/>
+        </index>
+        <index name="index2">
+            <element name="opened_by"/>
+        </index>
+        <index name="index3">
+            <element name="assign_to"/>
+        </index>
+        <index name="index4">
+            <element name="company"/>
+        </index>
+        <index name="index5">
+            <element name="transfer_to"/>
+        </index>
+        <index name="index6">
+            <element name="asset"/>
+        </index>
+        <index name="index7">
+            <element name="work_location"/>
+        </index>
+    </element>
+</database>

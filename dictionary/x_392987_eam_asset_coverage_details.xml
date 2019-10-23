@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Asset Coverage Details" max_length="40" name="x_392987_eam_asset_coverage_details" type="collection">
+        <element label="All Parts" max_length="40" name="all_parts" type="boolean"/>
+        <element label="Asset Coverage Definition" max_length="32" name="asset_coverage_definition" reference="x_392987_eam_asset_coverage_definition" type="reference"/>
+        <element label="Contract Coverage Details" max_length="32" name="contract_coverage_details" reference="x_392987_eam_contract_coverage_definition" type="reference"/>
+        <element label="Coverage Percentage" max_length="15" name="coverage_percentage" type="percent_complete"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Override" max_length="40" name="override" type="boolean"/>
+        <element label="Parts" max_length="4000" name="parts" reference="x_392987_eam_parts" type="glide_list"/>
+        <element label="Sys domain path" max_length="255" name="sys_domain_path" type="string"/>
+        <element choice="3" default="1" label="Type" max_length="40" name="type" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="Labor" value="1"/>
+                <element inactive_on_update="false" label="Part" value="2"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="asset_coverage_definition"/>
+        </index>
+        <index name="index2">
+            <element name="contract_coverage_details"/>
+        </index>
+    </element>
+</database>

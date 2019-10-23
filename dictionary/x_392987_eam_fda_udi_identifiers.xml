@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="FDA UDI Identifiers" max_length="40" name="x_392987_eam_fda_udi_identifiers" type="collection">
+        <element label="Contains DI Number" max_length="32" name="contains_di_number" reference="x_392987_eam_fda_udi_identifiers" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="ID" max_length="40" name="device_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="GS1" label="Issuing Agency" max_length="40" name="device_issuing_agency" type="string">
+            <choice>
+                <element inactive_on_update="false" label="GS1" sequence="0" value="GS1"/>
+                <element inactive_on_update="false" label="ICCBBA" sequence="1" value="ICCBBA"/>
+                <element inactive_on_update="false" label="HIBCC" sequence="2" value="HIBCC"/>
+                <element inactive_on_update="false" label="NDC/NHRIC" sequence="3" value="NDC/NHRIC"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Type" max_length="40" name="device_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Primary" sequence="0" value="Primary"/>
+                <element inactive_on_update="false" label="Secondary" sequence="1" value="Secondary"/>
+                <element inactive_on_update="false" label="Direct Marking" sequence="2" value="Direct Marking"/>
+                <element inactive_on_update="false" label="Unit of Use" sequence="3" value="Unit of Use"/>
+                <element inactive_on_update="false" label="Package" sequence="4" value="Package"/>
+            </choice>
+        </element>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Package Discontinue Date" max_length="40" name="package_discontinue_date" type="glide_date"/>
+        <element label="Package Quantity" max_length="40" name="package_quantity" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Package Status" max_length="40" name="package_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="In Commercial Distribution" sequence="0" value="In Commercial Distribution"/>
+                <element inactive_on_update="false" label="Not in Commercial Distribution" sequence="1" value="Not in Commercial Distribution"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Sys domain path" max_length="255" name="sys_domain_path" type="string"/>
+        <element label="UDI" max_length="32" name="udi" reference="x_392987_eam_fda_udi" type="reference"/>
+        <index name="index">
+            <element name="contains_di_number"/>
+        </index>
+        <index name="index2">
+            <element name="udi"/>
+        </index>
+    </element>
+</database>

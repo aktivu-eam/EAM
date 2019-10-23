@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Model Attribute" max_length="40" name="x_392987_eam_model_attribute" type="collection">
+        <element label="Attribute" mandatory="true" max_length="32" name="attribute_type" reference="x_392987_eam_model_attribute_type" type="reference"/>
+        <element label="Attribute.Value Unit" max_length="32" name="attribute_typevalue_unit" reference="x_392987_eam_unit_of_measure" type="reference"/>
+        <element label="Model" mandatory="true" max_length="32" name="model" reference="x_392987_eam_models" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="edge_encryption_enabled=true" label="Sys domain path" max_length="40" name="sys_domain_path" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Value" mandatory="true" max_length="100" name="value" type="string"/>
+        <index name="index">
+            <element name="attribute_typevalue_unit"/>
+        </index>
+        <index name="index2">
+            <element name="attribute_type"/>
+        </index>
+        <index name="index3">
+            <element name="model"/>
+        </index>
+        <index name="index4">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

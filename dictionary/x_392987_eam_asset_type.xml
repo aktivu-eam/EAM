@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="Asset Type" max_length="40" name="x_392987_eam_asset_type" type="collection">
+        <element label="Accessory" max_length="40" name="accessory" type="boolean"/>
+        <element default="true" label="Cascade Risk Factor" max_length="40" name="cascade_risk_factor" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Category" max_length="100" name="category" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="4000" name="description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="Standalone equipment" label="Identifier Class" max_length="40" name="identifier_class" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Standalone Equipment" sequence="0" value="standalone equipment"/>
+                <element inactive_on_update="false" label="Component" sequence="1" value="component"/>
+                <element inactive_on_update="false" label="System" sequence="2" value="system"/>
+                <element inactive_on_update="false" label="Location" sequence="3" value="location"/>
+                <element inactive_on_update="false" label="Tool" sequence="4" value="tool"/>
+                <element inactive_on_update="false" label="Reference Standard" sequence="5" value="reference standard"/>
+            </choice>
+        </element>
+        <element label="Life Sustaining" max_length="40" name="life_sustaining" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="225" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="RFC Function" max_length="32" name="rfc_function" reference="x_392987_eam_rfc_functions" type="reference"/>
+        <element label="RFC Incident History" max_length="32" name="rfc_incident_history" reference="x_392987_eam_rfc_incident_history" type="reference"/>
+        <element label="RFC Maintenance Requirement" max_length="32" name="rfc_maintenance_requirement" reference="x_392987_eam_rfc_maintenance_requirements" type="reference"/>
+        <element choice="1" label="RFC Mission Criticality" max_length="40" name="rfc_mission_criticality" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="1" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="2" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="3" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="4" sequence="3" value="4"/>
+                <element inactive_on_update="false" label="5" sequence="4" value="5"/>
+                <element inactive_on_update="false" label="6" sequence="5" value="6"/>
+                <element inactive_on_update="false" label="7" sequence="6" value="7"/>
+                <element inactive_on_update="false" label="8" sequence="7" value="8"/>
+                <element inactive_on_update="false" label="9" sequence="8" value="9"/>
+                <element inactive_on_update="false" label="10" sequence="9" value="10"/>
+            </choice>
+        </element>
+        <element label="RFC Physical Risk" max_length="32" name="rfc_physical_risk" reference="x_392987_eam_rfc_physical_risks" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="RFC Utilization Rate" max_length="40" name="rfc_utilization_rate" type="percent_complete"/>
+        <element attributes="edge_encryption_enabled=true" label="Sub-Category" max_length="100" name="sub_category" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="edge_encryption_enabled=true" label="Sys domain path" max_length="40" name="sys_domain_path" type="string"/>
+        <element label="Tool" max_length="40" name="tool" type="boolean"/>
+        <index name="index">
+            <element name="rfc_incident_history"/>
+        </index>
+        <index name="index2">
+            <element name="rfc_physical_risk"/>
+        </index>
+        <index name="index3">
+            <element name="rfc_maintenance_requirement"/>
+        </index>
+        <index name="index4">
+            <element name="rfc_function"/>
+        </index>
+        <index name="index5">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

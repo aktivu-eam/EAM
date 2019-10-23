@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="cmn_schedule" label="Device Exclusion Schedule" max_length="40" name="x_392987_eam_device_exclusion_schedule" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Asset Condition" max_length="40" name="asset_condition" type="conditions"/>
+        <element label="Asset Table" max_length="32" name="asset_table" read_only="true" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <index name="index">
+            <element name="asset_table"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_392987_eam_work_order_task_procedures</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_392987_eam_work_order_task_procedures">data_sheet_item_definitionISNOTEMPTY^state=Submitted^ORstateCHANGESTOSubmitted^EQ<item endquery="false" field="data_sheet_item_definition" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="Submitted"/>
+            <item endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="true" value="Submitted"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Update Result on WO Task</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	
+	var leftAsResult = current.left_as_result;
+	var foundAsResult = current.found_as_result;
+	var flag = true;
+	
+	//Check if Left As Result is not empty
+	if(leftAsResult != '') {
+		
+		if(leftAsResult == 2) {
+			
+			flag = false;
+			
+		}
+		
+	}
+	
+	//Else check Found As Result is not empty
+	else if(foundAsResult != ''){
+		
+		if(foundAsResult == 2) {
+			
+			flag = false;
+		}
+		
+	}
+	
+//If at least one Work Order Task Procedure is Failed, then update Result as Fail on Work Order Task.
+	if(flag == false) {
+		
+		var grWOTask = new GlideRecord('x_392987_eam_work_order_task');
+		grWOTask.get(current.work_order_task);
+		
+		grWOTask.result = 'Fail';
+		grWOTask.update();
+	}
+	
+// If Result is Pass on all Work Order Task Procedures, then update Result as Pass on Work Order Task.
+	else {
+		
+		//Get count of open work order task procudures
+		
+		var grOpenWOTP = new GlideAggregate('x_392987_eam_work_order_task_procedures');
+		grOpenWOTP.addQuery('work_order_task',current.work_order_task);
+		grOpenWOTP.addQuery('state','!=','Submitted');
+		grOpenWOTP.addAggregate('COUNT');
+		grOpenWOTP.query();
+		var countOpenWOTP = 0;
+		if (grOpenWOTP.next())
+			countOpenWOTP = grOpenWOTP.getAggregate('COUNT');
+		
+		if(countOpenWOTP == 0) {
+			
+			var grWOTask1 = new GlideRecord('x_392987_eam_work_order_task');
+			grWOTask1.get(current.work_order_task);
+			if(grWOTask1.result != 'Fail') {
+				
+				grWOTask1.result = 'Pass';
+				grWOTask1.update();
+				
+			}
+			
+		}
+		
+	}
+	
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-09-06 12:27:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4b6aa7182f7373000d355d372799b653</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update Result on WO Task</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+        <sys_update_name>sys_script_4b6aa7182f7373000d355d372799b653</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-09-06 12:27:07</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=4b6aa7182f7373000d355d372799b653"/>
+</record_update>

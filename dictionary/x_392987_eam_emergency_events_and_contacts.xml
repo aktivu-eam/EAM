@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Emergency Events and Contacts" max_length="40" name="x_392987_eam_emergency_events_and_contacts" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Contact Telephone Number" mandatory="true" max_length="40" name="contact_telephone_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Event Description" mandatory="true" max_length="1000" name="event_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Event Title" max_length="100" name="event_title" type="string"/>
+        <element label="Event Type" max_length="32" name="event_type" reference="x_392987_eam_event_type" type="reference"/>
+        <element label="Site" max_length="32" name="site" reference="x_392987_eam_building" type="reference"/>
+        <index name="index">
+            <element name="site"/>
+        </index>
+        <index name="index2">
+            <element name="event_type"/>
+        </index>
+    </element>
+</database>

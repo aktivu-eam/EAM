@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_392987_eam_installed_software_firmware</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_392987_eam_installed_software_firmware">installed_dateVALCHANGES^ORassetVALCHANGES^ORsoftware_firmware_definitionVALCHANGES^EQ<item endquery="false" field="installed_date" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="false" field="asset" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item endquery="false" field="software_firmware_definition" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Auto Set Current Flag for Patch</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+	var current_version = current.software_firmware_definition.getRefRecord().getValue('base_version');
+	var dateUtils = new NuvoloValidateDateTime();
+	var current_install = current.getValue('installed_date');
+	var record_found = false;
+	var agg = new  GlideAggregate('x_392987_eam_installed_software_firmware');
+	agg.addAggregate('count');
+	agg.addQuery('asset',current.getValue('asset'));
+	agg.groupBy('software_firmware_definition.base_version'); //Aggregate of distinct base versions
+	agg.query();
+	while(agg.next()) {		
+	
+		var base_version = agg.getValue('software_firmware_definition.base_version'); 
+		var installed_software_GR = new GlideRecord('x_392987_eam_installed_software_firmware');
+		installed_software_GR.addQuery('software_firmware_definition.base_version', base_version);
+		installed_software_GR.addQuery('sys_id','!=',current.getValue('sys_id'));	  
+		installed_software_GR.orderByDesc('installed_date');
+		installed_software_GR.query();
+		var current_set = true;
+		while (installed_software_GR.next()) { //Query for this base version
+			
+			if(current_set && base_version == current_version) {
+				record_found = true; //Has the most recently installed been compared to current?
+				current_set = false;					
+				var recent_install = installed_software_GR.getValue('installed_date');
+				var compare = dateUtils.compareDates(recent_install, current_install);
+				if (compare == -1){ //compare current to most recently installed
+					current.setValue('current', true);
+					installed_software_GR.setValue('current',false);						
+				}
+				else {
+					current.setValue('current',false);
+					installed_software_GR.setValue('current',true);							
+				}
+			}
+			else if (current_set && base_version != current_version) {			
+				installed_software_GR.setValue('current',true);
+				current_set = false;					
+			}
+			else {
+				installed_software_GR.setValue('current',false);
+			}			
+			installed_software_GR.update();
+		}
+		if (!record_found) {
+			current.setValue('current',true);
+		}
+	}
+	if (!record_found) {	
+		current.setValue('current',true);
+	}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-08-23 15:44:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4ac15844db6fb3001795d1b1ca9619c8</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Auto Set Current Flag for Patch</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+        <sys_update_name>sys_script_4ac15844db6fb3001795d1b1ca9619c8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-10-16 12:11:21</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=4ac15844db6fb3001795d1b1ca9619c8"/>
+</record_update>

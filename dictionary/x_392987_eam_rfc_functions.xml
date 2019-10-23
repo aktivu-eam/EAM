@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="RFC Functions" max_length="40" name="x_392987_eam_rfc_functions" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Category" max_length="40" name="category" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Therapeutic" sequence="0" value="Therapeutic"/>
+                <element inactive_on_update="false" label="Diagnostic" sequence="1" value="Diagnostic"/>
+                <element inactive_on_update="false" label="Analytical" sequence="2" value="Analytical"/>
+                <element inactive_on_update="false" label="Miscellaneous" sequence="3" value="Miscellaneous"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Description" mandatory="true" max_length="225" name="description" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element default="1" label="Point Score" mandatory="true" max_length="15" name="point_score" type="decimal"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="edge_encryption_enabled=true" label="Sys domain path" max_length="40" name="sys_domain_path" type="string"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

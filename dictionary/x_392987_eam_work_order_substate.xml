@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Work Order Substate" max_length="40" name="x_392987_eam_work_order_substate" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" mandatory="true" max_length="100" name="name" type="string"/>
+        <element label="Sequence" max_length="40" name="sequence" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="State" mandatory="true" max_length="40" name="state" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Draft" sequence="0" value="-5"/>
+                <element inactive_on_update="false" label="Pending Assignment" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="Pending Acceptance" sequence="2" value="100"/>
+                <element inactive_on_update="false" label="Ready for Work" sequence="3" value="110"/>
+                <element inactive_on_update="false" label="Work in Progress" sequence="4" value="2"/>
+                <element inactive_on_update="false" label="On Hold" sequence="5" value="120"/>
+                <element inactive_on_update="false" label="Pending Review" sequence="6" value="130"/>
+                <element inactive_on_update="false" label="Pending Invoicing" sequence="7" value="140"/>
+                <element inactive_on_update="false" label="Closed Complete" sequence="8" value="3"/>
+                <element inactive_on_update="false" label="Closed Cancelled" sequence="9" value="7"/>
+            </choice>
+        </element>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

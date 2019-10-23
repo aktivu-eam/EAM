@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Work Order Task" max_length="40" name="x_392987_eam_work_order_task" type="collection">
+        <element label="Actual Effort" max_length="40" name="actual_effort" type="glide_duration"/>
+        <element label="Actual start" max_length="40" name="actual_start" type="glide_date_time"/>
+        <element label="Average of Test Results" max_length="40" name="average_of_test_results" type="float"/>
+        <element label="Data Sheet Template" max_length="32" name="data_sheet_template" reference="x_392987_eam_cal_data_sheet_template" type="reference"/>
+        <element label="Planned End" max_length="40" name="planned_end" type="glide_date_time"/>
+        <element label="Planned Start" max_length="40" name="planned_start" type="glide_date_time"/>
+        <element label="Reference Standard" max_length="32" name="reference_standard" reference="x_392987_eam_assets" type="reference"/>
+        <element label="Requested for" max_length="32" name="requested_for" reference="sys_user" type="reference"/>
+        <element label="Required Task" max_length="40" name="required_task" type="boolean"/>
+        <element label="Result" max_length="40" name="result" type="string"/>
+        <element label="Standard Deviation" max_length="40" name="standard_deviation" type="float"/>
+        <element label="Variance" max_length="40" name="variance" type="float"/>
+        <element label="Work Order" max_length="32" name="work_order" reference="x_392987_eam_work_order" type="reference"/>
+        <element label="Work Task" max_length="32" name="work_task" reference="x_392987_eam_work_tasks" type="reference"/>
+    </element>
+</database>

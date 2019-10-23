@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="room_location" label="Room/Location" language="en" table="x_392987_eam_facilities_work_orders">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>room_location</element>
+            <help/>
+            <hint/>
+            <label>Room/Location</label>
+            <language>en</language>
+            <name>x_392987_eam_facilities_work_orders</name>
+            <plural>Room/Locations</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-23 06:31:29</sys_created_on>
+            <sys_id>98e165482f3333000d355d372799b6b2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Room/Location</sys_name>
+            <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+            <sys_update_name>sys_documentation_x_392987_eam_facilities_work_orders_room_location_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-23 06:31:29</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

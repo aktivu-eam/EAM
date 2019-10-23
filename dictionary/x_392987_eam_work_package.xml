@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Work Package" max_length="40" name="x_392987_eam_work_package" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Asset" max_length="32" name="asset" reference="x_392987_eam_assets" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="1000" name="description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" mandatory="true" max_length="100" name="name" type="string"/>
+        <element label="Order" max_length="40" name="order" type="integer"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="edge_encryption_enabled=true" label="Sys domain path" max_length="255" name="sys_domain_path" type="string"/>
+        <element label="Work Order Type" max_length="32" name="work_order_type" read_only="true" reference="x_392987_eam_work_order_type" type="reference"/>
+        <element label="Work Package Definition" max_length="32" name="work_package_definition" read_only="true" reference="x_392987_eam_work_package_definition" type="reference"/>
+        <index name="index">
+            <element name="work_package_definition"/>
+        </index>
+        <index name="index2">
+            <element name="asset"/>
+        </index>
+        <index name="index3">
+            <element name="sys_class_name"/>
+        </index>
+        <index name="index4">
+            <element name="work_order_type"/>
+        </index>
+    </element>
+</database>

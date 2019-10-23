@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Checklist Details" max_length="40" name="x_392987_eam_checklist_details" type="collection">
+        <element label="Checklist" mandatory="true" max_length="32" name="checklist" reference="x_392987_eam_checklist" type="reference"/>
+        <element label="Order" mandatory="true" max_length="40" name="order" type="integer"/>
+        <element label="Question" mandatory="true" max_length="32" name="question" reference="x_392987_eam_checklist_questions" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Sys domain path" max_length="155" name="sys_domain_path" type="string"/>
+        <index name="index">
+            <element name="question"/>
+        </index>
+        <index name="index2">
+            <element name="checklist"/>
+        </index>
+    </element>
+</database>

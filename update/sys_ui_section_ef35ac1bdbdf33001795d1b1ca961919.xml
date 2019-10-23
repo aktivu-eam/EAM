@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Vendor" section_id="ef35ac1bdbdf33001795d1b1ca961919" sys_domain="global" table="x_392987_eam_devices" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>asset_manufacturer</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 09:14:28</sys_created_on>
+            <sys_id>1545645bdbdf33001795d1b1ca9619cb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Vendor" display_value="Vendor" name="x_392987_eam_devices" sys_domain="global" view="Default view">ef35ac1bdbdf33001795d1b1ca961919</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 09:14:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>model_name</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 09:14:28</sys_created_on>
+            <sys_id>9545645bdbdf33001795d1b1ca9619cb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Vendor" display_value="Vendor" name="x_392987_eam_devices" sys_domain="global" view="Default view">ef35ac1bdbdf33001795d1b1ca961919</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 09:14:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>asset_vendor</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 09:14:28</sys_created_on>
+            <sys_id>1945645bdbdf33001795d1b1ca9619cb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Vendor" display_value="Vendor" name="x_392987_eam_devices" sys_domain="global" view="Default view">ef35ac1bdbdf33001795d1b1ca961919</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 09:14:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>service_provider</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 09:14:28</sys_created_on>
+            <sys_id>9945645bdbdf33001795d1b1ca9619cb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Vendor" display_value="Vendor" name="x_392987_eam_devices" sys_domain="global" view="Default view">ef35ac1bdbdf33001795d1b1ca961919</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 09:14:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 09:14:28</sys_created_on>
+            <sys_id>1d45645bdbdf33001795d1b1ca9619cb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Vendor" display_value="Vendor" name="x_392987_eam_devices" sys_domain="global" view="Default view">ef35ac1bdbdf33001795d1b1ca961919</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 09:14:28</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>serial_number</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 09:14:28</sys_created_on>
+            <sys_id>9d45645bdbdf33001795d1b1ca9619cb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Vendor" display_value="Vendor" name="x_392987_eam_devices" sys_domain="global" view="Default view">ef35ac1bdbdf33001795d1b1ca961919</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 09:14:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>warranty_expiration</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 09:14:28</sys_created_on>
+            <sys_id>1145645bdbdf33001795d1b1ca9619cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Vendor" display_value="Vendor" name="x_392987_eam_devices" sys_domain="global" view="Default view">ef35ac1bdbdf33001795d1b1ca961919</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 09:14:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 09:14:28</sys_created_on>
+            <sys_id>9145645bdbdf33001795d1b1ca9619cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Vendor" display_value="Vendor" name="x_392987_eam_devices" sys_domain="global" view="Default view">ef35ac1bdbdf33001795d1b1ca961919</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 09:14:28</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 09:14:28</sys_created_on>
+            <sys_id>1545645bdbdf33001795d1b1ca9619cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Vendor" display_value="Vendor" name="x_392987_eam_devices" sys_domain="global" view="Default view">ef35ac1bdbdf33001795d1b1ca961919</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 09:14:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>activity.xml</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 09:14:28</sys_created_on>
+            <sys_id>9545645bdbdf33001795d1b1ca9619cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter>
+            <sys_ui_section caption="Vendor" display_value="Vendor" name="x_392987_eam_devices" sys_domain="global" view="Default view">ef35ac1bdbdf33001795d1b1ca961919</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 09:14:28</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Vendor</caption>
+            <header>false</header>
+            <name>x_392987_eam_devices</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 09:14:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ef35ac1bdbdf33001795d1b1ca961919</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Vendor</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+            <sys_update_name>sys_ui_section_ef35ac1bdbdf33001795d1b1ca961919</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 09:14:21</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

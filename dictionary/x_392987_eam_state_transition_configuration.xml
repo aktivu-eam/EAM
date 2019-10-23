@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="update_synch=true" extends="sys_metadata" label="State Transition Configuration" max_length="40" name="x_392987_eam_state_transition_configuration" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Alternate Label" max_length="80" name="alternate_label" type="string"/>
+        <element label="End State" mandatory="true" max_length="32" name="end_state" reference="x_392987_eam_state_definition" type="reference"/>
+        <element label="Event" max_length="32" name="event" reference="sysevent_register" type="reference"/>
+        <element dependent="table_name" dependent_on_field="table_name" label="Field Name" mandatory="true" max_length="80" name="field_name" type="field_name" use_dependent_field="true"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Roles" max_length="1024" name="roles" reference="sys_user_role" type="glide_list"/>
+        <element label="Start State" mandatory="true" max_length="32" name="start_state" reference="x_392987_eam_state_definition" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Transition Blueprint" max_length="10000" name="stc_blueprint" read_only="true" type="string"/>
+        <element label="Customer update (No Longer Used)" max_length="40" name="sys_customer_update" type="boolean"/>
+        <element label="Replace on upgrade (No Longer Used)" max_length="40" name="sys_replace_on_update" type="boolean"/>
+        <element attributes="base_start=true" label="Table Name" mandatory="true" max_length="80" name="table_name" type="table_name"/>
+        <index name="index">
+            <element name="start_state"/>
+        </index>
+        <index name="index2">
+            <element name="end_state"/>
+        </index>
+        <index name="index3">
+            <element name="event"/>
+        </index>
+    </element>
+</database>

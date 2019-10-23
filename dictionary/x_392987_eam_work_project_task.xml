@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="x_392987_eam_planned_activities" label="Work Project Task" max_length="40" name="x_392987_eam_work_project_task" type="collection"/>
+</database>

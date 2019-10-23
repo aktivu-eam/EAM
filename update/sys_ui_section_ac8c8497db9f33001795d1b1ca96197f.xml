@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Device Status" section_id="ac8c8497db9f33001795d1b1ca96197f" sys_domain="global" table="x_392987_eam_fda_udi" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>device_publish_date</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 07:28:24</sys_created_on>
+            <sys_id>bbfccc97db9f33001795d1b1ca9619aa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Device Status" display_value="Device Status" name="x_392987_eam_fda_udi" sys_domain="global" view="Default view">ac8c8497db9f33001795d1b1ca96197f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 07:28:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>device_comm_dist_end_date</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 07:28:24</sys_created_on>
+            <sys_id>3ffccc97db9f33001795d1b1ca9619aa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Device Status" display_value="Device Status" name="x_392987_eam_fda_udi" sys_domain="global" view="Default view">ac8c8497db9f33001795d1b1ca96197f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 07:28:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>lot_batch</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 07:28:24</sys_created_on>
+            <sys_id>bffccc97db9f33001795d1b1ca9619aa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Device Status" display_value="Device Status" name="x_392987_eam_fda_udi" sys_domain="global" view="Default view">ac8c8497db9f33001795d1b1ca96197f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 07:28:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>serial_number</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 07:28:24</sys_created_on>
+            <sys_id>33fccc97db9f33001795d1b1ca9619ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Device Status" display_value="Device Status" name="x_392987_eam_fda_udi" sys_domain="global" view="Default view">ac8c8497db9f33001795d1b1ca96197f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 07:28:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>expiration_date</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 07:28:24</sys_created_on>
+            <sys_id>b3fccc97db9f33001795d1b1ca9619ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Device Status" display_value="Device Status" name="x_392987_eam_fda_udi" sys_domain="global" view="Default view">ac8c8497db9f33001795d1b1ca96197f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 07:28:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>manufacturing_date</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 07:28:24</sys_created_on>
+            <sys_id>37fccc97db9f33001795d1b1ca9619ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Device Status" display_value="Device Status" name="x_392987_eam_fda_udi" sys_domain="global" view="Default view">ac8c8497db9f33001795d1b1ca96197f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 07:28:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>donation_number</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 07:28:24</sys_created_on>
+            <sys_id>b7fccc97db9f33001795d1b1ca9619ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Device Status" display_value="Device Status" name="x_392987_eam_fda_udi" sys_domain="global" view="Default view">ac8c8497db9f33001795d1b1ca96197f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 07:28:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>device_sterile</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 07:28:24</sys_created_on>
+            <sys_id>3bfccc97db9f33001795d1b1ca9619ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Device Status" display_value="Device Status" name="x_392987_eam_fda_udi" sys_domain="global" view="Default view">ac8c8497db9f33001795d1b1ca96197f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 07:28:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sterilization_prior_to_use</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 07:28:24</sys_created_on>
+            <sys_id>bbfccc97db9f33001795d1b1ca9619ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Device Status" display_value="Device Status" name="x_392987_eam_fda_udi" sys_domain="global" view="Default view">ac8c8497db9f33001795d1b1ca96197f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 07:28:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sterilization_method_types</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 07:28:24</sys_created_on>
+            <sys_id>3ffccc97db9f33001795d1b1ca9619ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Device Status" display_value="Device Status" name="x_392987_eam_fda_udi" sys_domain="global" view="Default view">ac8c8497db9f33001795d1b1ca96197f</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 07:28:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Device Status</caption>
+            <header>false</header>
+            <name>x_392987_eam_fda_udi</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 07:26:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ac8c8497db9f33001795d1b1ca96197f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Device Status</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+            <sys_update_name>sys_ui_section_ac8c8497db9f33001795d1b1ca96197f</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 07:26:17</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

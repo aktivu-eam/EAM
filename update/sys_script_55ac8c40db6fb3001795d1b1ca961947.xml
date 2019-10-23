@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_392987_eam_m2m_software_fir_models</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_392987_eam_m2m_software_fir_models">software_firmware_definitionsVALCHANGES^ORsoftware_firmware_patch_definitionVALCHANGES^EQ<item endquery="false" field="software_firmware_definitions" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="false" field="software_firmware_patch_definition" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Calculate Available Soft/Firm rank</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+	//Add ranks together and set to this record's rank
+	var currentRank = Number(current.software_firmware_definitions.rank.getDisplayValue()) + 
+		Number(current.software_firmware_patch_definition.rank.getDisplayValue());
+	current.rank = currentRank;
+	
+	//Get highest patch rating and compare to this record's patch
+	var isPatchCurrent = false;
+	var currPatchRank = Number(current.software_firmware_patch_definition.rank.getDisplayValue());
+	var patchRankGr = new GlideRecord('x_392987_eam_software_firmware_patch_definition');
+	patchRankGr.addQuery('software_firmware_definition', current.software_firmware_definitions.sys_id);		
+
+	patchRankGr.orderByDesc('rank');
+	patchRankGr.query();
+	if(!patchRankGr.hasNext()){ //Base case. If there's no patch, it's current
+		isPatchCurrent = true;
+		if(current.software_firmware_patch_definition){
+			current.software_firmware_patch_definition = '';
+		}
+	}
+	else{
+		patchRankGr.next();
+		if(Number(patchRankGr.rank.getDisplayValue()) == currPatchRank){
+			isPatchCurrent = true;
+		}
+	}
+
+	//Check if there's a soft/firm record with this as a previous
+	var isSfCurrent = false;
+	var sfRankGr = new GlideRecord('x_392987_eam_software_firmware_definitions');
+	sfRankGr.addQuery('previous_version', current.software_firmware_definitions.sys_id);
+	sfRankGr.query();
+	if(!sfRankGr.hasNext()){
+		isSfCurrent = true;
+	}
+	
+	current.current = (isPatchCurrent && isSfCurrent);
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-08-23 15:25:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>55ac8c40db6fb3001795d1b1ca961947</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Calculate Available Soft/Firm rank</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+        <sys_update_name>sys_script_55ac8c40db6fb3001795d1b1ca961947</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-08-23 15:25:18</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=55ac8c40db6fb3001795d1b1ca961947"/>
+</record_update>

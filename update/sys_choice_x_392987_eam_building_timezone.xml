@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="timezone" table="x_392987_eam_building" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>timezone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Canada/Atlantic</label>
+            <language>en</language>
+            <name>x_392987_eam_building</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-16 07:41:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bbefd22ddb533300f318fbef29961981</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-16 07:41:01</sys_updated_on>
+            <value>Canada/Atlantic</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>timezone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Canada/Central</label>
+            <language>en</language>
+            <name>x_392987_eam_building</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-16 07:41:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3fefd22ddb533300f318fbef29961982</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-16 07:41:01</sys_updated_on>
+            <value>Canada/Central</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>timezone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Canada/Eastern</label>
+            <language>en</language>
+            <name>x_392987_eam_building</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-16 07:41:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bbefd22ddb533300f318fbef29961983</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-16 07:41:01</sys_updated_on>
+            <value>Canada/Eastern</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>timezone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Canada/Mountain</label>
+            <language>en</language>
+            <name>x_392987_eam_building</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-16 07:41:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3befd22ddb533300f318fbef29961984</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-16 07:41:01</sys_updated_on>
+            <value>Canada/Mountain</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>timezone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Canada/Pacific</label>
+            <language>en</language>
+            <name>x_392987_eam_building</name>
+            <sequence>4</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-16 07:41:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b7efd22ddb533300f318fbef29961985</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-16 07:41:01</sys_updated_on>
+            <value>Canada/Pacific</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>timezone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Europe/Amsterdam</label>
+            <language>en</language>
+            <name>x_392987_eam_building</name>
+            <sequence>5</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-16 07:41:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>37efd22ddb533300f318fbef29961986</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-16 07:41:01</sys_updated_on>
+            <value>Europe/Amsterdam</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>timezone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Europe/Berlin</label>
+            <language>en</language>
+            <name>x_392987_eam_building</name>
+            <sequence>6</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-16 07:41:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>80ffd22ddb533300f318fbef29961987</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-16 07:41:01</sys_updated_on>
+            <value>Europe/Berlin</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>timezone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Europe/Brussels</label>
+            <language>en</language>
+            <name>x_392987_eam_building</name>
+            <sequence>7</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-16 07:41:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>00ffd22ddb533300f318fbef29961988</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-16 07:41:01</sys_updated_on>
+            <value>Europe/Brussels</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>timezone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Europe/Copenhagen</label>
+            <language>en</language>
+            <name>x_392987_eam_building</name>
+            <sequence>8</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-16 07:41:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8cffd22ddb533300f318fbef29961988</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-16 07:41:01</sys_updated_on>
+            <value>Europe/Copenhagen</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>timezone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Europe/Dublin</label>
+            <language>en</language>
+            <name>x_392987_eam_building</name>
+            <sequence>9</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-16 07:41:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0cffd22ddb533300f318fbef29961989</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-16 07:41:01</sys_updated_on>
+            <value>Europe/Dublin</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>timezone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Europe/London</label>
+            <language>en</language>
+            <name>x_392987_eam_building</name>
+            <sequence>10</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-16 07:41:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>08ffd22ddb533300f318fbef299619a3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-16 07:41:01</sys_updated_on>
+            <value>Europe/London</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>timezone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Europe/Madrid</label>
+            <language>en</language>
+            <name>x_392987_eam_building</name>
+            <sequence>11</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-16 07:41:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>84ffd22ddb533300f318fbef299619a4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-16 07:41:01</sys_updated_on>
+            <value>Europe/Madrid</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>timezone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Europe/Paris</label>
+            <language>en</language>
+            <name>x_392987_eam_building</name>
+            <sequence>12</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-16 07:41:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>04ffd22ddb533300f318fbef299619a5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-16 07:41:01</sys_updated_on>
+            <value>Europe/Paris</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>timezone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Europe/Rome</label>
+            <language>en</language>
+            <name>x_392987_eam_building</name>
+            <sequence>13</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-16 07:41:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>80ffd22ddb533300f318fbef299619a6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-16 07:41:01</sys_updated_on>
+            <value>Europe/Rome</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>timezone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Europe/Stockholm</label>
+            <language>en</language>
+            <name>x_392987_eam_building</name>
+            <sequence>14</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-16 07:41:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>00ffd22ddb533300f318fbef299619a7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-16 07:41:01</sys_updated_on>
+            <value>Europe/Stockholm</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>timezone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Europe/Zurich</label>
+            <language>en</language>
+            <name>x_392987_eam_building</name>
+            <sequence>15</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-16 07:41:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8cffd22ddb533300f318fbef299619a7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-16 07:41:01</sys_updated_on>
+            <value>Europe/Zurich</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>timezone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>GMT</label>
+            <language>en</language>
+            <name>x_392987_eam_building</name>
+            <sequence>16</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-16 07:41:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0cffd22ddb533300f318fbef299619a8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-16 07:41:01</sys_updated_on>
+            <value>GMT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>timezone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hongkong</label>
+            <language>en</language>
+            <name>x_392987_eam_building</name>
+            <sequence>17</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-16 07:41:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>88ffd22ddb533300f318fbef299619a9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-16 07:41:01</sys_updated_on>
+            <value>Hongkong</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>timezone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>US/Arizona</label>
+            <language>en</language>
+            <name>x_392987_eam_building</name>
+            <sequence>18</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-16 07:41:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>08ffd22ddb533300f318fbef299619aa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-16 07:41:01</sys_updated_on>
+            <value>US/Arizona</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>timezone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>US/Central</label>
+            <language>en</language>
+            <name>x_392987_eam_building</name>
+            <sequence>19</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-16 07:41:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>84ffd22ddb533300f318fbef299619ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-16 07:41:01</sys_updated_on>
+            <value>US/Central</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>timezone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>US/Eastern</label>
+            <language>en</language>
+            <name>x_392987_eam_building</name>
+            <sequence>20</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-16 07:41:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>04ffd22ddb533300f318fbef299619ac</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-16 07:41:01</sys_updated_on>
+            <value>US/Eastern</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>timezone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>US/Hawaii</label>
+            <language>en</language>
+            <name>x_392987_eam_building</name>
+            <sequence>21</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-16 07:41:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>80ffd22ddb533300f318fbef299619ad</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-16 07:41:01</sys_updated_on>
+            <value>US/Hawaii</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>timezone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>US/Mountain</label>
+            <language>en</language>
+            <name>x_392987_eam_building</name>
+            <sequence>22</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-16 07:41:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>00ffd22ddb533300f318fbef299619ae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-16 07:41:01</sys_updated_on>
+            <value>US/Mountain</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>timezone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>US/Pacific</label>
+            <language>en</language>
+            <name>x_392987_eam_building</name>
+            <sequence>23</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-16 07:41:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8cffd22ddb533300f318fbef299619ae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-16 07:41:01</sys_updated_on>
+            <value>US/Pacific</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>timezone</element>
+            <name>x_392987_eam_building</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-16 07:41:01</sys_created_on>
+            <sys_id>2513edc02f7333000d355d372799b679</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>timezone</sys_name>
+            <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+            <sys_update_name>sys_choice_x_392987_eam_building_timezone</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-16 07:41:01</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

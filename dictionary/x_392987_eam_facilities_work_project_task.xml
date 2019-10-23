@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="x_392987_eam_work_project_task" label="Facilities Work Project Task" max_length="40" name="x_392987_eam_facilities_work_project_task" sizeclass="2" type="collection">
+        <element label="Work Project" mandatory="true" max_length="32" name="work_project" reference="x_392987_eam_planned_activities" type="reference"/>
+    </element>
+</database>

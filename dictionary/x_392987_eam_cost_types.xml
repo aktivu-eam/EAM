@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Cost Types" max_length="40" name="x_392987_eam_cost_types" type="collection">
+        <element display="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Name" max_length="255" name="name" type="string"/>
+        <element label="Sys domain path" max_length="255" name="sys_domain_path" type="string"/>
+    </element>
+</database>

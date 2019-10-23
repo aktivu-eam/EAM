@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_392987_eam_work_order_task_procedures</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_392987_eam_work_order_task_procedures">found_as_inputISNOTEMPTY^data_sheet_item_definitionISNOTEMPTY^found_as_inputVALCHANGES^found_as_outputISNOTEMPTY^data_sheet_item_definition.data_sheet_template.calibration_test_type!=2^NQfound_as_outputISNOTEMPTY^found_as_outputVALCHANGES^data_sheet_item_definitionISNOTEMPTY^found_as_inputISEMPTY^data_sheet_item_definition.data_sheet_template.calibration_test_type=2^EQ<item endquery="false" field="found_as_input" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="false" field="data_sheet_item_definition" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="false" field="found_as_input" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="false" field="found_as_output" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="false" field="data_sheet_item_definition.data_sheet_template.calibration_test_type" goto="false" newquery="false" operator="!=" or="false" value="2"/>
+            <item endquery="false" field="found_as_output" goto="false" newquery="true" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="false" field="found_as_output" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="false" field="data_sheet_item_definition" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="false" field="found_as_input" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
+            <item endquery="false" field="data_sheet_item_definition.data_sheet_template.calibration_test_type" goto="false" newquery="false" operator="=" or="false" value="2"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Validate Input/Output Value - Found As</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	var output_value = current.found_as_output;
+	var input_value = current.found_as_input;
+	var input_lower_limit = current.data_sheet_item_definition.input_lower_limit;
+	var input_upper_limit = current.data_sheet_item_definition.input_upper_limit;
+	
+	var out_adjust_lower_limit = current.data_sheet_item_definition.output_adjustment_lower_limit;
+	var out_adjust_upper_limit = current.data_sheet_item_definition.output_adjustment_upper_limit;
+	
+	var fail_lower_limit = current.data_sheet_item_definition.output_failed_lower_limit;
+	var fail_upper_limit = current.data_sheet_item_definition.output_failed_upper_limit;
+	
+	var flag = false;
+	
+	// Validation of Input Value
+	if(input_lower_limit <= input_value && input_upper_limit >= input_value) {
+		
+		// Validation of Output Value
+		
+		if(output_value != current.data_sheet_item_definition.desired_output){
+			
+			if(output_value < fail_lower_limit || output_value > fail_upper_limit) {
+				
+				gs.addErrorMessage('This test has failed. Actual Output value is out of Fail Tolerance Limits.');
+				current.found_as_result = 2;
+				flag = true;
+				
+			}
+			
+			else if(output_value > out_adjust_lower_limit && output_value < out_adjust_upper_limit) {
+				gs.addInfoMessage('Actual Output value is within Adjust Tolerance Limits.');
+				current.found_as_result = 1;
+			}
+			
+			else {
+				
+				gs.addInfoMessage('Actual Output value is outside Adjust Tolerance Limits. But, it is within Fail Tolerance Units.');
+				current.found_as_result = 1;
+				
+			}
+		}
+		
+		else {
+			
+			current.found_as_result = 1;
+			
+		}
+	}
+	
+	else {
+		
+		gs.addErrorMessage('Actual Input Value is out of Input Lower Limit and Input Upper Limit. Please adjust input value and retest again.');
+		current.state = 'Draft';
+		current.found_as_input = '';
+		current.found_as_output = '';
+		flag = true;
+		
+	}
+
+	if(flag == true) {
+		action.setRedirectURL(current);
+	}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-09-06 12:50:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f22bab942f7373000d355d372799b6e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Validate Input/Output Value - Found As</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+        <sys_update_name>sys_script_f22bab942f7373000d355d372799b6e3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-09-06 12:50:29</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=f22bab942f7373000d355d372799b6e3"/>
+</record_update>

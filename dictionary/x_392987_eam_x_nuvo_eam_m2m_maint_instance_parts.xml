@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Maintenance Instance Parts" max_length="40" name="x_392987_eam_x_nuvo_eam_m2m_maint_instance_parts" type="collection">
+        <element label="Cost" max_length="20" name="cost" type="currency"/>
+        <element label="Maintenance Definition Parts" max_length="32" name="maintenance_definition_parts" reference="x_392987_eam_x_nuvo_eam_m2m_maint_instance_parts" type="reference"/>
+        <element label="Parts" max_length="32" name="parts" reference="x_392987_eam_parts" type="reference"/>
+        <element label="Quantity" max_length="40" name="quantity" type="integer"/>
+        <element label="Scheduled Maintenances" max_length="32" name="scheduled_maintenances" reference="x_392987_eam_scheduled_maintenances" type="reference"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <index name="index">
+            <element name="parts"/>
+        </index>
+        <index name="index2">
+            <element name="maintenance_definition_parts"/>
+        </index>
+        <index name="index3">
+            <element name="scheduled_maintenances"/>
+        </index>
+        <index name="index4">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Desired Output Formula" max_length="40" name="x_392987_eam_desired_output_formula" type="collection">
+        <element default="/* Add Desired Output Formula here */" label="Formula" max_length="8000" name="formula" type="script"/>
+        <element label="Name" max_length="100" name="name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+    </element>
+</database>

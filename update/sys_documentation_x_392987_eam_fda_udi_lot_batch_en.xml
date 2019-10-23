@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="lot_batch" label="Lot Batch" language="en" table="x_392987_eam_fda_udi">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>lot_batch</element>
+            <help/>
+            <hint/>
+            <label>Lot Batch</label>
+            <language>en</language>
+            <name>x_392987_eam_fda_udi</name>
+            <plural>Lot Batches</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-08-21 07:26:17</sys_created_on>
+            <sys_id>85c1e9c42f3333000d355d372799b6dd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Lot Batch</sys_name>
+            <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+            <sys_update_name>sys_documentation_x_392987_eam_fda_udi_lot_batch_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-08-21 07:26:17</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

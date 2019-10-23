@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="Models" max_length="40" name="x_392987_eam_models" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Acquisition Method" max_length="40" name="acquisition_method" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Both" sequence="0" value="Both"/>
+                <element inactive_on_update="false" label="Buy" sequence="1" value="Buy"/>
+                <element inactive_on_update="false" label="Lease" sequence="2" value="Lease"/>
+            </choice>
+        </element>
+        <element label="Asset Type" mandatory="true" max_length="32" name="asset_type" reference="x_392987_eam_asset_type" type="reference"/>
+        <element default="true" label="Cascade Risk Factor" max_length="40" name="cascade_risk_factor" type="boolean"/>
+        <element label="Certified" max_length="40" name="certified" type="boolean"/>
+        <element attributes="omit_sys_original=true" label="Cost" max_length="20" name="cost" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="1000" name="description" type="string"/>
+        <element label="Desired Life Expectancy" max_length="40" name="desired_life_expectancy" type="glide_duration"/>
+        <element label="End Of Life" max_length="40" name="end_of_life" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="End Of Life Date" max_length="40" name="end_of_life_date" type="glide_date"/>
+        <element label="End Of Support Life" max_length="40" name="end_of_support_life" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="End Of Support Life Date" max_length="40" name="end_of_support_life_date" type="glide_date"/>
+        <element label="Manufacturer Life Expectancy" max_length="40" name="life_expectancy" type="glide_duration"/>
+        <element attributes="omit_sys_original=true" label="List Price" max_length="20" name="list_price" type="currency"/>
+        <element label="Manufacturer" mandatory="true" max_length="32" name="manufacturer" reference="x_392987_eam_company" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Model Name" mandatory="true" max_length="255" name="name" type="string"/>
+        <element label="Network Connected" max_length="40" name="network_connected" type="boolean"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Overview" max_length="65536" name="overview" type="html"/>
+        <element attributes="edge_encryption_enabled=true" label="Picture" max_length="40" name="picture" type="user_image"/>
+        <element label="Expected PM Duration" max_length="40" name="pm_duration" type="glide_duration"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Relate Parts" max_length="1024" name="relate_parts" type="glide_list"/>
+        <element label="RFC Function" max_length="32" name="rfc_function" reference="x_392987_eam_rfc_functions" type="reference"/>
+        <element label="RFC Incident History" max_length="32" name="rfc_incident_history" reference="x_392987_eam_rfc_incident_history" type="reference"/>
+        <element label="RFC Maintenance Requirement" max_length="32" name="rfc_maintenance_requirement" reference="x_392987_eam_rfc_maintenance_requirements" type="reference"/>
+        <element choice="1" label="RFC Mission Criticality" max_length="40" name="rfc_mission_criticality" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="1" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="2" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="3" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="4" sequence="3" value="4"/>
+                <element inactive_on_update="false" label="5" sequence="4" value="5"/>
+                <element inactive_on_update="false" label="6" sequence="5" value="6"/>
+                <element inactive_on_update="false" label="7" sequence="6" value="7"/>
+                <element inactive_on_update="false" label="8" sequence="7" value="8"/>
+                <element inactive_on_update="false" label="9" sequence="8" value="9"/>
+                <element inactive_on_update="false" label="10" sequence="9" value="10"/>
+            </choice>
+        </element>
+        <element label="RFC Physical Risk" max_length="32" name="rfc_physical_risk" reference="x_392987_eam_rfc_physical_risks" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="RFC Utilization Rate" max_length="40" name="rfc_utilization_rate" type="string"/>
+        <element label="Risk Score" max_length="40" name="risk_factor" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Security Status" max_length="40" name="security_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="No Known Vulnerabilities" sequence="0" value="no_known_vulnerabilities"/>
+                <element inactive_on_update="false" label="Vulnerable" sequence="1" value="vulnerable"/>
+                <element inactive_on_update="false" label="Risk Accepted" sequence="2" value="risk_accepted"/>
+                <element inactive_on_update="false" label="Mitigating Controls" sequence="3" value="mitigating_controls"/>
+            </choice>
+        </element>
+        <element label="Software Firmware Definitions" max_length="40" name="software_firmware_definitions" reference="x_392987_eam_software_firmware_definitions" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Software Version" max_length="100" name="software_version" type="string"/>
+        <element label="Specifications" max_length="65536" name="specifications" type="html"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="edge_encryption_enabled=true" label="Sys domain path" max_length="40" name="sys_domain_path" type="string"/>
+        <element label="UDI" max_length="32" name="udi" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element label="Useful Life (yrs)" max_length="15" name="useful_life" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" label="Website" max_length="1024" name="website" type="url"/>
+        <index name="index">
+            <element name="rfc_incident_history"/>
+        </index>
+        <index name="index2">
+            <element name="asset_type"/>
+        </index>
+        <index name="index3">
+            <element name="rfc_physical_risk"/>
+        </index>
+        <index name="index4">
+            <element name="udi"/>
+        </index>
+        <index name="index5">
+            <element name="rfc_maintenance_requirement"/>
+        </index>
+        <index name="index6">
+            <element name="rfc_function"/>
+        </index>
+        <index name="index7">
+            <element name="sys_class_name"/>
+        </index>
+        <index name="index8">
+            <element name="manufacturer"/>
+        </index>
+    </element>
+</database>

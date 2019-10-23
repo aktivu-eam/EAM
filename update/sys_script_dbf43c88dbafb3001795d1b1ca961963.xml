@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_392987_eam_installed_software_firmware</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_392987_eam_installed_software_firmware">installed_dateVALCHANGES^installed_dateISNOTEMPTY^EQ<item endquery="false" field="installed_date" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="false" field="installed_date" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Validate Installation Date</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+	var dateUtils = new NuvoloValidateDateTime();
+	var current_date = new GlideDateTime().getValue();
+	var install_date = current.getValue('installed_date');
+	var published_date = dateUtils.getPublishedDate(current.getValue('software_firmware_definition'));
+	gs.info("Validate Date BR::: published date is " + published_date);
+	var compare = dateUtils.compareDates(current_date, install_date);
+	var compare2 = dateUtils.compareDates(published_date, install_date);
+	gs.info("Validate Date BR::: compare2 is " + compare2);
+	if (compare == -1){
+		gs.addErrorMessage('Installation Date must be set in the past.');
+		current.setAbortAction(true);
+	}
+	if (compare2 == 1){
+		gs.addErrorMessage('Installation Date cannot be before software version Published Date');
+		current.setAbortAction(true);
+	}
+
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-08-23 18:20:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dbf43c88dbafb3001795d1b1ca961963</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Validate Installation Date</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+        <sys_update_name>sys_script_dbf43c88dbafb3001795d1b1ca961963</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-08-23 18:20:23</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=dbf43c88dbafb3001795d1b1ca961963"/>
+</record_update>

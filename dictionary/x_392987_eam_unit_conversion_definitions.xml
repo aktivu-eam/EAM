@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Unit Conversion Definitions" max_length="40" name="x_392987_eam_unit_conversion_definitions" type="collection">
+        <element label="Conversion Formula" max_length="15" name="conversion_formula" type="script"/>
+        <element label="From" max_length="32" name="from" reference="x_392987_eam_unit_of_measure" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Sys domain path" max_length="155" name="sys_domain_path" type="string"/>
+        <element label="To" max_length="32" name="to" reference="x_392987_eam_unit_of_measure" type="reference"/>
+        <index name="index">
+            <element name="from"/>
+        </index>
+        <index name="index2">
+            <element name="to"/>
+        </index>
+    </element>
+</database>

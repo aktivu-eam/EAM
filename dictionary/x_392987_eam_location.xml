@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="cmdb_ci" label="Location" max_length="40" name="x_392987_eam_location" sizeclass="2" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Floor" mandatory="true" max_length="32" name="floor" reference="x_392987_eam_floor" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Image URL" max_length="40" name="image_url" type="user_image"/>
+        <element attributes="edge_encryption_enabled=true" label="Location Code" mandatory="true" max_length="200" name="location_code" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Reservable" max_length="40" name="reservable" type="boolean"/>
+        <element label="Space" max_length="32" name="space" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element label="Space Type" max_length="32" name="space_type" reference="x_392987_eam_space_type" type="reference"/>
+        <element attributes="synchronizePartitions=true" choice="3" default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true">
+            <choice/>
+        </element>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

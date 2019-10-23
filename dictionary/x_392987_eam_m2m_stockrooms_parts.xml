@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Stockroom Parts" max_length="40" name="x_392987_eam_m2m_stockrooms_parts" type="collection">
+        <element label="Available Quantity" max_length="40" name="available_quantity" type="integer"/>
+        <element label="Display Name" max_length="100" name="display_name" type="string"/>
+        <element label="Parts" max_length="32" name="parts" reference="x_392987_eam_parts" type="reference"/>
+        <element label="Quantity" max_length="40" name="quantity" type="integer"/>
+        <element label="Stockrooms" max_length="32" name="stockrooms" reference="x_392987_eam_stockrooms" type="reference"/>
+        <element label="Sys domain path" max_length="255" name="sys_domain_path" type="string"/>
+        <element label="Used Quantity" max_length="40" name="used_quantity" type="integer"/>
+        <index name="index">
+            <element name="parts"/>
+        </index>
+        <index name="index2">
+            <element name="stockrooms"/>
+        </index>
+    </element>
+</database>

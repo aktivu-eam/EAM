@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Technician Dispatch Conflict Lookup" max_length="40" name="x_392987_eam_technician_dispatch_conflict_lookup" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element dependent="table" dependent_on_field="table" label="Assignee Field" mandatory="true" max_length="80" name="assignee_field" type="field_name" use_dependent_field="true"/>
+        <element dependent="table" dependent_on_field="table" label="End Date Field" mandatory="true" max_length="80" name="end_date_field" type="field_name" use_dependent_field="true"/>
+        <element dependent="table" dependent_on_field="table" label="Start Date Field" mandatory="true" max_length="80" name="start_date_field" type="field_name" use_dependent_field="true"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="edge_encryption_enabled=true" label="Sys domain path" max_length="155" name="sys_domain_path" type="string"/>
+        <element attributes="base_start=true" label="Table" mandatory="true" max_length="80" name="table" type="table_name"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

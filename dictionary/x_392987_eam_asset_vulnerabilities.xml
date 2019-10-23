@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Asset Vulnerabilities" max_length="40" name="x_392987_eam_asset_vulnerabilities" type="collection">
+        <element label="Asset" mandatory="true" max_length="32" name="asset" reference="x_392987_eam_assets" type="reference"/>
+        <element label="Correlated" max_length="40" name="correlated" type="boolean"/>
+        <element choice="1" default="3" label="Criticality" max_length="40" name="criticality" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="Critical" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="High" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Non-Critical" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <element choice="1" label="Resolution" max_length="40" name="resolution" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="False Positive" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Risk Accepted" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Irrevelant" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Fixed" sequence="3" value="4"/>
+            </choice>
+        </element>
+        <element label="Security Risk Score" max_length="40" name="security_risk_score" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Source" max_length="40" name="source" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Event" sequence="0" value="event"/>
+                <element inactive_on_update="false" label="Vulnerability Scan" sequence="1" value="vulnerability_scan"/>
+                <element inactive_on_update="false" label="Correlation" sequence="2" value="correlation"/>
+            </choice>
+        </element>
+        <element label="Vulnerability" max_length="32" name="vulnerability" reference="x_392987_eam_vulnerabilities" type="reference"/>
+    </element>
+</database>

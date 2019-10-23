@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_392987_eam_planned_activities</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_392987_eam_planned_activities">work_endVALCHANGES^work_endISNOTEMPTY^active=false^parent_planned_activitiesISNOTEMPTY^EQ<item endquery="false" field="work_end" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="false" field="work_end" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="false"/>
+            <item endquery="false" field="parent_planned_activities" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Update Parent Actual Work End</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	//Find last actual work end and update parents actual work end if all siblings are closed
+	
+	var hasOpenChildren = new GlideRecord('x_392987_eam_planned_activities');
+	hasOpenChildren.addQuery('parent_planned_activities',current.parent_planned_activities);
+	hasOpenChildren.addQuery('active',true);
+	hasOpenChildren.query();
+	if(!hasOpenChildren.hasNext()){
+		var siblingTask = new GlideRecord('x_392987_eam_planned_activities');
+		siblingTask.addQuery('parent_planned_activities',current.parent_planned_activities);
+		siblingTask.addQuery('active',false);
+		siblingTask.orderByDesc('work_end');
+		siblingTask.query();
+		if(siblingTask.next()){
+			var parentTask = current.parent_planned_activities.getRefRecord();
+			parentTask.work_end = siblingTask.work_end;
+			//var start = new GlideDateTime(parentTask.work_start);
+			//var end = new GlideDateTime(siblingTask.work_end);
+			//var duration = GlideDateTime.subtract(start,end);
+			//parentTask.actual_duration.setDateNumericValue(duration.getNumericValue());
+			parentTask.update();
+		}
+	}
+	
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-08-27 10:15:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8c4ce7cddba333001795d1b1ca96192e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update Parent Actual Work End</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Enterprise Asset Management" source="x_392987_eam">2cd717a8dbdb3300f318fbef2996195f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Asset Management">2cd717a8dbdb3300f318fbef2996195f</sys_scope>
+        <sys_update_name>sys_script_8c4ce7cddba333001795d1b1ca96192e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-08-27 10:15:15</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=8c4ce7cddba333001795d1b1ca96192e"/>
+</record_update>

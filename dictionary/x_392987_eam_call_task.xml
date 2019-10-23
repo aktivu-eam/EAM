@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="Call Task" max_length="40" name="x_392987_eam_call_task" type="collection">
+        <element label="Asset" max_length="32" name="asset" reference="x_392987_eam_assets" type="reference"/>
+        <element label="Caller" max_length="32" name="caller" reference="cmdb_ci_appl_dot_net" type="reference"/>
+        <element default="1" label="Call Type" max_length="40" name="call_type" type="integer"/>
+        <element label="Email" max_length="40" name="email" type="string"/>
+        <element label="First Name" max_length="40" name="first_name" type="string"/>
+        <element label="Migrated From" max_length="32" name="migrated_from" reference="x_392987_eam_calls" type="reference"/>
+        <element label="Override Assignee" max_length="32" name="override_assignee" reference="sys_user" type="reference"/>
+        <element label="Override Assignment" max_length="40" name="override_assignment" type="boolean"/>
+        <element label="Phone Number" max_length="40" name="phone_number" type="string"/>
+        <element label="Planned End" max_length="40" name="planned_end" type="glide_date_time"/>
+        <element label="Planned Start" max_length="40" name="planned_start" type="glide_date_time"/>
+        <element label="Primary CI" max_length="32" name="primary_ci" reference="cmdb_ci" type="reference"/>
+        <element label="Requested for" max_length="32" name="requested_for" reference="sys_user" type="reference"/>
+        <element label="Skills" max_length="4000" name="skills" type="glide_list"/>
+        <element label="Transfer To" max_length="32" name="transfer_to" reference="task" type="reference"/>
+    </element>
+</database>

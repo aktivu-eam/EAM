@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Space Amenities" max_length="40" name="x_392987_eam_space_amenities" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="1000" name="description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="255" name="name" type="string"/>
+    </element>
+</database>
