@@ -24,7 +24,7 @@
             <sys_mod_count>0</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_392987_eam_facilities_devices" name="x_392987_eam_facilities_devices" sys_domain="global" view="Default view">135739e3db5f73001795d1b1ca961933</sys_ui_form>
-            <sys_ui_section caption="Vender" display_value="Vender" name="x_392987_eam_facilities_devices" sys_domain="global" view="Default view">cea4b7b32ff333000d355d372799b6ed</sys_ui_section>
+            <sys_ui_section caption="Vendor" display_value="Vendor" name="x_392987_eam_facilities_devices" sys_domain="global" view="Default view">cea4b7b32ff333000d355d372799b6ed</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2019-09-17 10:08:54</sys_updated_on>
         </sys_ui_form_section>

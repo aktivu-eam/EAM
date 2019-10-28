@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="x_392987_eam_devices" label="Facilities Devices" max_length="40" name="x_392987_eam_facilities_devices" sizeclass="2" type="collection">
+    <element audit="true" extends="x_392987_eam_devices" label="Facilities Devices" max_length="40" name="x_392987_eam_facilities_devices" sizeclass="3" type="collection">
         <element attributes="omit_sys_original=true" label="Acquisition Cost" max_length="20" name="acquisition_cost" type="currency"/>
         <element attributes="edge_encryption_enabled=true" choice="1" default="1" label="Acquisition Method" max_length="40" name="acquisition_method" type="string">
             <choice/>

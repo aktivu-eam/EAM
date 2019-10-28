@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="x_392987_eam_work_order" label="Facilities Work Orders" max_length="40" name="x_392987_eam_facilities_work_orders" sizeclass="3" type="collection">
+    <element audit="true" extends="x_392987_eam_work_order" label="Facilities Work Orders" max_length="40" name="x_392987_eam_facilities_work_orders" sizeclass="4" type="collection">
         <element label="Acknowledged" max_length="40" name="acknowledged" type="glide_date_time"/>
         <element label="Building" max_length="32" name="building" reference="x_392987_eam_building" type="reference"/>
         <element label="Catalog Item Name" max_length="40" name="catalog_item_name" type="string"/>

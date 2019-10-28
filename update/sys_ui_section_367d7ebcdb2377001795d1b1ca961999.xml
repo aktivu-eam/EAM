@@ -4,13 +4,13 @@
             <element>asset_tag</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>2d4bb8152fa000100d355d372799b64d</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>e57ec2052f7000100d355d372799b6ba</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>department</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>e54bb8152fa000100d355d372799b64e</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>a17ec2052f7000100d355d372799b6bb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>last_maintenance_date</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>694bb8152fa000100d355d372799b64e</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>257ec2052f7000100d355d372799b6bb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>reservable</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>e94bb8152fa000100d355d372799b64e</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>a57ec2052f7000100d355d372799b6bb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>asset_manufacturer</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>6d4bb8152fa000100d355d372799b64e</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>297ec2052f7000100d355d372799b6bb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -74,13 +74,13 @@
             <element>asset_vendor</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>ed4bb8152fa000100d355d372799b64e</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>a97ec2052f7000100d355d372799b6bb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -88,13 +88,13 @@
             <element>service_provider</element>
             <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>614bb8152fa000100d355d372799b64f</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>2d7ec2052f7000100d355d372799b6bb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -102,13 +102,13 @@
             <element>scheduled_maintenance</element>
             <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>e14bb8152fa000100d355d372799b64f</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>ad7ec2052f7000100d355d372799b6bb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -116,13 +116,13 @@
             <element>model_name</element>
             <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>654bb8152fa000100d355d372799b64f</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>217ec2052f7000100d355d372799b6bc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -130,13 +130,13 @@
             <element>system</element>
             <position>9</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>e54bb8152fa000100d355d372799b64f</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>a17ec2052f7000100d355d372799b6bc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -144,13 +144,13 @@
             <element>category</element>
             <position>10</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>694bb8152fa000100d355d372799b64f</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>257ec2052f7000100d355d372799b6bc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -158,13 +158,13 @@
             <element>model_id</element>
             <position>11</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>e94bb8152fa000100d355d372799b64f</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>a57ec2052f7000100d355d372799b6bc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -172,13 +172,13 @@
             <element>.split</element>
             <position>12</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>6d4bb8152fa000100d355d372799b64f</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>297ec2052f7000100d355d372799b6bc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -186,13 +186,13 @@
             <element>install_status</element>
             <position>13</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>ed4bb8152fa000100d355d372799b64f</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>a97ec2052f7000100d355d372799b6bc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -200,13 +200,13 @@
             <element>decommission_date</element>
             <position>14</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>614bb8152fa000100d355d372799b650</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>2d7ec2052f7000100d355d372799b6bc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -214,27 +214,27 @@
             <element>quantity</element>
             <position>15</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>e14bb8152fa000100d355d372799b650</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>ad7ec2052f7000100d355d372799b6bc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>asset_type</element>
+            <element>part_type</element>
             <position>16</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>654bb8152fa000100d355d372799b650</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>217ec2052f7000100d355d372799b6bd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -242,13 +242,13 @@
             <element>next_scheduled_maint</element>
             <position>17</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>e54bb8152fa000100d355d372799b650</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>a17ec2052f7000100d355d372799b6bd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -256,13 +256,13 @@
             <element>asset_location</element>
             <position>18</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>694bb8152fa000100d355d372799b650</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>257ec2052f7000100d355d372799b6bd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -270,13 +270,13 @@
             <element>acquisition_cost</element>
             <position>19</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>e94bb8152fa000100d355d372799b650</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>a57ec2052f7000100d355d372799b6bd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -284,13 +284,13 @@
             <element>tco</element>
             <position>20</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>6d4bb8152fa000100d355d372799b650</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>297ec2052f7000100d355d372799b6bd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -298,13 +298,13 @@
             <element>service_contract_cost</element>
             <position>21</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>ed4bb8152fa000100d355d372799b650</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>a97ec2052f7000100d355d372799b6bd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -312,13 +312,13 @@
             <element>current_book_value</element>
             <position>22</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>614bb8152fa000100d355d372799b651</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>2d7ec2052f7000100d355d372799b6bd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -326,13 +326,13 @@
             <element>critical</element>
             <position>23</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>e14bb8152fa000100d355d372799b651</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>ad7ec2052f7000100d355d372799b6bd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -340,13 +340,13 @@
             <element>responsible_cost_center</element>
             <position>24</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>654bb8152fa000100d355d372799b651</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>217ec2052f7000100d355d372799b6be</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -354,13 +354,13 @@
             <element>.end_split</element>
             <position>25</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>e54bb8152fa000100d355d372799b651</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>a17ec2052f7000100d355d372799b6be</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
@@ -368,13 +368,13 @@
             <element>.begin_split</element>
             <position>26</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>694bb8152fa000100d355d372799b651</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>257ec2052f7000100d355d372799b6be</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -382,13 +382,13 @@
             <element>assembly</element>
             <position>27</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>e94bb8152fa000100d355d372799b651</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>a57ec2052f7000100d355d372799b6be</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -396,13 +396,13 @@
             <element>condition</element>
             <position>28</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>6d4bb8152fa000100d355d372799b651</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>297ec2052f7000100d355d372799b6be</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -410,13 +410,13 @@
             <element>usage_unit</element>
             <position>29</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>ed4bb8152fa000100d355d372799b651</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>a97ec2052f7000100d355d372799b6be</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -424,13 +424,13 @@
             <element>disposal_reason</element>
             <position>30</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>614bb8152fa000100d355d372799b652</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>2d7ec2052f7000100d355d372799b6be</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -438,13 +438,13 @@
             <element>purchase_date</element>
             <position>31</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>e14bb8152fa000100d355d372799b652</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>ad7ec2052f7000100d355d372799b6be</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -452,13 +452,13 @@
             <element>disposal_value</element>
             <position>32</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>654bb8152fa000100d355d372799b652</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>217ec2052f7000100d355d372799b6bf</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -466,13 +466,13 @@
             <element>longitude</element>
             <position>33</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>e54bb8152fa000100d355d372799b652</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>a17ec2052f7000100d355d372799b6bf</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -480,13 +480,13 @@
             <element>out_of_service_reason</element>
             <position>34</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>694bb8152fa000100d355d372799b652</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>257ec2052f7000100d355d372799b6bf</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -494,13 +494,13 @@
             <element>stockroom</element>
             <position>35</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>e94bb8152fa000100d355d372799b652</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>a57ec2052f7000100d355d372799b6bf</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -508,13 +508,13 @@
             <element>.split</element>
             <position>36</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>6d4bb8152fa000100d355d372799b652</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>297ec2052f7000100d355d372799b6bf</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -522,13 +522,13 @@
             <element>aem</element>
             <position>37</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>ed4bb8152fa000100d355d372799b652</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>a97ec2052f7000100d355d372799b6bf</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -536,13 +536,13 @@
             <element>disposal_locations</element>
             <position>38</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>614bb8152fa000100d355d372799b653</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>2d7ec2052f7000100d355d372799b6bf</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -550,13 +550,13 @@
             <element>discovery_source</element>
             <position>39</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>e14bb8152fa000100d355d372799b653</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>ad7ec2052f7000100d355d372799b6bf</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -564,13 +564,13 @@
             <element>cpe_cascade</element>
             <position>40</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>654bb8152fa000100d355d372799b653</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>217ec2052f7000100d355d372799b6c0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -578,13 +578,13 @@
             <element>latitude</element>
             <position>41</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>e54bb8152fa000100d355d372799b653</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>a17ec2052f7000100d355d372799b6c0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -592,13 +592,13 @@
             <element>acquisition_method</element>
             <position>42</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>694bb8152fa000100d355d372799b653</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>257ec2052f7000100d355d372799b6c0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -606,13 +606,13 @@
             <element>customer</element>
             <position>43</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>e94bb8152fa000100d355d372799b653</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>a57ec2052f7000100d355d372799b6c0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -620,13 +620,13 @@
             <element>disposal_method</element>
             <position>44</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>6d4bb8152fa000100d355d372799b653</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>297ec2052f7000100d355d372799b6c0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -634,13 +634,13 @@
             <element>rfid</element>
             <position>45</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2019-10-16 09:01:14</sys_created_on>
-            <sys_id>ed4bb8152fa000100d355d372799b653</sys_id>
+            <sys_created_on>2019-10-28 06:41:53</sys_created_on>
+            <sys_id>a97ec2052f7000100d355d372799b6c0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_392987_eam_facilities_parts" sys_domain="global" view="Default view">367d7ebcdb2377001795d1b1ca961999</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2019-10-16 09:01:14</sys_updated_on>
+            <sys_updated_on>2019-10-28 06:41:53</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
